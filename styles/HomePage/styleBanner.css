@@ -1,0 +1,203 @@
+*{margin: 0; padding: 0;} 
+
+@font-face {
+    font-family: font-bold;
+    src: url(fonts/Lato-Bold.ttf);
+}
+
+/* Banner */
+body{
+    font-family: Arial;
+    background-color: #FFF;
+}
+#container{
+    width: 1240px; 
+    margin: 0px auto; 
+}
+
+html,body{
+    overflow-x: hidden;
+}
+
+/* Header */
+#header{
+    width: 100%;
+    height: 260px;
+    background-color: #333;
+}
+
+#banner{
+    height: 211.5px;
+    float: left;
+    background-image: url("NenBanner1.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 1300px;
+    background-color: #333;
+}
+#banner-Left{
+    width: 760px;
+    float: left;
+}
+
+
+#SđtShop{
+    padding-top: 35px;
+    padding-left: 130px;
+    width: 260px;
+    margin: 40px;
+}
+
+/* img SĐT */
+.cd-LR{
+    opacity: 0;
+}
+.cd-LR.sangRight {
+    animation: cdSangRight 1.5s ease forwards;
+}
+@keyframes cdSangRight{
+    from{transform: translateX(-60px);opacity: 0;}
+    to{transform: translateX(0);opacity: 1;}
+}
+
+
+.cd-BtT{
+    opacity: 0;
+}
+.cd-BtT.lenTop {
+    animation: cdLenTop 1.7s ease forwards;
+}
+@keyframes cdLenTop{
+    from{transform: translateY(21px);opacity: 0;}
+    to{transform: translateY(0);opacity: 1;}
+}
+.cd-RL{
+    opacity: 0;
+}
+.cd-RL.sangLeft {
+    animation: cdSangLeft 1.6s ease forwards;
+}
+@keyframes cdSangLeft{
+    from{transform: translateX(60px);opacity: 0;}
+    to{transform: translateX(0);opacity: 1;}
+}
+.cd-T{
+    opacity: 0;
+}
+.cd-T.sangT {
+    animation: cdSangT 1.6s ease forwards;
+}
+@keyframes cdSangT{
+    from{transform: translateX(60px);opacity: 0;}
+    to{transform: translateX(0);opacity: 1;}
+}
+.cd-RL2{
+    opacity: 0;
+}
+.cd-RL2.sangLeft2 {
+    animation: cdSangLeft2 1.6s ease forwards;
+}
+@keyframes cdSangLeft2{
+    from{transform: translateX(60px);opacity: 0;}
+    to{transform: translateX(0);opacity: 1;}
+}
+
+#Logo{
+    width: 270px;
+}
+
+#banner-RTop{
+    margin-top: 50px;
+    margin-left: -30px;
+    width: 250px;
+    height: 80px;
+    float: left;
+}
+
+#btnLogin{
+    margin-right: 10px;
+}
+.btn{
+    line-height: 130px;
+    text-decoration: none;
+    float: right;
+    margin-right: 5px;
+    color: lightpink;
+}
+.bt{
+    margin-top: 53px;
+    float: right;
+    margin-right: 10px;
+    color: lightpink;
+}
+
+#btnLogin:hover{
+    color: #333;
+}
+.btn:hover{
+    color: #333;
+}
+
+#banner-Right{
+    margin-top: 55px;
+    height: 80px;
+    width: 55px;
+    float: left;
+}
+
+#imgGioHag{
+    width: 25px;
+    margin-top: 45px;
+    margin-right: 20px;
+}
+#sohanggiohang1{
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 40px;
+    color: cadetblue;
+}
+
+#br-Bt{
+    width: 305px;
+    height: 50px;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50px;
+    margin-left: -30px;
+
+}
+#search-box{
+    background: #FFF;
+    border: solid 2px lightpink;
+    border-radius: 20px;
+}
+#search-box #search-text{
+    border: none;
+    outline: none;
+    background: none;
+    background-color: #FFF;
+    font-size: 18px;
+    border-radius: 20px;
+    width: 0px;
+    margin-left: 5px;
+    transition: 0.5s ease-out;
+}
+#search-box #search-btn{
+    background-color: #FFF;
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    padding-right: 20px;
+    transition: 0.5s ease-out;
+}
+#search-box:hover #search-text{
+    width: 200px;
+    height: 40px;
+    margin-left: 20px;
+    transition: 0.5s ease all;
+}
+
+/* Hết Banner */

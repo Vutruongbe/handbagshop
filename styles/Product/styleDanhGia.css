@@ -1,0 +1,73 @@
+.showSP-DanhGia{
+    width: 70%;
+    margin-left: 3%;
+    height: 60%;
+    overflow: hidden;
+}
+
+#review-list li{
+    font-family: 'Courier New', Courier, monospace;
+    height: 50px;
+    line-height: 30px;
+    width: 60%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+
+#review-list li:hover{
+    width: 100%;
+    background-color: #28a197;
+    overflow: visible, hidden;
+}
+
+.list-danhGia{
+    width: 300px;
+    height: auto;
+}
+
+.sel-list{
+    width: 60%;
+    margin-left: 20%;
+    background-color: #a0a0a0;
+    border: 1px solid rgb(172, 172, 172);
+}
+
+.sel-list ul li{
+    list-style: none;
+    padding: 10px;
+}
+
+.container-danhGia{
+    width: 55%;
+    height: 250px;
+    margin: 10px auto;
+    border-radius: 5px;
+    border: 1px solid ;
+    opacity: 0.8;
+    margin-bottom: 5%;
+}
+
+.container-danhGia h2{
+    font-size: 20px;
+    text-align: center;
+    font-weight: 400;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#newReview{
+    margin-top: 2%;
+    margin-left: 12%;
+    padding: 2%;
+    height: 25%;
+    width: 75%;
+    border-radius: 10px;
+    border: 5px solid rgb(190, 190, 156);
+}
+
+.btnDanhGia{
+    margin-top: 10px;
+    margin-left: 40%;
+    width: 20%;
+    height: 20%;
+}

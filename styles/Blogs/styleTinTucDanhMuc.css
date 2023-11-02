@@ -1,0 +1,38 @@
+.showTinTuc a{
+    text-decoration: none;
+    font-size: 18px;
+    color: rgb(55, 161, 62);
+}
+
+#container4{
+    margin-top: 20px;
+    width: 32.781%;
+    margin-left: 2%;
+    height: 255px;
+    background-color: rgb(140, 239, 239);
+    float: left;
+    border: 1px solid beige;
+    padding-bottom: 20px;
+}
+
+#container5{
+    margin-top: 20px;
+    width: 32.781%;
+    margin-left: 2%;
+    height: 505px;
+    background-color: rgb(140, 239, 239);
+    float: left;
+    border: 1px solid beige;
+    padding-bottom: 20px;
+}
+
+#container6{
+    margin-top: 20px;
+    width: 32.781%;
+    margin-left: 2%;
+    height: 487px;
+    background-color: rgb(140, 239, 239);
+    float: left;
+    border: 1px solid beige;
+    padding-bottom: 20px;
+}

@@ -1,0 +1,351 @@
+<html>
+    <head >
+        <meta charset="UTF-8">
+        <title>Shop Hoa Tươi Ngô Hạ: Đặt Hoa Online - Giao Miễn Phí Tận Nơi Hải Dương</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+        <script src="scripts/Product/scriptProductSP.js"></script>
+        <script src="scripts/Product/scriptDanhGiaSP.js"></script>
+
+        <link rel="stylesheet" href="styles/Product/styleProduct.css">
+        <link rel="stylesheet" href="styles/Product/styleDanhGia.css">
+        <link rel="stylesheet" href="styles/Product/styleFooter.css">
+
+    </head>
+    <body>
+        <div id="container">
+            <div id="header">
+                <div id="banner">
+                    <div id="br-L">
+                        <img id="SđtShop"src="images/imageHolines.png" alt="SdtShop">
+                        <a href="indexHomePage.html" title="Shop túi xách NaLaBaLa | Đặt túi xách online | Giao Hàng tận nơi"><img id="Logo" src="images/imageLogoShop.png" alt="Logo" ></a>
+                    </div>
+                    <div id="br-T">
+                        <a class="btn" href="indexShoppingCart.html">GIỎ HÀNG</a>
+                        <span class="bt">|</span>
+                        <a class="btn" id="btnLogin" href="indexLoginPage.html" title="Đăng nhập tài khoản">ĐĂNG NHẬP</a>
+                    </div>
+                    <div id="br-R">
+                        <a onclick="showcart('showgiohang','mycart')"><img id="imgGioHag" src="images/GioHang.png" alt="GioHang"></a>
+                        <input type="text" value="0" style="width: 30px;height: 30px;border: 0px;border-radius: 30px;margin-top: 34px;opacity: 1;" id="sohanggiohang1" > 
+                        <!-- <input type="text" value="0" style="width: 30px;height: 30px;border: 0px;border-radius: 30px;margin-top: 34px;margin-left: 25;" id="sohanggiohang2"  >  -->
+                    </div>
+                    <div id="showgiohang">
+                        <h1 style="text-align: center;">GIỎ HÀNG</h1>
+                        <table>
+                            <tr>
+                                <th>STT</th>
+                                <th style="padding-left: 10px;">Hình</th>
+                                <th style="padding-left: 10px;">Tên sản phẩm</th>
+                                <th style="padding-left: 10px;">Đơn giá</th>
+                                <th style="padding-left: 10px;">Số lượng</th>
+                                <th style="padding-left: 10px;">Thành tiền</th>
+                                <th style="padding-left: 10px;">Xóa</th>
+                            </tr>
+                            <tbody id="chitietgiohang">
+                                <td></td>
+                                <td style="width: 30px;"></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id="br-Bt">
+                        <form action="" id="search-box">
+                            <input id="search-text" type="text">
+                            <button id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </form>
+                    </div>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li class="active"><a href="1-index-main.html">TRANG CHỦ</a></li>
+                        <li><a href="LINK2">TÚI SÁCH</a></li>
+                        <li><a href="LINK3">NEWS</a></li>
+                        <li><a href="LINK4">BLOGS</a></li>
+                        <li><a href="LINK5">LIÊN HỆ</a></li>
+                        <li><a href="LINK6">DỊCH VỤ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="main">
+                <div id="main-Left">
+                    <div id="main-div-Left">
+                        <img src="images/Pro1a.jpg" alt="">
+                        <div class="giamgia3" style="margin-left: 30px;margin-top: 30px;" id="ok1">
+                            <p>-17%</p>
+                        </div>
+                    </div>
+                    <div id="main-div-mid" style="margin-top: 26.5px;">
+                        <div id="main-d-m-top">
+                            <a href="">Home page</a>
+                            <span>/</span>
+                            <a href="">Product</a>
+                        </div>
+                        <div id="main-d-m-mid">
+                            <span id="SPtieude" class="spanne">Túi xách OreanTak</span>
+                            <div id="main-d-m-m-div1">
+                                <span id="old" class="spanne">780000đ</span>
+                                <span id="new" class="spanne">650000</span><span id="new" class="spanne">đ</span>
+                            </div>
+                        </div>
+                        <div id="main-d-m-tieuChi">
+                            <div id="main-d-m-tieuChi-NDTieuChi">
+                                <div id="main-d-m-tC-NDTieuChi-1">
+                                    <span style="margin-left: 20px;">Tiêu chí của chúng tôi:</span>
+                                </div>
+                                <ol>
+                                    <li>Đây là túi sách ra mắt 2023.</li>
+                                    <li>Cập nhật các xu hướng hoa cưới mới nhất!</li>
+                                    <li>của nhà CAEISL & KCIEL.</li>
+                                    <li>Giao hàng nhanh nhất trong nội thành TP.Hải Dương</li>
+                                </ol>
+                            </div>
+                        </div>
+                        <div id="main-d-m-khuyenMai">
+                            <div id="main-d-m-KM-NDKhuyenMai">
+                                <div id="main-d-m-KM-NDKhuyenMai-1">
+                                    <span style="margin-left: 20px;">Khuyến mãi hot nhất:</span>
+                                </div>
+                                <ol>
+                                    <li>Giao hàng miễn phí tận nơi nội thành TP.Hải Dương</li>
+                                    <li>Giao những đơn hàng gấp từ 1h-2h</li>
+                                    <li>Miễn phí băng rôn, thiệp...</li>
+                                    <li>Chất lượng sản phẩm đạt tốt nhất khi quý khách đặt hàng trước ít nhất 3 ngày</li>
+                                    <li>Gửi hình ảnh sản phẩm thực tế trước khi giao</li>
+                                </ol>
+                            </div>
+                        </div>
+                        <div id="main-d-m-divbtn1">
+                            <input class="btn-add" id="btchinh-btadd1" type="button" value="Chat Facebook"/>
+                            <input class="btn-add" id="btchinh-btadd2" type="button" value="Hotline: 0385666387"/>
+                        </div>
+                        <div id="main-d-m-divbtn2">
+                            <a href=""></a>
+                            <input type="button" onclick="sub('tinhtoan1')" value="-" class="R-ct-01">
+                            <input type="text" value="1" style="border: 0px solid;background-color: #efeded;" id="tinhtoan1" > 
+                            <input type="button" onclick="plus('tinhtoan1')" value="+" class="R-ct-01">
+                            <input type="button" id="btchinh-btadd3" onclick="plus1('tinhtoan1','sohanggiohang1'); themvaogiohang('ok1','main-d-m-m-div1','tinhtoan1','chitietgiohang','showgiohang')"  value="Thêm vào giỏ hàng"/>
+                            <div style="margin-top: 10px;">
+                                <span>Vui lòng gọi hotline: <span style="color: orangered;">0932.650.046</span> để xin giá chính thức!</span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr style="margin-bottom: 50px;">
+                    <span style="margin-left: 40px;font-size: 20px;color: rgb(255, 51, 0);">Sản phẩm tương tự</span>
+                    <div id="showHoa">
+                        <div class="ImgHoa2 H1">
+                            <a href="/">
+                                <img src="images/SPshowH2a.jpg" style="margin-top: -10px; height: 200px;">
+                            </a>
+                            <div class="giamgia">
+                                <p>-11%</p>
+                            </div>
+                            <div class="btshow2">
+                                <div class="CLdivshowH">
+                                    <a id="a1">Túi xách Jimibuty</a>
+                                </div>
+                                <div style="text-align: center;"">
+                                    <span class="old3">1.100.000đ</span>
+                                    <span class="new3">930.000đ</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ImgHoa2 H2">
+                            <a href="/">
+                                <img src="images/SPshowH2b.jpg" style="margin-top: -10px; height: 200px;">
+                            </a>
+                            <div class="giamgia">
+                                <p>-7%</p>
+                            </div>
+                            <div class="btshow2">
+                                <div class="CLdivshowH">
+                                    <a>Túi xách Ximpotu</a>
+                                </div>
+                                <div style="text-align: center;"">
+                                    <span class="old3">650.000đ</span>
+                                    <span class="new3">530.000đ</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ImgHoa2 H3">
+                            <a href="/">
+                                <img src="images/SPshowH2c.jpg" style="margin-top: -10px; height: 200px;">
+                            </a>
+                            <div class="giamgia">
+                                <p>-35%</p>
+                            </div>
+                            <div class="btshow2">
+                                <div class="CLdivshowH">
+                                    <a>Túi sách Omximuter</a>
+                                </div>
+                                <div style="text-align: center;"">
+                                    <span class="old3">1.200.000đ</span>
+                                    <span class="new3">999.000đ</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ImgHoa2 H4">
+                            <a href="/">
+                                <img src="images/SPshowH2d.jpg" style="margin-top: -10px; height: 200px;">
+                            </a>
+                            <div class="giamgia">
+                                <p>-16%</p>
+                            </div>
+                            <div class="btshow2">
+                                <div class="CLdivshowH">
+                                    <a>Túi xách Umito</a>
+                                </div>
+                                <div style="text-align: center;"">
+                                    <span class="old3">650.000đ</span>
+                                    <span class="new3">500.000đ</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr style="margin-top: -46.5px;">
+                </div>
+                <div id="main-Right">
+                    <img src="images/QC1.jpg" style="width: 260px;margin-top: 10px;margin-left: 10px;">
+                    <img src="images/QC2.jpg" style="width: 260px;margin-top: 10px;margin-left: 10px;">
+                    <div id="main-right-show1">
+                        <span style="float: left;margin-top: 20px;color: rgb(117, 134, 134);">Mẫu sản phẩm khác</span>
+                        <hr>
+                        <div class="main-R-show-1-Classdiv">
+                            <a href=""><img src="images/SPshowH3a.jpg" alt=""></a>
+                            <a href="">Túi xách Orito</a>
+                            <div class="divjk1">
+                                <span class="old1">1.150.000đ</span>
+                                <span class="new1">1.050.000đ</span>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="main-R-show-1-Classdiv">
+                            <a href=""><img src="images/SPshowH3b.jpg"></a>
+                            <a href="">Túi xách Mikice</a>
+                            <div class="divjk1">
+                                <span class="old1">1.550.000đ</span>
+                                <span class="new1">1.430.000đ</span>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="main-R-show-1-Classdiv">
+                            <a href=""><img src="images/SPshowH3c.jpg"></a>
+                            <a href="">Túi xách Bumi</a>
+                            <div class="divjk1">
+                                <span class="old1">800.000đ</span>
+                                <span class="new1">780.000đ</span>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="main-R-show-1-Classdiv">
+                            <a href=""><img src="images/SPshowH3d.jpg"></a>
+                            <a href="">Túi xách Uytimo</a>
+                            <div class="divjk1">
+                                <span class="old1">750.000đ</span>
+                                <span class="new1">640.000đ</span>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="main-R-show-1-Classdiv">
+                            <a href=""><img src="images/SPshowH3e.jpg"></a>
+                            <a href="">Túi xách Carit Omi</a>
+                            <div class="divjk1">
+                                <span class="old1">1.250.000đ</span>
+                                <span class="new1">1.050.000đ</span>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="showSP-DanhGia" style="height: auto;width: 100%;">
+            <div class="SP-BanChay" style="width: 100%;height: auto;background-color: rgb(248, 245, 242);margin-top: -45px;">
+                <div class="tiuday">
+                    <h6 style="font-weight: 500;font-size: 20px;text-align: center;padding: 30px 0px 0px 0px;font-family: 'Courier New', Courier, monospace;">Đánh giá của khách hàng</h6>
+                </div>
+                <div class="sel-list">
+                    <ul id="review-list">
+                        <li onclick="onTodoClick();">New Review</li>
+                    </ul>
+                </div>
+                <div class="container-danhGia">
+                    <h2>Thêm đánh giá cá nhân</h2>
+                    <textarea  name="review" id="newReview"></textarea>
+                    <button class="btnDanhGia" type="button" onclick="event.preventDefault(); onAddClick();">Gửi đi</button>
+                </div>
+                <hr>
+            </div>
+        </div>
+        <div class="Footer">
+            <div class="divF1">
+                <a>Hỗ trợ</a>
+                <br>
+                <br>
+                <h5>Quý khách có thể liên hệ với chúng </h5>
+                <h5>tôi qua Hotline +84 385666387 , </h5>
+                <h5>Email, hoặc các phương thức liên hệ </h5>
+                <h5>khác.</h5>
+                <br>
+                <h5>Câu hỏi thường gặp.</h5>
+                <br>
+                <h5>Chăm sóc sản phẩm.</h5>
+                <br>
+                <h5>Cửa hàng.</h5>
+                <br>
+                <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width="" data-layout="" data-action="" data-size="" data-share="true"></div>
+                <script src="https://apis.google.com/js/platform.js"></script>
+                <!-- <div class="g-ytsubscribe" data-channel="GoogleDevelopers" data-layout="default" data-count="default"></div> -->
+            </div>
+            <div class="divF2">
+                <a>Dịch vụ</a>
+                <br>
+                <br>
+                <h5>Dịch vụ bảo dưỡng.</h5>
+                <br>
+                <h5>Dịch vụ cá nhân hóa.</h5>
+                <br>
+                <h5>Nghệ thuật tặng quà.</h5>
+                <br>
+                <h5>Tải ứng dụng của chúng tôi.</h5>
+                <br>
+                <!-- <img src="images/imageHolines.png" alt=""> -->
+            </div>
+            <div class="divF3">
+                <a>Về NaLaBaLa Shop</a>
+                <br>
+                <br>
+                <h5>Buổi trình diễn thời trang.</h5>
+                <br>
+                <h5>Nghệ thuật và văn hóa.</h5>
+                <br>
+                <h5>La Maison.</h5>
+                <br>
+                <h5>Phát triển bền vững.</h5>
+                <br>
+                <h5>Tin mới nhất.</h5>
+                <br>
+                <h5>Nghề nghiệp.</h5>
+                <br>
+                <h5>Foundation Louis Vuitton.</h5>
+            </div>
+            <div class="divF4">
+                <a>Kết nối với chúng tôi</a>
+                <br>
+                <br>
+                <h5>Đăng ký để nhận thông tin mới nhất về bộ sưu tập, chiến dịch và video.</h5>
+                <br>
+                <img src="images/imageLogoShop.png" alt="">
+            </div>
+        </div>
+        <script src="scripts/Product/scriptProductSP.js"></script>
+        <script>
+            NhanDuLieuGuiVe();
+        </script>
+    </body>
+</html>

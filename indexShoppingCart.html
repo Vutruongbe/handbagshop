@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Túi sách NALABALA  </title>
+		<meta charset="utf-8">
+        <script src="https://kit.fontawesome.com/253d4a6e24.js" crossorigin="anonymous"></script>
+        <script async defer crossorigin="anonymous" 
+            src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v18.0" nonce="NqAf8PoE">
+        </script>
+
+        <script src="scripts/Product/scriptProductSP.js"></script>
+        <script src="scripts/Product/scriptBanner.js"></script>
+
+        <link rel="stylesheet" href="styles/ShoppingCart/styleBannerProduct.css">
+        <link rel="stylesheet" href="styles/ShoppingCart/styleProduct.css">
+        <link rel="stylesheet" href="styles/ShoppingCart/styleGioHang.css">
+        <link rel="stylesheet" href="styles/ShoppingCart/styleFooter.css">
+    </head>
+    <body>
+        <div id="container"> 
+			<div id="header">
+				<div id="banner"> 
+                    <div id="banner-Left">
+                        <a id="aChinh" class="cd-LR" href="">Home Page</a>
+                        <a href="indexHomePage.html" title="Shop túi sách NaLaBaLa order | Đặt túi online | Giao Hàng tận nơi"><img id="Logo" src="images/imageLogoShop.png" alt="Logo" class="cd-BtT cd-LR"></a>
+                    </div>
+                    <div id="banner-RTop" class="cd-RL">
+                        <a class="btn" href="" style="margin-left: 35px;">
+                            <i class="fa-solid fa-bars" style="color: #5676ae;"></i>
+                        </a>
+                        <a class="btn" href="" style="margin-left: 35px;">
+                            <i class="fa-solid fa-magnifying-glass" style="color: #6281b7;"></i>
+                        </a>
+                        <a class="btn" href="" title="Đăng nhập tài khoản" style="margin-left: 35px;">
+                            <i class="fa-solid fa-user" style="color: #5680c8;"></i>
+                        </a>
+                        <a class="btn" href="" style="margin-left: 35px;">
+                            <i class="fa-solid fa-basket-shopping" style="color: #6483b9;"></i>
+                        </a>
+                    </div>
+                </div>
+			</div>
+        </div>
+        <div class="ThongBaoCart">
+            <div class="TB-ThemThanhCong">
+                <i class="fa-solid fa-square-check" style="color: #57c15c;"></i>
+                <strong>Tên sản phẩm !</strong>
+                Đã được thêm vào giỏ hàng
+            </div>
+        </div>
+        <div class="GioHang">
+            <h3>GIỎ HÀNG <small>(3 sản phẩm)</small></h3>
+        </div>
+
+        
+        <div class="SanPham" id="okday">
+            <table>
+                <tr>
+                    <th>STT</th>
+                    <th>Hình</th>
+                    <th>Tên</th>
+                    <th>Đơn giá</th>
+                    <th>Số lượng</th>
+                    <th>Thành tiền</th>
+                    <th>Sửa</th>
+                    <th>Xóa</th>
+                </tr>
+                <tbody id="chitietgiohang">
+                    <td class="td1">1</td>
+                    <td><img src="" width="100px" alt="" srcset="">...</td>
+                    <td>...</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td><input type="button" value="Sửa" style="width: 60px;height: 30px;"></td>
+                    <td><input type="button" value="Xóa" style="width: 60px;height: 30px;"></td>
+                </tbody>
+            </table>
+            <div id="ver" style="width: 200px;height: 39px;float: right;">
+                <input type="button" value="Quay lại"" id="btnQuayLai" onclick="QuayLaiVaTruyenDuLieu(); window.location.href='indexProduct.html'">
+            </div>
+            <div id="ver" style="width: 200px;height: 39px; float: right; margin-right: 10px;">
+                <input type="button" value="Xóa tất cả" id="btnXoa" onclick="XoaTatCa()">
+            </div>
+            <div id="ver" style="width: 200px;height: 39px; float: right; margin-right: 10px;">
+                <input type="button" value="Cập nhập" id="btnCapNhap" onclick="CapNhap('okhienNao')" style="cursor: pointer;">
+            </div>
+        </div>
+        
+        
+        
+        <div class="TinhGia">
+            <div class="dongTinhGia" style="padding-bottom: 40px;margin-top: 10px;">
+                <div class="dtg-trai">Tạm tính</div>
+                <div class="dtg-phai">
+                    <p id="tamTinhTien">0</p>
+                </div>
+            </div>
+            <div class="dongThanhTien" style="margin-top: 10px;">
+                <div class="dtg-trai">Thành tiền</div>
+                <div class="dtg-phai">
+                    <div id="sotienTT">
+                        <p id="tienNe">0</p>
+                    </div>
+                    <div class="gom">
+                        (Đã bao gồm VAT)
+                    </div>
+                </div>
+            </div>
+            <div class="TienHanhDatHang">
+                <input type="button" value="Tiến Hành Đặt Hàng" id="btnDatHang" onclick="window.location.href='indexCheckoutPage.html'">
+            </div>
+        </div>
+        <div class="suado" id="okhienNao" style="width: 280px;height: 60px;background-color: #859286;margin-top: 150px;margin-left: 300px;background-color: #FFF;opacity: 0;">
+            <input type="button" onclick="sub('tinhtoan2')" value="-" class="R-ct-01" style="margin-top: 10px;margin-left: 18px;">
+            <input type="text" value="1" style="border: 0px solid;background-color: #efeded;margin-top: 10px;" id="tinhtoan2" > 
+            <input type="button" onclick="plus('tinhtoan2')" value="+" class="R-ct-01" style="margin-top: 10px;">
+            <input type="button" value="Chọn" id="btnSuaNe" onclick="SuaSoLuong('tinhtoan2','okhienNao')" style="margin-top: 10px;margin-left: 10px;">
+            <input type="button" value="Hủy" id="btnHuyNe" onclick="HuySua('okhienNao')" style="margin-top: 10px;margin-left: 10px;">
+        </div>
+
+        <div class="SanPhamKhac">
+            <div class="tieudeSPK">
+                <h3>Sản phẩm khác</h3>
+            </div>
+            <div class="noidungSPK">
+                <div class="motSPK">
+                    <img src="images/DMitem2.jpg" alt="">
+                    <div class="ttSPK">
+                        <h4>Túi sách UPTOORI</h4>
+                        <p>Hãng Carit & Koty đem đến sự thanh lịch</p>
+                        <div class="GiaShow1">400.000 <a>đ</a></div>
+                        <a href="" class="ShowMuaNgay">Mua Ngay</a>
+                    </div>
+                </div>
+            </div>
+            <div class="noidungSPK" style="margin-top: -300px; margin-left: 35%;">
+                <div class="motSPK">
+                    <img src="images/SPshowH2c.jpg" alt="">
+                    <div class="ttSPK">
+                        <h4>Túi sách UPTOORI</h4>
+                        <p>Hãng Carit & Koty đem đến sự thanh lịch</p>
+                        <div class="GiaShow1">500.000 <a>đ</a></div>
+                        <a href="" class="ShowMuaNgay">Mua Ngay</a>
+                    </div>
+                </div>
+            </div>
+            <div class="noidungSPK" style="margin-top: -300px; margin-left: 70%;">
+                <div class="motSPK">
+                    <img src="images/SPshowH2e.jpg" alt="">
+                    <div class="ttSPK">
+                        <h4>Túi sách UPTOORI</h4>
+                        <p>Hãng Carit & Koty đem đến sự thanh lịch</p>
+                        <div class="GiaShow1">600.000 <a>đ</a></div>
+                        <a href="" class="ShowMuaNgay">Mua Ngay</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr width="100%">
+        <div class="Footer">
+            <div class="divF1">
+                <a>Hỗ trợ</a>
+                <br>
+                <br>
+                <h5>Quý khách có thể liên hệ với chúng </h5>
+                <h5>tôi qua Hotline +84 385666387 , </h5>
+                <h5>Email, hoặc các phương thức liên hệ </h5>
+                <h5>khác.</h5>
+                <br>
+                <h5>Câu hỏi thường gặp.</h5>
+                <br>
+                <h5>Chăm sóc sản phẩm.</h5>
+                <br>
+                <h5>Cửa hàng.</h5>
+                <br>
+                <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width="" data-layout="" data-action="" data-size="" data-share="true"></div>
+                <script src="https://apis.google.com/js/platform.js"></script>
+                <!-- <div class="g-ytsubscribe" data-channel="GoogleDevelopers" data-layout="default" data-count="default"></div> -->
+            </div>
+            <div class="divF2">
+                <a>Dịch vụ</a>
+                <br>
+                <br>
+                <h5>Dịch vụ bảo dưỡng.</h5>
+                <br>
+                <h5>Dịch vụ cá nhân hóa.</h5>
+                <br>
+                <h5>Nghệ thuật tặng quà.</h5>
+                <br>
+                <h5>Tải ứng dụng của chúng tôi.</h5>
+                <br>
+                <!-- <img src="images/imageHolines.png" alt=""> -->
+            </div>
+            <div class="divF3">
+                <a>Về NaLaBaLa Shop</a>
+                <br>
+                <br>
+                <h5>Buổi trình diễn thời trang.</h5>
+                <br>
+                <h5>Nghệ thuật và văn hóa.</h5>
+                <br>
+                <h5>La Maison.</h5>
+                <br>
+                <h5>Phát triển bền vững.</h5>
+                <br>
+                <h5>Tin mới nhất.</h5>
+                <br>
+                <h5>Nghề nghiệp.</h5>
+                <br>
+                <h5>Foundation Louis Vuitton.</h5>
+            </div>
+            <div class="divF4">
+                <a>Kết nối với chúng tôi</a>
+                <br>
+                <br>
+                <h5>Đăng ký để nhận thông tin mới nhất về bộ sưu tập, chiến dịch và video.</h5>
+                <br>
+                <img src="images/imageLogoShop.png" alt="">
+            </div>
+        </div>
+        <script src="scripts/Product/scriptProductSP.js"></script>
+        <script>
+            showgiohang();
+        </script>
+    </body>
+</html>

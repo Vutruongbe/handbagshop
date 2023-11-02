@@ -1,0 +1,93 @@
+.SP-KhuyenMai{
+    width: 100%; 
+    height: 450px;
+    margin-top: 2000px;
+    position:absolute;
+}
+
+.btnKMai{
+    border-radius: 40px;
+    border:  solid 0px;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 250px;
+    background-color: #defa40;
+    transform: 4s;
+}
+
+.btnKMai h2{
+    color: rgb(227, 137, 78);
+}
+
+/* 1 */
+.cd-SPkm1{
+    opacity: 0;
+}
+.cd-SPkm1.KMALLLeft1 {
+    animation: KMLeft1 2s ease forwards;
+}
+@keyframes KMLeft1{
+    from{transform: translateX(50px);opacity: 0;}
+    to{transform: translateX(0);opacity: 1;}
+}
+.cd-SPkm1.KMALLLRIGHT1 {
+    animation: KMRight1 2s ease forwards;
+}
+@keyframes KMRight1{
+    from{transform: translateX(0px);opacity: 1;}
+    to{transform: translateX(50px);opacity: 0;}
+}
+
+
+/* 2 */
+.cd-SPkm2{
+    opacity: 0;
+}
+.cd-SPkm2.KMALLLeft2 {
+    animation: KMLeft2 2s ease forwards;
+}
+@keyframes KMLeft2{
+    from{transform: translateX(50px);opacity: 0;}
+    to{transform: translateX(0);opacity: 1;}
+}
+.cd-SPkm2.KMALLLRIGHT2 {
+    animation: KMRight2 2s ease forwards;
+}
+@keyframes KMRight2{
+    from{transform: translateX(0px);opacity: 1;}
+    to{transform: translateX(50px);opacity: 0;}
+}
+
+/* 3 */
+.cd-SPkm3{
+    opacity: 0;
+}
+.cd-SPkm3.KMALLLeft3 {
+    animation: KMLeft3 2s ease forwards;
+}
+@keyframes KMLeft3{
+    from{transform: translateX(50px);opacity: 0;}
+    to{transform: translateX(0);opacity: 1;}
+}
+.cd-SPkm3.KMALLLRIGHT3 {
+    animation: KMRight3 2s ease forwards;
+}
+@keyframes KMRight3{
+    from{transform: translateX(0px);opacity: 1;}
+    to{transform: translateX(50px);opacity: 0;}
+}
+
+
+#TimKhuyenMai1{
+    color: #bdb8b8;
+}
+
+#TimKhuyenMai2{
+    color: #bdb8b8;
+}
+
+#TimKhuyenMai3{
+    color: #bdb8b8;
+}

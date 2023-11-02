@@ -1,0 +1,246 @@
+#container2{
+    width: 100%; height: 1000px;
+    /* background-color: bisque; */
+}
+
+#divNhapDuLieu{
+    width: 65%;
+    height: 1000px;
+    float: left;
+}
+
+#divSanPhamMua{
+    margin-left: 13px;
+    width: 33.8%;
+    height: 100%;
+    float: left;
+}
+
+.TieuDeNhap{
+    width: 100%;
+    height: 70px;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+#tieudechinh{
+    font-size: 45px; 
+    font-family:Georgia, 'Times New Roman', Times, serif; 
+    margin-left: 260px;
+    color: #53b57a;
+}
+
+.TieuDeNhap a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(49, 47, 47);
+}
+.TieuDeNhap hr{
+    margin-top: 20px;
+}
+
+#NoiDungThongTin{
+    margin-left: 40px;
+    width: 100%;
+    height: 800px;
+}
+
+.ND1{
+    width: 45%;
+    height: 120px;
+    float: left;
+}
+
+.ND1 a{
+    text-decoration: none;
+    font-size: 17px;
+    color: black;
+    float: left;
+}
+
+#textFistName{
+    outline: 0;
+    width: 294.3px;
+    float: left;
+    margin-top: 40px;
+    margin-left: -84px;
+    padding: 16px 30px 16px 30px;
+    border: 0.5px solid #abb1bc;
+}
+
+.ND2{
+    width: 46%;
+    height: 120px;
+    margin-left: 35px;
+    float: left;
+}
+
+.ND2 a{
+    text-decoration: none;
+    font-size: 17px;
+    color: black;
+}
+
+#textLastName{
+    outline: 0;
+    float: left;
+    width: 298.2px;
+    margin-top: 20px;
+    padding: 16px 30px 16px 30px;
+    border: 0.5px solid #abb1bc;
+}
+
+.ND3{
+    width: 100%;
+    height: 100px;
+    float: left;
+}
+
+.ND3 a{
+    text-decoration: none;
+    font-size: 17px;
+    color: black;
+    float: left;
+}
+
+#textCountry{
+    outline: 0;
+    float: left;
+    width: 87%;
+    margin-top: 40px;
+    margin-left: -66px;
+    padding: 16px 30px 16px 30px;
+    border: 0.5px solid #abb1bc;
+}
+
+.ND4{
+    margin-top: 30px;
+    width: 100%;
+    height: 100px;
+    float: left;
+}
+
+.ND4 a{
+    text-decoration: none;
+    font-size: 17px;
+    color: black;
+    float: left;
+}
+
+#textAddress{
+    outline: 0;
+    float: left;
+    width: 87%;
+    margin-top: 40px;
+    margin-left: -69px;
+    padding: 16px 30px 16px 30px;
+    border: 0.5px solid #abb1bc;
+}
+
+.ND5{
+    margin-top: 30px;
+    width: 100%;
+    height: 100px;
+    float: left;
+}
+
+.ND5 a{
+    text-decoration: none;
+    font-size: 17px;
+    color: black;
+    float: left;
+}
+
+#textTownCity{
+    outline: 0;
+    float: left;
+    width: 87%;
+    margin-top: 40px;
+    margin-left: -80px;
+    padding: 16px 30px 16px 30px;
+    border: 0.5px solid #abb1bc;
+}
+
+.ND6{
+    margin-top: 10px;
+    width: 45%;
+    height: 120px;
+    float: left;
+}
+
+.ND6 a{
+    text-decoration: none;
+    font-size: 17px;
+    color: black;
+    float: left;
+}
+
+#textPhone{
+    outline: 0;
+    width: 294.3px;
+    float: left;
+    margin-top: 40px;
+    margin-left: -56px;
+    padding: 16px 30px 16px 30px;
+    border: 0.5px solid #abb1bc;
+}
+
+.ND7{
+    width: 46%;
+    height: 120px;
+    margin-left: 35px;
+    margin-top: 10px;
+    float: left;
+}
+
+.ND7 a{
+    text-decoration: none;
+    font-size: 17px;
+    color: black;
+}
+
+#textEmail{
+    outline: 0;
+    float: left;
+    width: 298.2px;
+    margin-top: 20px;
+    padding: 16px 30px 16px 30px;
+    border: 0.5px solid #abb1bc;
+}
+
+.ND8{
+    text-align: center;
+    margin-left: -30px;
+    width: 100%;
+    height: 40px;
+    float: left;
+}
+
+.ND8 a{
+    text-decoration: none;
+    font-size: 17px;
+    color: black;
+}
+
+.ND9{
+    width: 100%;
+    height: 100px;
+    float: left;
+}
+
+.ND9 a{
+    text-decoration: none;
+    font-size: 17px;
+    color: black;
+    float: left;
+}
+
+#textOrderNotes{
+    outline: 0;
+    float: left;
+    width: 87%;
+    margin-top: 10px;
+    padding: 30px 30px 30px 30px;
+    border: 0.5px solid #abb1bc;
+}

@@ -1,0 +1,183 @@
+.SP-BanChay{
+    width: 100%; 
+    height: 450px;
+    margin-top: 600px;
+    position:absolute;
+}
+
+.tiuday{
+    width: 100%;
+    height: 50px;
+    float: left;
+}
+
+.tiuday h6{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 0px;
+    padding-top: 10px;
+    float: left;
+}
+
+.show1{
+    width: 100%;
+    height: 400px;
+    margin-top: 20px;
+    float: left;
+}
+
+.ImgHoa{
+    border: 1px solid rgb(217, 217, 48);
+    width: 300px;
+    height: 350px;
+    border-radius: 20px;
+    position: absolute;
+    overflow: hidden;
+}
+
+.H1{
+    margin-left: 8%;
+}
+
+.H2{
+    margin-left: 38%;
+}
+
+.H3{
+    margin-left: 68%;
+}
+
+
+.ImgHoa img{
+    width: 300px;
+    height: 320px;
+    border-radius: 10px;
+    position: absolute;
+    display: block;
+    transition: all .3s ease;
+}
+
+.ImgHoa img:hover{
+    transform: scale(1.13);
+    border: 0px solid #ccc;
+    padding: 5px;
+}
+
+.ImgHoa h2{
+    font-size: 15px;
+    color: white;
+}
+
+.btimgH1{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border:  solid 0px;
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    margin-top: 310px;
+    background-color: #2cbe7f;
+    opacity: 1;
+}
+
+.btimgH1:hover{
+    opacity: 1;
+}
+
+.ImgHoa2{
+    width: 270px;
+    height: 350px;
+    border-radius: 5px;
+    position: absolute;
+    overflow: hidden;
+}
+
+.ImgHoa2 img{
+    width: 270px;
+    height: auto;
+    border-radius: 10px;
+    position: absolute;
+    display: block;
+    transition: all .3s ease;
+    border-radius: 10px;
+}
+
+.ImgHoa2 img:hover{
+    transform: scale(1.13);
+    border: 0px solid #ccc;
+    padding: 5px;
+}
+
+.btnTim{
+    border:  solid 0px;
+    width: 18px;
+    height: 18px;
+    margin-left: 6%;
+    margin-top: 4%;
+    position: absolute;
+}
+
+.btnHOT{
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border:  solid 0px;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    margin-left: 250px;
+    background-color: #fa5c40;
+}
+
+.btnHOT h2{
+    color: rgb(255, 255, 255);
+}
+
+.cd-SPbc1{
+    opacity: 0;
+}
+.cd-SPbc1.BCALLRight {
+    animation: BCRight 2s ease forwards;
+}
+@keyframes BCRight{
+    from{transform: translateX(-300px);opacity: 0;}
+    to{transform: translateX(0);opacity: 1;}
+}
+.cd-SPbc1.BCALLLeft {
+    animation: BCLeft 2s ease forwards;
+}
+@keyframes BCLeft{
+    from{transform: translateX(0px);opacity: 1;}
+    to{transform: translateX(-300);opacity: 0;}
+}
+
+.cd-SPbc2{
+    opacity: 0;
+}
+.cd-SPbc2.BCALLRight2 {
+    animation: BCRight 2s ease forwards;
+}
+.cd-SPbc2.BCALLLeft2 {
+    animation: BCLeft 2s ease forwards;
+}
+
+.cd-SPbc3{
+    opacity: 0;
+}
+.cd-SPbc3.BCALLRight3 {
+    animation: BCRight 2s ease forwards;
+}
+.cd-SPbc3.BCALLLeft3 {
+    animation: BCLeft 2s ease forwards;
+}
+
+#TimBanChay1{
+    color: #bdb8b8;
+}
+
+#TimBanChay2{
+    color: #bdb8b8;
+}
+
+#TimBanChay3{
+    color: #bdb8b8;
+}

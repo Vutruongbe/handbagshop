@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Túi sách NALABALA  </title>
+		<meta charset="utf-8">
+        <script src="https://kit.fontawesome.com/253d4a6e24.js" crossorigin="anonymous"></script>
+
+        <script src="scripts/Product/scriptBanner.js"></script>
+
+        <link rel="stylesheet" href="styles/CheckoutPage/styleBanner.css">
+        <link rel="stylesheet" href="styles/CheckoutPage/styleNhapThongTin.css">
+        <link rel="stylesheet" href="styles/CheckoutPage/styleSanPhamChonMua.css">
+        <link rel="stylesheet" href="styles/CheckoutPage/styleFooter.css">
+
+        <div id="fb-root"></div>
+        <script async defer crossorigin="anonymous" 
+            src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v18.0" nonce="NqAf8PoE">
+        </script>
+    </head>
+    <body>
+        <div id="container"> 
+			<div id="header">
+				<div id="banner"> 
+                    <div id="banner-Left">
+                        <a id="aChinh" class="cd-LR" href="indexHomePage.html">Home Page</a>
+                        <a href="indexHomePage.html" title="Shop túi sách NaLaBaLa order | Đặt túi online | Giao Hàng tận nơi"><img id="Logo" src="images/imageLogoShop.png" alt="Logo" class="cd-BtT cd-LR"></a>
+                    </div>
+                    <div id="banner-RTop" class="cd-RL">
+                        <a class="btn" href="" style="margin-left: 30px;">
+                            <i class="fa-solid fa-bars" style="color: #5676ae;"></i>
+                        </a>
+                        <a class="btn" href="" style="margin-left: 30px;">
+                            <i class="fa-solid fa-magnifying-glass" style="color: #6281b7;"></i>
+                        </a>
+                        <a class="btn" href="" title="Đăng nhập tài khoản" style="margin-left: 30px;">
+                            <i class="fa-solid fa-user" style="color: #5680c8;"></i>
+                        </a>
+                        <a class="btn" href="indexShoppingCart.html">
+                            <i class="fa-solid fa-basket-shopping" style="color: #6483b9;"></i>
+                        </a>
+                    </div>
+                </div>
+			</div>
+        </div>
+        <div id="container2">
+            <div id="divNhapDuLieu">
+                <div class="TieuDeNhap">
+                    <a id="tieudechinh">Checkout</a>
+                    <hr color="#" width="94.5%">
+                </div>
+                <div class="TieuDeNhap">
+                    <a>BILLING DETAILS</a>
+                    <hr color="#" width="94.5%">
+                </div>
+                <div id="NoiDungThongTin">
+                    <div class="ND1">
+                        <a href="">Fist Name*</a>
+                        <input type="text" name="" id="textFistName">
+                    </div>
+                    <div class="ND2">
+                        <a href="">Last Name*</a>
+                        <input type="text" name="" id="textLastName">
+                    </div>
+                    <div class="ND3">
+                        <a href="">Country*</a>
+                        <input type="text" name="" id="textCountry">
+                    </div>
+                    <div class="ND4">
+                        <a href="">Address*</a>
+                        <input type="text" name="" id="textAddress">
+                    </div>
+                    <div class="ND5">
+                        <a href="">Town/City*</a>
+                        <input type="text" name="" id="textTownCity">
+                    </div>
+                    <div class="ND6">
+                        <a href="">Phone*</a>
+                        <input type="number" name="" id="textPhone">
+                    </div>
+                    <div class="ND7">
+                        <a href="">Email*</a>
+                        <input type="email" name="" id="textEmail">
+                    </div>
+                    <div class="ND8">
+                        <a href="">
+                            <i class="fa-regular fa-circle-check" style="color: #8c978f;"></i>
+                        </a>
+                        <a>Đồng ý với các điều khoản</a>
+                    </div>
+                    <div class="ND9">
+                        <a href="">Order notes*</a>
+                        <input type="email" name="" id="textOrderNotes">
+                    </div>
+                </div>
+            </div>
+            <div id="divSanPhamMua">
+                <div id="divSPChonMua">
+                    <div class="TieuDeNhap" style="padding-top: 20px;">
+                        <a style="font-weight: 500;margin-left: 100px;">YOUR ORDER</a>
+                        <hr color="#" width="80%">
+                    </div>
+                    <div class="SanPhamChonMua" id="okdayNha" style="margin-bottom: 10px;">
+                        <table>
+                            <tr>
+                                <th>STT</th>
+                                <th style="width: 38px;">Tên</th>
+                                <th style="width: 76px;">Thành tiền</th>
+                            </tr>
+                            <tbody id="chitietthanhtoan">
+                                <td class="td1">1</td>
+                                <td>...</td>
+                                <td>0</td>
+                            </tbody>
+                        </table>
+                    </div>
+                    <hr color="#" width="80%" style="margin-left: 40px;">
+                    <div id="GiaThanhToan">
+                        <div style="width: 100%;height: 30px;">
+                            <a style="float: left;">Tạm Tính</a>   
+                            <span style="float: right;">đ</span><a style="float: right;">1080000</a>     
+                        </div>
+                        <div>
+                            <a style="float: left;">Thành Tiền</a>   
+                            <span style="float: right;">đ</span><a style="float: right;">1080000</a>     
+                        </div>
+                    </div>
+                    <hr color="#" width="80%" style="margin-left: 40px;">
+                    <div style="width: 334px;height: 45px;float:left;">
+                        <input type="button" value="Thanh Toán" id="btnThanhToan" onclick="ThanhToan()">
+                    </div>
+                    <div style="width: 334px;height: 45px;float:left;">
+                        <input type="button" value="Xem Hóa Đơn" id="btnHoaDon" onclick="window.location.href='indexSalesInvoice.html'">
+                    </div>
+                    <div style="width: 334px;height: 45px;float: left;">
+                        <input type="button" value="Quay lại" id="btnTroLai" onclick="window.location.href='indexShoppingCart.html'">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="Footer">
+            <div class="divF1">
+                <a>Hỗ trợ</a>
+                <br>
+                <br>
+                <h5>Quý khách có thể liên hệ với chúng </h5>
+                <h5>tôi qua Hotline +84 385666387 , </h5>
+                <h5>Email, hoặc các phương thức liên hệ </h5>
+                <h5>khác.</h5>
+                <br>
+                <h5>Câu hỏi thường gặp.</h5>
+                <br>
+                <h5>Chăm sóc sản phẩm.</h5>
+                <br>
+                <h5>Cửa hàng.</h5>
+                <br>
+                <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width="" data-layout="" data-action="" data-size="" data-share="true"></div>
+                <script src="https://apis.google.com/js/platform.js"></script>
+                <!-- <div class="g-ytsubscribe" data-channel="GoogleDevelopers" data-layout="default" data-count="default"></div> -->
+            </div>
+            <div class="divF2">
+                <a>Dịch vụ</a>
+                <br>
+                <br>
+                <h5>Dịch vụ bảo dưỡng.</h5>
+                <br>
+                <h5>Dịch vụ cá nhân hóa.</h5>
+                <br>
+                <h5>Nghệ thuật tặng quà.</h5>
+                <br>
+                <h5>Tải ứng dụng của chúng tôi.</h5>
+                <br>
+                <!-- <img src="images/imageHolines.png" alt=""> -->
+            </div>
+            <div class="divF3">
+                <a>Về NaLaBaLa Shop</a>
+                <br>
+                <br>
+                <h5>Buổi trình diễn thời trang.</h5>
+                <br>
+                <h5>Nghệ thuật và văn hóa.</h5>
+                <br>
+                <h5>La Maison.</h5>
+                <br>
+                <h5>Phát triển bền vững.</h5>
+                <br>
+                <h5>Tin mới nhất.</h5>
+                <br>
+                <h5>Nghề nghiệp.</h5>
+                <br>
+                <h5>Foundation Louis Vuitton.</h5>
+            </div>
+            <div class="divF4">
+                <a>Kết nối với chúng tôi</a>
+                <br>
+                <br>
+                <h5>Đăng ký để nhận thông tin mới nhất về bộ sưu tập, chiến dịch và video.</h5>
+                <br>
+                <img src="images/imageLogoShop.png" alt="">
+            </div>
+        </div>
+    </body>
+</html>
