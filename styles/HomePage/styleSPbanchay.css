@@ -26,9 +26,10 @@
     float: left;
 }
 
+/* Ghi chu */
 .ImgHoa{
     border: 1px solid rgb(217, 217, 48);
-    width: 300px;
+    width: 280px;
     height: 350px;
     border-radius: 20px;
     position: absolute;
@@ -36,17 +37,20 @@
 }
 
 .H1{
-    margin-left: 8%;
+    margin-left: 1%;
 }
 
 .H2{
-    margin-left: 38%;
+    margin-left: 25.7%;
 }
 
 .H3{
-    margin-left: 68%;
+    margin-left: 50.9%;
 }
 
+.H4{
+    margin-left: 76%;
+}
 
 .ImgHoa img{
     width: 300px;
@@ -124,7 +128,7 @@
     width: 40px;
     height: 40px;
     position: absolute;
-    margin-left: 250px;
+    margin-left: 230px;
     background-color: #fa5c40;
 }
 
@@ -170,6 +174,16 @@
     animation: BCLeft 2s ease forwards;
 }
 
+.cd-SPbc4{
+    opacity: 0;
+}
+.cd-SPbc4.BCALLRight4 {
+    animation: BCRight 2s ease forwards;
+}
+.cd-SPbc4.BCALLLeft4 {
+    animation: BCLeft 2s ease forwards;
+}
+
 #TimBanChay1{
     color: #bdb8b8;
 }
@@ -179,5 +193,9 @@
 }
 
 #TimBanChay3{
+    color: #bdb8b8;
+}
+
+#TimBanChay4{
     color: #bdb8b8;
 }
