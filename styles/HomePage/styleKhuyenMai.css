@@ -1,7 +1,7 @@
 .SP-KhuyenMai{
     width: 100%; 
     height: 450px;
-    margin-top: 2000px;
+    margin-top: 1930px;
     position:absolute;
 }
 
@@ -12,7 +12,7 @@
     height: 40px;
     position: absolute;
     margin-top: 10px;
-    margin-left: 250px;
+    margin-left: 230px;
     background-color: #defa40;
     transform: 4s;
 }
@@ -29,7 +29,7 @@
     animation: KMLeft1 2s ease forwards;
 }
 @keyframes KMLeft1{
-    from{transform: translateX(50px);opacity: 0;}
+    from{transform: translateX(60px);opacity: 0;}
     to{transform: translateX(0);opacity: 1;}
 }
 .cd-SPkm1.KMALLLRIGHT1 {
@@ -37,7 +37,7 @@
 }
 @keyframes KMRight1{
     from{transform: translateX(0px);opacity: 1;}
-    to{transform: translateX(50px);opacity: 0;}
+    to{transform: translateX(60px);opacity: 0;}
 }
 
 
@@ -79,6 +79,25 @@
     to{transform: translateX(50px);opacity: 0;}
 }
 
+/* 4 */
+.cd-SPkm4{
+    opacity: 0;
+}
+.cd-SPkm4.KMALLLeft4 {
+    animation: KMLeft4 2s ease forwards;
+}
+@keyframes KMLeft4{
+    from{transform: translateX(50px);opacity: 0;}
+    to{transform: translateX(0);opacity: 1;}
+}
+.cd-SPkm4.KMALLLRIGHT4 {
+    animation: KMRight4 2s ease forwards;
+}
+@keyframes KMRight4{
+    from{transform: translateX(0px);opacity: 1;}
+    to{transform: translateX(50px);opacity: 0;}
+}
+
 
 #TimKhuyenMai1{
     color: #bdb8b8;
@@ -89,5 +108,9 @@
 }
 
 #TimKhuyenMai3{
+    color: #bdb8b8;
+}
+
+#TimKhuyenMai4{
     color: #bdb8b8;
 }

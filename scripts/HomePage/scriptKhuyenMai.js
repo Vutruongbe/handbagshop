@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded',function(){
     var loadSPkm1 = document.querySelector('.cd-SPkm1');
     var loadSPkm2 = document.querySelector('.cd-SPkm2');
     var loadSPkm3 = document.querySelector('.cd-SPkm3');
+    var loadSPkm4 = document.querySelector('.cd-SPkm4');
     var trangthaiSPkm = "duoi";
 
     var Show1a = document.querySelector('.cd-SPshowH1a');
@@ -25,6 +26,9 @@ document.addEventListener('DOMContentLoaded',function(){
 
                 loadSPkm3.classList.add('KMALLLeft3');
                 loadSPkm3.classList.remove('KMALLLRIGHT3');
+
+                loadSPkm4.classList.add('KMALLLeft4');
+                loadSPkm4.classList.remove('KMALLLRIGHT4');
             }
         }
         else if(window.pageYOffset < 2400 ){
@@ -39,6 +43,9 @@ document.addEventListener('DOMContentLoaded',function(){
 
                 loadSPkm3.classList.add('KMALLLRIGHT3');
                 loadSPkm3.classList.remove('KMALLLeft3');
+
+                loadSPkm4.classList.add('KMALLLRIGHT4');
+                loadSPkm4.classList.remove('KMALLLeft4');
             }
         }
     },false)
