@@ -29,18 +29,18 @@
 /* Item1 */
 .DanhMucItem1{
     border: 1px solid black;
-    width: 370px;
+    width: 377px;
     height: 430px;
     position: absolute;
     overflow: hidden;
 }
 
 .HDM1{
-    margin-left: 21.8%;
+    margin-left: 1.3%;
 }
 
 .DanhMucItem1 img{
-    width: 370px;
+    width: 377px;
     height: 435px;
     position: absolute;
     display: block;
@@ -73,7 +73,7 @@
     animation: DM1Right 2s ease forwards;
 }
 @keyframes DM1Right{
-    from{transform: translateX(-60px);opacity: 0;}
+    from{transform: translateX(-20px);opacity: 0;}
     to{transform: translateX(0);opacity: 1;}
 }
 
@@ -82,14 +82,14 @@
 }
 @keyframes DM1Left{
     from{transform: translateX(0px);opacity: 1;}
-    to{transform: translateX(-60);opacity: 0;}
+    to{transform: translateX(-20px);opacity: 0;}
 }
 
 
 /* Item2 */
 .DanhMucItem2{
     border: 1px solid black;
-    width: 370px;
+    width: 377px;
     height: 380px;
     position: absolute;
     overflow: hidden;
@@ -97,11 +97,11 @@
 }
 
 .HDM2{
-    margin-left: 52.5%;
+    margin-left:32.8%;
 }
 
 .DanhMucItem2 img{
-    width: 370px;
+    width: 377px;
     height: 380px;
     position: absolute;
     display: block;
@@ -134,7 +134,7 @@
     animation: DM2Left 2s ease forwards;
 }
 @keyframes DM2Left{
-    from{transform: translateX(60px);opacity: 0;}
+    from{transform: translateX(20px);opacity: 0;}
     to{transform: translateX(0);opacity: 1;}
 }
 .cd-DM2.DMbRight {
@@ -142,25 +142,25 @@
 }
 @keyframes DM2Right{
     from{transform: translateX(0px);opacity: 1;}
-    to{transform: translateX(60);opacity: 0;}
+    to{transform: translateX(20px);opacity: 0;}
 }
 
 /* Item3 */
 .DanhMucItem3{
     border: 1px solid black;
-    margin-top: 433px;
-    width: 370px;
+    margin-top: 436px;
+    width: 377px;
     height: 370px;
     position: absolute;
     overflow: hidden;
 }
 
 .HDM3{
-    margin-left: 21.8%;
+    margin-left: 1.3%;
 }
 
 .DanhMucItem3 img{
-    width: 370px;
+    width: 377px;
     height: 370px;
     position: absolute;
     display: block;
@@ -193,7 +193,7 @@
     animation: DM3Right 2s ease forwards;
 }
 @keyframes DM3Right{
-    from{transform: translateX(-60px);opacity: 0;}
+    from{transform: translateX(-20px);opacity: 0;}
     to{transform: translateX(0);opacity: 1;}
 }
 .cd-DM3.DMcLeft {
@@ -201,26 +201,26 @@
 }
 @keyframes DMcLeft{
     from{transform: translateX(0px);opacity: 1;}
-    to{transform: translateX(60);opacity: 0;}
+    to{transform: translateX(-20px);opacity: 0;}
 }
 
 
 /* Item4 */
 .DanhMucItem4{
     border: 1px solid black;
-    margin-top: 383px;
-    width: 370px;
+    margin-top: 385px;
+    width: 377px;
     height: 420px;
     position: absolute;
     overflow: hidden;
 }
 
 .HDM4{
-    margin-left: 52.5%;
+    margin-left:32.8%;
 }
 
 .DanhMucItem4 img{
-    width: 370px;
+    width: 377px;
     height: 420px;
     position: absolute;
     display: block;
@@ -254,7 +254,7 @@
     animation: DMdLeft 2s ease forwards;
 }
 @keyframes DMdLeft{
-    from{transform: translateX(60px);opacity: 0;}
+    from{transform: translateX(20px);opacity: 0;}
     to{transform: translateX(0);opacity: 1;}
 }
 .cd-DM4.DMdRight {
@@ -262,5 +262,62 @@
 }
 @keyframes DM4Right{
     from{transform: translateX(0px);opacity: 1;}
-    to{transform: translateX(60);opacity: 0;}
+    to{transform: translateX(20px);opacity: 0;}
 }
+
+
+/* Item5 */
+.DanhMucItem5{
+    /* margin-top: 300px; */
+    border: 1px solid black;
+    width: 390px;
+    height: 503px;
+    position: absolute;
+    overflow: hidden;
+}
+
+.HDM5{
+    margin-left:67%;
+}
+
+.DanhMucItem5 img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: block;
+    transition: all .3s ease;
+}
+
+.DanhMucItem5 h2{
+    font-size: 15px;
+    color: white;
+}
+
+
+/* Item6 */
+.DanhMucItem6{
+    margin-top: 504px;
+    border: 1px solid black;
+    width: 390px;
+    height: 300px;
+    position: absolute;
+    overflow: hidden;
+}
+
+.HDM6{
+    margin-left:67%;
+}
+
+.DanhMucItem6 img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: block;
+    transition: all .3s ease;
+}
+
+.DanhMucItem6 h2{
+    font-size: 15px;
+    color: white;
+}
+
