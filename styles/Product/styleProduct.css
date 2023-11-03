@@ -47,6 +47,86 @@ body{
     float: left;
 }
 
+.cd-LR{
+    opacity: 0;
+}
+.cd-LR.sangRight {
+    animation: cdSangRight 1.5s ease forwards;
+}
+@keyframes cdSangRight{
+    from{transform: translateX(-60px);opacity: 0;}
+    to{transform: translateX(0);opacity: 1;}
+}
+
+.cd-BtT{
+    opacity: 0;
+}
+.cd-BtT.lenTop {
+    animation: cdLenTop 1.7s ease forwards;
+}
+@keyframes cdLenTop{
+    from{transform: translateY(21px);opacity: 0;}
+    to{transform: translateY(0);opacity: 1;}
+}
+
+.cd-RL{
+    opacity: 0;
+}
+.cd-RL.sangLeft {
+    animation: cdSangLeft 1.6s ease forwards;
+}
+@keyframes cdSangLeft{
+    from{transform: translateX(60px);opacity: 0;}
+    to{transform: translateX(0);opacity: 1;}
+}
+
+.cd-T{
+    opacity: 0;
+}
+.cd-T.sangT {
+    animation: cdSangT 1.6s ease forwards;
+}
+@keyframes cdSangT{
+    from{transform: translateX(60px);opacity: 0;}
+    to{transform: translateX(0);opacity: 1;}
+}
+
+.cd-RL2{
+    opacity: 0;
+}
+.cd-RL2.sangLeft2 {
+    animation: cdSangLeft2 1.6s ease forwards;
+}
+@keyframes cdSangLeft2{
+    from{transform: translateX(60px);opacity: 0;}
+    to{transform: translateX(0);opacity: 1;}
+}
+
+
+.Ok-cd{
+    opacity: 0;
+}
+.Ok-cd.sangLeft9 {
+    animation: cdSangLeft9 1.6s ease forwards;
+}
+@keyframes cdSangLeft9{
+    from{transform: translateX(60px);opacity: 0;}
+    to{transform: translateX(0);opacity: 1;}
+}
+
+
+.Ok1-cd{
+    opacity: 0;
+}
+.Ok1-cd.sangLeft10 {
+    animation: cdSangLeft10 1.6s ease forwards;
+}
+@keyframes cdSangLeft10{
+    from{transform: translateX(60px);opacity: 0;}
+    to{transform: translateX(0);opacity: 1;}
+}
+
+
 #SđtShop{
     width: 200px;
     margin: 40px;
