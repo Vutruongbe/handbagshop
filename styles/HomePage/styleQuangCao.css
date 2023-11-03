@@ -1,7 +1,8 @@
 .QuangCao{
-    width: 100%; 
+    width: 98.4%; 
     height: 300px;
-    margin-top: 2450px;
+    margin-top: 2400px;
+    margin-left: 10px;
     position:absolute;
     background-color: aquamarine;
 }
