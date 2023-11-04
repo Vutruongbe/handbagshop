@@ -1,0 +1,184 @@
+#container2{
+    margin-top: 40px;
+    width: 100%;
+    height: 400px;
+    background-color: aqua;
+    float: left;
+    overflow-y: hidden;
+}
+
+#NoiDungGG{
+    width: 420px;
+    height: 150px;
+    position: relative;
+    background-color: aliceblue;
+    float: left;
+    margin-top: -280px;
+    margin-left: 400px;
+    opacity: 0.9;
+    border: 1px solid black;
+}
+
+#NoiDungGG a{
+    position: relative;
+    float: left;
+    text-decoration: none;
+    font-size: 20px;
+    margin-left: 130px;
+    margin-top: 25px;
+}
+
+#DiaChiLienHe{
+    width: 100%;
+    height: 160px;
+    float: left;
+    margin-top: 40px;
+}
+
+.ND1{
+    width: 360px;
+    height: 100%;
+    float: left;
+}
+
+.cach{
+    margin-left: 22px;
+}
+
+.ND1 .DiaChi{
+    width: 100%;
+    height: 50px;
+    float: left;
+}
+
+.DiaChi a{
+    margin-left: 20px;
+    margin-top: 20px;
+    float: left;
+}
+
+.ND1 .ChiTietDiaChi{
+    width: 100%;
+    height: 20px;
+    float: left;
+}
+
+.ChiTietDiaChi a{
+    margin-left: 20px;
+    float: left;
+}
+
+.ND1 .ChiTietDiaChi1{
+    width: 100%;
+    height: 20px;
+    margin-top: 10px;
+    float: left;
+}
+
+.ChiTietDiaChi1 a{
+    margin-left: 20px;
+    float: left;
+}
+
+#ContactWithUs{
+    width: 100%;
+    height: 300px;
+    float: left;
+    margin-top: 20px;
+}
+
+.Chia{
+    margin-left: 60px;
+    width: 400px;
+    height: 100%;
+    float: left;
+}
+
+.Chia1{
+    margin-left: 40px;
+    width:660px;
+    height: 100%;
+    float: left;
+}
+
+.TieuDeConTact{
+    width: 100%;
+    height: 60px;
+}
+
+.TieuDeConTact a{
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    font-size: 25px;
+    margin-top: 15px;
+    float: left;
+}
+
+.ndc{
+    width: 100%;
+    height: 30px;
+}
+
+.ndc a{
+    color: rgb(131, 123, 123);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nhap1{
+    width: 100%;
+    height: 60px;
+}
+
+#textName{
+    width: 250px;
+    height: 40px;
+    padding: 5px 30px 5px 20px;
+    outline: 0;
+    font-size: 18px;
+    float: left;
+}
+
+#textEmail{
+    margin-left: 30px;
+    width: 250px;
+    height: 40px;
+    padding: 5px 30px 5px 20px;
+    outline: 0;
+    font-size: 18px;
+    float: left;
+}
+
+.nhap2{
+    margin-top: 20px;
+    width: 100%;
+    height: 160px;
+}
+
+#textMassage{
+    width: 584px;
+    height: 40px;
+    padding: 5px 30px 100px 20px;
+    outline: 0;
+    font-size: 18px;
+    float: left;
+}
+
+.nhap3{
+    margin-top: 10px;
+    margin-left: 20px;
+    width: 130px;
+    height: 50px;
+}
+
+.nhap3 input{
+    font-weight: 500;
+    font-size: 18px;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(18, 178, 125);
+    color: white;
+    border: 1px solid rgb(83, 79, 79);
+    cursor: pointer;
+}
