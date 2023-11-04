@@ -265,25 +265,131 @@
                 </div>
             </div>
         </div>
-        <div class="showSP-DanhGia" style="height: auto;width: 100%;">
-            <div class="SP-BanChay" style="width: 100%;height: auto;background-color: rgb(248, 245, 242);margin-top: -45px;">
-                <div class="tiuday">
-                    <h6 style="font-weight: 500;font-size: 20px;text-align: center;padding: 30px 0px 0px 0px;font-family: 'Courier New', Courier, monospace;">Đánh giá của khách hàng</h6>
-                </div>
-                <div class="sel-list">
-                    <ul id="review-list">
-                        <li onclick="onTodoClick();">New Review</li>
-                    </ul>
-                </div>
-                <div class="container-danhGia">
-                    <h2>Thêm đánh giá cá nhân</h2>
-                    <textarea  name="review" id="newReview"></textarea>
-                    <button class="btnDanhGia" type="button" onclick="event.preventDefault(); onAddClick();">Gửi đi</button>
-                </div>
+
+        <div id="divDanhGia">
+            <div id="tieuDeDanhGia">
+                <a style="float: left;">Đánh giá sản phẩm</a>
+            </div>
+            <div id="XemThem">
+                <a href="">Xem tất cả ></a>
+            </div>
+            <div id="soSao">
+                <i class="fa-sharp fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star"></i>
+            </div>
+            <div id="danhGiaALL">
+                <a>5/5</a><span>(15 đánh giá)</span>
+            </div>
+            <div id="NoiDungDG">
                 <hr>
+                <div id="tieudeDGALL">
+                    <a style="float: left;">Hình ảnh từ người mua</a>
+                </div>
+                <div id="ShowHinhAnh1">
+                    <div class="divImg">
+                        <img src="images/Pro1b.jpg" alt="">
+                    </div>
+                    <div class="divImg img2">
+                        <img src="images/Pro1c.jpg" alt="">
+                    </div>
+                    <div class="divImg img2">
+                        <img src="images/Pro1a.jpg" alt="">
+                    </div>
+                    <div class="divImg img2 imgMo">
+                        <img src="images/Pro1b.jpg" alt="" style="opacity: 0.2;">
+                        <div class="manDen">
+                            <a href="">+2349</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="DGKhachHang">
+                <hr>
+                <div class="KH">
+                    <div class="imgKH">
+                        <img src="images/KH2.png" alt="">
+                    </div>
+                    <div class="tenKH">
+                        <a>v*****6</a>
+                    </div>
+                    <div class="soSaoKH">
+                        <i class="fa-sharp fa-solid fa-star" style="margin-left: 10px;"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                    </div>
+                    <div class="NDKH">
+                        <a>Túi chất lượng quá, shop giao hàng nhanh vừa hôm qua đặt nay đã về rồi</a>
+                        <a>túi màu đẹp đường may các thứ đỉnh lắm nha mọi người, nên mua nha!!</a>
+                    </div>
+                </div>
+            </div>
+            <div class="DGKhachHang">
+                <hr>
+                <div class="KH">
+                    <div class="imgKH">
+                        <img src="images/KH1.jpg" alt="">
+                    </div>
+                    <div class="tenKH">
+                        <a>v*****6</a>
+                    </div>
+                    <div class="soSaoKH">
+                        <i class="fa-sharp fa-solid fa-star" style="margin-left: 10px;"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                    </div>
+                    <div class="NDKH">
+                        <a>Giao hàng nhanh chừ túi xinh xĩu mất da xinh form đẹp giá rẻ săn còn</a>
+                        <a>rẻ hơn ưng cái bụng dì đâu ý nên mua nha mọi người xinh lắm.</a>
+                    </div>
+                </div>
+            </div>
+            <div class="DGKhachHang1">
+                <hr>
+                <div class="KH">
+                    <div class="imgKH">
+                        <img src="images/KH3.png" alt="">
+                    </div>
+                    <div class="tenKH">
+                        <a>v*****6</a>
+                    </div>
+                    <div class="soSaoKH">
+                        <i class="fa-sharp fa-solid fa-star" style="margin-left: 10px;"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                    </div>
+                    <div class="NDKH">
+                        <a>Túi đẹp nhaaa, săn sale được giá rẻ, mà còn được tặng thêm mấy dây</a>
+                        <a>chun buộc tóc, 10đ cho sự nhiệt tình của shop. Sẽ ủng hộ shop nhìu nhìu...</a>
+                    </div>
+                    <div class="imgND1" style="width: 100%;height: 142.5px;float: left;">
+                        <div class="divImg1" style="margin-left: 50px;">
+                            <img src="images/Pro1b.jpg" alt="">
+                        </div>
+                        <div class="divImg1 img21">
+                            <img src="images/Pro1c.jpg" alt="">
+                        </div>
+                        <div class="divImg1 img21">
+                            <img src="images/Pro1a.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="TatCaDanhGia">
+                <hr>
+                <a href="">Xem Tất Cả (15) ></a>
             </div>
         </div>
-        <div class="Footer">
+
+        <!-- <div class="Footer">
             <div class="divF1">
                 <a>Hỗ trợ</a>
                 <br>
@@ -301,7 +407,6 @@
                 <br>
                 <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width="" data-layout="" data-action="" data-size="" data-share="true"></div>
                 <script src="https://apis.google.com/js/platform.js"></script>
-                <!-- <div class="g-ytsubscribe" data-channel="GoogleDevelopers" data-layout="default" data-count="default"></div> -->
             </div>
             <div class="divF2">
                 <a>Dịch vụ</a>
@@ -315,7 +420,6 @@
                 <br>
                 <h5>Tải ứng dụng của chúng tôi.</h5>
                 <br>
-                <!-- <img src="images/imageHolines.png" alt=""> -->
             </div>
             <div class="divF3">
                 <a>Về NaLaBaLa Shop</a>
@@ -343,7 +447,8 @@
                 <br>
                 <img src="images/imageLogoShop.png" alt="">
             </div>
-        </div>
+        </div> -->
+
         <script src="scripts/Product/scriptProductSP.js"></script>
         <script>
             NhanDuLieuGuiVe();

@@ -1,73 +1,217 @@
-.showSP-DanhGia{
-    width: 70%;
-    margin-left: 3%;
-    height: 60%;
-    overflow: hidden;
+#divDanhGia{
+    margin-top: -60px;
+    margin-left: 30px;
+    background-color: rgb(235, 250, 250);
+    width: 870px;
+    height: 900px;
+    float: left;
 }
 
-#review-list li{
-    font-family: 'Courier New', Courier, monospace;
-    height: 50px;
-    line-height: 30px;
-    width: 60%;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis; 
+#tieuDeDanhGia{
+    margin-top: 5px;
+    margin-left: 10px;
+    width: 700px;
+    height: 30px;
+    float: left;
 }
 
-#review-list li:hover{
-    width: 100%;
-    background-color: #28a197;
-    overflow: visible, hidden;
-}
-
-.list-danhGia{
-    width: 300px;
-    height: auto;
-}
-
-.sel-list{
-    width: 60%;
-    margin-left: 20%;
-    background-color: #a0a0a0;
-    border: 1px solid rgb(172, 172, 172);
-}
-
-.sel-list ul li{
-    list-style: none;
-    padding: 10px;
-}
-
-.container-danhGia{
-    width: 55%;
-    height: 250px;
-    margin: 10px auto;
-    border-radius: 5px;
-    border: 1px solid ;
-    opacity: 0.8;
-    margin-bottom: 5%;
-}
-
-.container-danhGia h2{
-    font-size: 20px;
-    text-align: center;
-    font-weight: 400;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-#newReview{
-    margin-top: 2%;
-    margin-left: 12%;
-    padding: 2%;
-    height: 25%;
-    width: 75%;
-    border-radius: 10px;
-    border: 5px solid rgb(190, 190, 156);
-}
-
-.btnDanhGia{
+#tieuDeDanhGia a{
     margin-top: 10px;
-    margin-left: 40%;
-    width: 20%;
-    height: 20%;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+
+#XemThem{
+    margin-left: 10px;
+    width: 150px;
+    height: 40px;
+    float: left;
+}
+
+#XemThem a{
+    text-decoration: none;
+    float: right;
+    margin-top: 25px;
+    margin-right: 20px;
+    font-weight: 500;
+    font-size: 15px;
+    color: rgb(209, 96, 55);
+}
+
+#soSao{
+    margin-left: 10px;
+    width: 120px;
+    height: 30px;
+    float: left;
+}
+
+#soSao i{
+    color: rgb(231, 231, 34);
+}
+
+#danhGiaALL{
+    width: 720px;
+    height: 30px;
+    float: left;
+}
+
+#danhGiaALL a{
+    font-weight: bold;
+    margin-top: 1px;
+    float: left;
+    color: red;
+}
+
+#danhGiaALL span{
+    margin-top: 1px;
+    margin-left: 6px;
+    float: left;
+}
+
+#NoiDungDG{
+    width: 100%;
+    height: 230px;
+    float: left;
+}
+
+#tieudeDGALL{
+    /* background-color: rgb(53, 85, 113); */
+    margin-left: 10px;
+    width: 700px;
+    height: 30px;
+    float: left;
+}
+
+#tieudeDGALL a{
+    font-size: 15px;
+}
+
+#ShowHinhAnh1{
+    width: 98.84%;
+    float: left;
+    height: 180px;
+    margin-left: 10px;
+}
+
+.divImg{
+    width: 160px;
+    height: 160px;
+    float: left;
+}
+
+.divImg img{
+    width: 100%;
+}
+
+.img2{
+    margin-left: 20px;
+}
+
+.manDen{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(57, 59, 59);
+    float: left;
+    z-index: 10;
+    margin-top: -160px;
+}
+
+.manDen a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    float: left;
+    margin-top: 65px;
+    margin-left: 40px;
+}
+
+.DGKhachHang{
+    width: 100%;
+    height: 130px;
+    float: left;
+}
+
+.KH{
+    margin-left: 10px;
+    width: 98.8%;
+    height: 262.5px;
+}
+
+.imgKH{
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    float: left;
+}
+
+.imgKH img{
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+}
+
+.tenKH{
+    width: 819.5px;
+    height: 25px;
+    float: left;
+}
+
+.tenKH a{
+    margin-top: 5px;
+    margin-left: 10px;
+    float: left;
+}
+
+.soSaoKH{
+    width: 819.5px;
+    height: 25px;
+    float: left;
+}
+
+.soSaoKH i{
+    color: rgb(231, 231, 34);
+}
+
+.NDKH{
+    margin-top: 10px;
+    width: 80%;
+    height: 60px;
+    float: left;
+    margin-left: 50px;
+}
+
+.DGKhachHang1{
+    width: 100%;
+    height: 280px;
+    float: left;
+}
+
+.divImg1{
+    background-color: brown;
+    width: 120px;
+    height: 120px;
+    float: left;
+}
+
+.divImg1 img{
+    width: 100%;
+}
+
+.img21{
+    margin-left: 20px;
+}
+
+#TatCaDanhGia{
+    width: 100%;
+    height: 50px;
+    float: left;
+}
+
+#TatCaDanhGia a{
+    text-decoration: none;
+    margin-top: 8px;
+    margin-left: 360px;
+    float: left;
+    color: rgb(255, 98, 0);
 }
