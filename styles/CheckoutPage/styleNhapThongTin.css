@@ -64,7 +64,7 @@
     width: 294.3px;
     float: left;
     margin-top: 40px;
-    margin-left: -84px;
+    margin-left: -31px;
     padding: 16px 30px 16px 30px;
     border: 0.5px solid #abb1bc;
 }
@@ -85,7 +85,7 @@
 #textLastName{
     outline: 0;
     float: left;
-    width: 298.2px;
+    width: 295.2px;
     margin-top: 20px;
     padding: 16px 30px 16px 30px;
     border: 0.5px solid #abb1bc;
@@ -109,7 +109,7 @@
     float: left;
     width: 87%;
     margin-top: 40px;
-    margin-left: -66px;
+    margin-left: -76px;
     padding: 16px 30px 16px 30px;
     border: 0.5px solid #abb1bc;
 }
@@ -133,7 +133,7 @@
     float: left;
     width: 87%;
     margin-top: 40px;
-    margin-left: -69px;
+    margin-left: -59px;
     padding: 16px 30px 16px 30px;
     border: 0.5px solid #abb1bc;
 }
@@ -155,9 +155,9 @@
 #textTownCity{
     outline: 0;
     float: left;
-    width: 87%;
-    margin-top: 40px;
-    margin-left: -80px;
+    width: 86.9%;
+    margin-top: 20px;
+    margin-left: 0px;
     padding: 16px 30px 16px 30px;
     border: 0.5px solid #abb1bc;
 }
@@ -181,7 +181,7 @@
     width: 294.3px;
     float: left;
     margin-top: 40px;
-    margin-left: -56px;
+    margin-left: -106px;
     padding: 16px 30px 16px 30px;
     border: 0.5px solid #abb1bc;
 }
@@ -203,7 +203,7 @@
 #textEmail{
     outline: 0;
     float: left;
-    width: 298.2px;
+    width: 296.2px;
     margin-top: 20px;
     padding: 16px 30px 16px 30px;
     border: 0.5px solid #abb1bc;
@@ -243,4 +243,16 @@
     margin-top: 10px;
     padding: 30px 30px 30px 30px;
     border: 0.5px solid #abb1bc;
+}
+
+.payment-methods-select {
+    width: 400px;
+}
+
+.payment-methods-select select {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+    outline: 0;
 }
