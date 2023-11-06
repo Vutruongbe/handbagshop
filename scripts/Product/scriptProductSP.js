@@ -92,17 +92,17 @@ function showgiohang() {
             tt= parseFloat(giohang[i][2])*parseInt(giohang[i][3]);
         }
         
-        ttgh += "<tr>";
-        ttgh += "<td>"+j+"</td>";
-        ttgh += "<td>"+hinhsp+"</td>";
-        ttgh += "<td>"+tensp+"</td>";
-        ttgh += "<td>"+dGia+"</td>";
-        ttgh += "<td>"+Sl+"</td>";
-        ttgh += "<td>"+tt+"</td>";
-        ttgh += "<td><input type='button' value='Sửa' style='width: 60px;height: 30px;' onclick='Sua(this,"+i+")'></td>";
-        ttgh += "<td><input type='button' value='Xóa' style='width: 60px;height: 30px;' onclick='Xoa(this)'></td>";
-        ttgh += "<tr>";
-        
+        ttgh += `<tr>
+                    <td>${j}</td>
+                    <td>${hinhsp}</td>
+                    <td>${tensp}</td>
+                    <td>${dGia}</td>
+                    <td>${Sl}</td>
+                    <td>${tt}</td>
+                    <td><input type='button' value='Sửa' style='width: 60px;height: 30px;' onclick='Sua(this, ${i})'></td>
+                    <td><input type='button' value='Xóa' style='width: 60px;height: 30px;' onclick='Xoa(this)'></td>
+                </tr>`;
+                  
         tongTien.push(tt);
         SoLuongTatCaChuaThayDoi = Sl
         
@@ -110,7 +110,7 @@ function showgiohang() {
     document.getElementById('chitietgiohang').innerHTML=ttgh;
     thanhTien();
     console.log(giohang);
-
+    
 }
 
 //hoàn thiện
@@ -207,65 +207,13 @@ function NhanDuLieuGuiVe(){
 
 
 
-
-
-// function showcart(x,y){
-//     var bx=document.getElementById(x);
-//     if (bx.style.display=="none"){
-//         bx.style.display="block";
-//     }else{
-//         bx.style.display="none";
-//     }
-// }
-
-
-
-// var giohang = new Array();
-
-// function themvaogiohang(x,y,z,k,m){
-//     document.getElementById(m).style.width="730px";
-//     var bx = document.getElementById(x).parentElement.children;
-//     var by = document.getElementById(y).parentElement.children;
-//     var bz = document.getElementById(z).parentElement.children;
-//     var hinh=bx[0].src;
-//     var ten=by[0].innerText;
-//     var gia=by[1].children[1].innerText;
-//     var soluong=bz[2].value;
-//     var item = [hinh, ten, gia, soluong];
-//     // let ttgh="";
-//     // let tong=0;
-//     giohang.push(item);
-//     alert(giohang);
-//     // for(let i=0; i< giohang.length; i++){
-//     //     let tt= parseFloat(giohang[i][2])*parseInt(giohang[i][3]);
-//     //     tong+=tt;
-//     //     let j=i+1;
-//     //     let hinhsp = "<img style='width: 80px; hight: 20px ;padding:0 0 0 30px' src='"+ giohang[i][0] +"'>";
-//     //     let tensp= giohang[i][1];
-//     //     let dGia= giohang[i][2];
-//     //     let Sl= giohang[i][3];
-
-//     //     ttgh += "<tr>";
-//     //     ttgh += "<td>"+j+"</td>";
-//     //     ttgh += "<td>"+hinhsp+"</td>";
-//     //     ttgh += "<td style='padding:0 0 0 40px'>"+tensp+"</td>";
-//     //     ttgh += "<td style='padding:0 0 0 22px'>"+dGia+"đ</td>";
-//     //     ttgh += "<td style='padding:0 0 0 45px'>"+Sl+"</td>";
-//     //     ttgh += "<td style='padding:0 0 0 20px'>"+tt+".000đ</td>";
-//     //     ttgh += "<td style='padding:0 0 0 12px'><button style='width: 20px; hight: 20px ;padding:10px' onclick='Xoa(this)'></button></td>";
-//     //     ttgh += "<tr>";
-
-//     //     document.getElementById(k).innerHTML=ttgh;
-//     // }
-//     // ttgh +="<tr>";
-//     // ttgh +="<th colspan='5' style='padding-left: 420px;'>Tổng đơn hàng:</th>";
-//     // ttgh +="<th>" + tong + "<span>.000đ</span></th>";
-//     // ttgh +="</tr>";
-//     // // alert(giohang
-//     // document.getElementById(k).innerHTML=ttgh;
-//     // alert(
-//     // document.getElementById(k).innerHTML
-//     // )
-
-//     sessionStorage.setItem("giohang",JSON.stringify(giohang));
-// }
+// ttgh += "<tr>";
+// ttgh += "<td>"+j+"</td>";
+// ttgh += "<td>"+hinhsp+"</td>";
+// ttgh += "<td>"+tensp+"</td>";
+// ttgh += "<td>"+dGia+"</td>";
+// ttgh += "<td>"+Sl+"</td>";
+// ttgh += "<td>"+tt+"</td>";
+// ttgh += "<td><input type='button' value='Sửa' style='width: 60px;height: 30px;' onclick='Sua(this,"+i+")'></td>";
+// ttgh += "<td><input type='button' value='Xóa' style='width: 60px;height: 30px;' onclick='Xoa(this)'></td>";
+// ttgh += "<tr>";
