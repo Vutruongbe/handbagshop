@@ -1,0 +1,89 @@
+.btnTimKiem{
+    width: 50px;
+    height: 40px;
+    border-radius: 40px;
+    border: 1px solid rgb(150, 150, 147);
+    cursor: pointer;
+    background-color: white;
+}
+
+.btnTimKiem:hover{
+    background-color: rgb(98, 178, 171);
+    color: white;
+}
+
+#NenTimKiem{
+    top: 0;
+    left: 0;
+    position:fixed; 
+    width: 0px;
+    height: 1000px;
+    background-color: rgb(53, 48, 48);
+    z-index: 600;
+    opacity: 0;
+    transition: 1s;
+}
+
+.NdungTimKiem{
+    margin-top: 20px;
+    margin-left: 330px;
+    width: 560px;
+    height: 60px;
+    opacity: 1;
+    float: left;
+    transition: 0.1s;
+}
+
+#DataTimKiem{
+    width: 500px;
+    height: 30px;
+    padding: 10px 0px 10px 50px;
+    outline: 0;
+    border-radius: 40px;
+    border: 1px solid rgb(158, 154, 154);
+    font-size: 15px;
+    background-color: white;
+    color: black;
+}
+
+.quayLaiTrangChu{
+    margin-left: -870px;
+    margin-top: 20px;
+    width: 38px;
+    height: 38px;
+    float: left;
+}
+
+.thoatTimKiem{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    border-radius: 20px;
+    outline: 0;
+    border: 1px solid;
+}
+
+.KetQuaTimKiem{
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    width: 1120px;
+    height: auto;
+    float: left;
+    background-color: aliceblue;
+}
+
+#DataList {
+    list-style-type: none;
+}
+
+#DataList li {
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+#DataList li:hover {
+    cursor: pointer;
+    background-color: rgb(217, 208, 208);
+}

@@ -13,6 +13,7 @@
         <script src="scripts/HomePage/scriptTab.js"></script>
         
 		<link rel="stylesheet" href="styles/HomePage/styleBanner.css">
+        <link rel="stylesheet" href="styles/HomePage/styleSearch.css">
 		<link rel="stylesheet" href="styles/HomePage/styleMenu.css">
 		<link rel="stylesheet" href="styles/HomePage/styleSlide.css">
 		<link rel="stylesheet" href="styles/HomePage/styleSPbanchay.css">
@@ -22,6 +23,7 @@
 		<link rel="stylesheet" href="styles/HomePage/styleShowSanPham.css">
 		<link rel="stylesheet" href="styles/HomePage/styleTab.css">
 		<link rel="stylesheet" href="styles/HomePage/styleFooter.css">
+
 		
         <script src="library/jquery-3.6.4.min.js"></script>
         <div id="fb-root"></div>
@@ -29,9 +31,23 @@
             src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v18.0" nonce="NqAf8PoE">
         </script>
 	</head>
-	<body>
+	<body id="body">
 		<div id="container"> 
 			<div id="header">
+                <div id="NenTimKiem">
+                    <div class="NdungTimKiem">
+                        <i class="fa-solid fa-magnifying-glass" style="position: fixed;margin-top: 18px;margin-left: 20px;color: black;"></i>
+                        <input type="text" name="" id="DataTimKiem" placeholder="Nhập thông tin sản phẩm bạn muốn tìm...">
+                    </div>
+                    <div class="quayLaiTrangChu">
+                        <button class="thoatTimKiem" onclick="DongTimKiem('NenTimKiem')"><i class="fa-solid fa-arrow-up-from-bracket fa-rotate-270" style="color: rgb(65, 56, 56);"></i></button>
+                    </div>
+                    <div class="KetQuaTimKiem">
+                        <ul id="DataList">
+                            <!-- data -->
+                        </ul>
+                    </div>
+                </div>
 				<div id="banner">
                     <div id="banner-Left">
                         <img id="SđtShop"src="images/imageHolines.png" alt="SdtShop" class="cd-LR">
@@ -46,11 +62,8 @@
                         <a href=""><img id="imgGioHag" src="images/GioHang.png" alt="GioHang" class="cd-T"></a>
                         <!-- <h4 id="sohanggiohang1">0</h4> -->
                     </div>
-                    <div id="br-Bt" >
-                        <form action="" id="search-box" class="cd-RL2">
-                            <input id="search-text" type="text">
-                            <button id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
-                        </form>
+                    <div id="br-Bt">
+                        <button class="cd-RL2 btnTimKiem" onclick="MoTimKiem('NenTimKiem')"><i class="fa-solid fa-magnifying-glass"></i></button>
                     </div>
                 </div>
                 <div class="menu">
@@ -583,6 +596,7 @@
                 <br>
                 <img src="images/imageLogoShop.png" alt="">
             </div>
-        </div>
+        </div> 
+        <script src="scripts/HomePage/scriptSearch.js"></script>
 	</body>
 </html>
