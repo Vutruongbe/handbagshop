@@ -116,7 +116,6 @@ dataTimKiem.addEventListener('input', function() {
         pkSP.style.marginTop="20px"
         pkSP.textContent = `Phong cách: ${item.phongCach}`;
 
-        // Gộp
         li.appendChild(anhSP);
         li.appendChild(tenSP);
         li.appendChild(giaSP);
@@ -135,6 +134,6 @@ dataTimKiem.addEventListener('input', function() {
 });
 
 function navigateToProductDetail(product) {
-    const url = `OK.html?name=${encodeURIComponent(product.ten)}&price=${encodeURIComponent(product.gia)}&color=${encodeURIComponent(product.hinhAnh)}&style=${encodeURIComponent(product.thuongHieu)}`;
+    const url = `indexProducts.html?ten=${encodeURIComponent(product.ten)}&gia=${encodeURIComponent(product.gia)}&anh=${encodeURIComponent(product.hinhAnh)}&thuonghieu=${encodeURIComponent(product.thuongHieu)}`;
     window.location.href = url;
 }
