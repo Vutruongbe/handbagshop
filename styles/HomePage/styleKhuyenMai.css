@@ -114,3 +114,24 @@
 #TimKhuyenMai4{
     color: #bdb8b8;
 }
+
+.btGiamGiaDo{
+    border: solid 0px;
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    background-color: #bad1c7;
+    opacity: 1;
+    margin-top: 270px;
+}
+
+.giaCu{
+    text-decoration: line-through;
+    float: left;
+    margin-left: 68px;
+}
+
+.giaMoi{
+    float: left;
+    margin-left: 5px;
+}
