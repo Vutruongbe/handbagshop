@@ -1,0 +1,138 @@
+body{
+    overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    width: 1210px;
+    height: 600px;
+    background-color: bisque;
+}
+
+.row-Top{
+    width: 100%;
+    height: 60px;
+    background-color: yellow;
+}
+
+#TieuDe{
+    width: 250px;
+    height: 100%;
+    background-color: rgb(41, 130, 154);
+    float: left;
+}
+
+#TieuDe a{
+    text-decoration: none;
+    font-size: 24px;
+    color: white;
+    font-weight: 600;
+    float: left;
+    margin-top: 15px;
+    margin-left: 55px;
+}
+
+#TieuDe span{
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+    float: left;
+    margin-top: 15px;
+}
+
+#CongCu{
+    width: 960px;
+    height: 100%;
+    background-color: rgb(47, 162, 194);
+    float: left;
+}
+
+#QuayLai{
+    margin-top: 20px;
+    margin-left: 25px;
+    width: 70px;
+    height: 100%;
+    float: left;
+}
+
+#QuayLai i{
+    cursor: pointer;
+    font-size: 20px;
+}
+
+#HomThu{
+    width: 55px;
+    height: 100%;
+    float: left;
+    margin-left: 530px;
+}
+
+#HomThu i{
+    margin-top: 18px;
+    cursor: pointer;
+    font-size: 23px;
+    margin-left: 20px;
+    float: left;
+}
+
+#ThongBao{
+    width: 60px;
+    height: 100%;
+    float: left;
+}
+
+#ThongBao i{
+    float: left;
+    margin-top: 18px;
+    cursor: pointer;
+    font-size: 23px;
+    margin-left: 20px;
+}
+
+#AnhNhoAdmin{
+    width: 60px;
+    height: 100%;
+    float: left;
+}
+
+.anhNho{
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 40px;
+    height: 40px;
+    float: left;
+}
+
+.anhNho img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.tenTaiKhoan{
+    width: 100px;
+    height: 100%;
+    float: left;
+}
+
+.tenTaiKhoan a{
+    margin-left: 5px;
+    font-weight: 500;
+    margin-top: 20px;
+    color: white;
+    float: left;
+}
+
+.ChiaSe{
+    width: 55px;
+    height: 100%;
+    float: left;
+}
+
+.ChiaSe i{
+    float: left;
+    margin-top: 18px;
+    cursor: pointer;
+    font-size: 23px;
+    margin-left: 10px;
+}

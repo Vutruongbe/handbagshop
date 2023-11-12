@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="https://kit.fontawesome.com/253d4a6e24.js" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="styles/AdminPage/styleAdminTop.css">
+        <link rel="stylesheet" href="styleAdminLeft.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="row-Top">
+                <div id="TieuDe">
+                    <a>Admin</a><span>NLBL</span>
+                </div>
+                <div id="CongCu">
+                    <div id="QuayLai">
+                        <i class="fa-solid fa-bars" style="color: #fbfcfe;"></i>
+                    </div>
+                    <div id="HomThu">
+                        <i class="fa-regular fa-envelope" style="color: #ffffff;"></i>
+                    </div>
+                    <div id="ThongBao">
+                        <i class="fa-regular fa-bell" style="color: #ffffff;"></i>
+                    </div>
+                    <div id="AnhNhoAdmin">
+                        <div class="anhNho">
+                            <img src="images/AnhAdmin.jpg">
+                        </div>
+                    </div>
+                    <div class="tenTaiKhoan">
+                        <a>Vutruongbe</a>
+                    </div>
+                    <div class="ChiaSe">
+                        <i class="fa-solid fa-share-nodes" style="color: #f2f2f2;"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row-Left">
+                <div class="ThongTinAdmin">
+                    <div class="AvtAdmin">
+                        <img src="images/AnhAdmin.jpg">
+                    </div>
+                    <div class="tenTK">
+                        <a>Vutruongbe</a>
+                    </div>
+                    <div class="online">
+                        <div class="nutHoatDong">
+                        </div>
+                        <div class="chuHoatDong">
+                            <a>Online</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="TimKiem">
+                    <input type="text" placeholder="Search..." class="noiDungTimKiem">
+                    <button class="btnTimKiem"><i class="fa-solid fa-magnifying-glass" style="color: #4d525c;"></i></button>
+                </div>
+                <div class="Main">
+                    <a>MAIN NAVIGATION</a>
+                </div>
+                <div class="TrangChu" onclick="alert('Trở lại trang chủ')">
+                    <i class="fa-solid fa-igloo" style="color: #ffffff;"></i>
+                    <a>Trang Chủ</a>
+                    <i class="fa-solid fa-download" style="color: #ffffff;float: right;margin-right: 20px;margin-top: 14px;"></i>
+                </div>
+                <div class="HeThong" id="HeThong" onclick="MoHeThong('RadioHeThong0','RadioHeThong1','RadioHeThong2');">
+                    <i class="fa-regular fa-file-lines" style="color: #ffffff;"></i>
+                    <a>Hệ thống</a>
+                    <i class="fa-solid fa-angle-down" style="color: #ffffff;float: right;margin-right: 20px;margin-top: 14px;"></i>
+                </div>
+                <div class="Radio" id="RadioHeThong0">
+                    <input type="radio" id="radioTaiKhoan" name="radio">
+                    <label for="radioTaiKhoan">Tài khoản</label>
+                </div>
+                <div class="Radio" id="RadioHeThong1">
+                    <input type="radio" id="radioTinTuc" name="radio">
+                    <label for="radioTinTuc">Tin tức & bài viết</label>
+                </div>
+                <div class="Radio" id="RadioHeThong2">
+                    <input type="radio" id="radioDanhGiaSanPham" name="radio">
+                    <label for="radioDanhGiaSanPham">Đánh giá sản phẩm</label>
+                </div>
+                <div class="SanPham" onclick="MoSanPham('RadioSanPham0','RadioSanPham1','RadioSanPham2','RadioSanPham3','RadioSanPham4');">
+                    <i class="fa-brands fa-shopify" style="color: #ffffff;"></i>
+                    <a>Sản Phẩm</a>
+                    <i class="fa-solid fa-angle-down" style="color: #ffffff;float: right;margin-right: 20px;margin-top: 14px;"></i>
+                </div>
+                <div class="Radio" id="RadioSanPham0">
+                    <input type="radio" id="radioSanPham" name="radio">
+                    <label for="radioSanPham">Sản phẩm</label>
+                </div>
+                <div class="Radio" id="RadioSanPham1">
+                    <input type="radio" id="radioLoaiSanPham" name="radio">
+                    <label for="radioLoaiSanPham">Loại sản phẩm</label>
+                </div>
+                <div class="Radio" id="RadioSanPham2">
+                    <input type="radio" id="radioThuongHieu" name="radio">
+                    <label for="radioThuongHieu">Thương hiệu</label>
+                </div>
+                <div class="Radio" id="RadioSanPham3">
+                    <input type="radio" id="radioGia" name="radio">
+                    <label for="radioGia">Giá</label>
+                </div>
+                <div class="Radio" id="RadioSanPham4">
+                    <input type="radio" id="radioKhuyenMai" name="radio">
+                    <label for="radioKhuyenMai">Khuyến mãi</label>
+                </div>
+                <div class="DonHang" onclick="MoDonHang('RadioDonHang0','RadioDonHang1','RadioDonHang2');">
+                    <i class="fa-solid fa-box-open" style="color: #ffffff;"></i>
+                    <a>Đơn Hàng</a>
+                    <i class="fa-solid fa-angle-down" style="color: #ffffff;float: right;margin-right: 20px;margin-top: 14px;"></i>
+                </div>
+                <div class="Radio" id="RadioDonHang0">
+                    <input type="radio" id="radioDonHang" name="radio">
+                    <label for="radioDonHang">Đơn hàng</label>
+                </div>
+                <div class="Radio" id="RadioDonHang1">
+                    <input type="radio" id="radioCTDonHang" name="radio">
+                    <label for="radioCTDonHang">Chi tiết đơn hàng</label>
+                </div>
+                <div class="Radio" id="RadioDonHang2">
+                    <input type="radio" id="radioThanhToan" name="radio">
+                    <label for="radioThanhToan">Lịch sử thanh toán</label>
+                </div>
+                <div class="ThongKe" onclick="">
+                    <i class="fa-solid fa-chart-column" style="color: #ffffff;"></i>
+                    <a>Thống Kê</a>
+                    <i class="fa-solid fa-angle-down" style="color: #ffffff;float: right;margin-right: 20px;margin-top: 14px;"></i>
+                </div>
+                <!-- Các mục của thống kê-->
+                <!--  -->
+                <div class="HoaDon" onclick="MoHoaDon('RadioHoaDon0','RadioHoaDon1','RadioHoaDon2','RadioHoaDon3');">
+                    <i class="fa-solid fa-file-invoice-dollar" style="color: #ffffff;"></i>
+                    <a>Hóa Đơn</a>
+                    <i class="fa-solid fa-angle-down" style="color: #ffffff;float: right;margin-right: 20px;margin-top: 14px;"></i>
+                </div>
+                <div class="Radio" id="RadioHoaDon0">
+                    <input type="radio" id="radioHoaDonBan" name="radio">
+                    <label for="radioHoaDonBan">Hóa đơn bán</label>
+                </div>
+                <div class="Radio" id="RadioHoaDon1">
+                    <input type="radio" id="radioCTHoaDonBan" name="radio">
+                    <label for="radioCTHoaDonBan">Chi tiết hóa đơn bán</label>
+                </div>
+                <div class="Radio" id="RadioHoaDon2">
+                    <input type="radio" id="radioHoaDonNhap" name="radio">
+                    <label for="radioHoaDonNhap">Hóa đơn nhập</label>
+                </div>
+                <div class="Radio" id="RadioHoaDon3">
+                    <input type="radio" id="radioCTHoaDonNhap" name="radio">
+                    <label for="radioCTHoaDonNhap">Chi tiết hóa đơn nhập</label>
+                </div>
+            </div>
+        </div>
+        <script src="scriptAdminLeft.js"></script>
+    </body>
+</html>

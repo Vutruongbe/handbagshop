@@ -1,0 +1,537 @@
+.row-Left{
+    width: 250px;
+    height: auto;
+    min-height: 540px;
+    background-color: rgb(52, 52, 51);
+}
+
+.ThongTinAdmin{
+    width: 100%;
+    height: 80px;
+    float: left;
+}
+
+.AvtAdmin{
+    width: 80px;
+    height: 100%;
+    float: left;
+}
+
+.AvtAdmin img{
+    margin-top: 5px;
+    margin-left: 10px;
+    width: 60px;
+    height: 60px;
+    float: left;
+    border-radius: 30px;
+}
+
+.tenTK{
+    width: 68%;
+    height: 35px;
+    float: left;
+}
+
+.tenTK a{
+    font-weight: 500;
+    color: white;
+    margin-top: 13px;
+    float: left;
+}
+
+.online{
+    width: 68%;
+    height: 35px;
+    float: left;
+}
+
+.nutHoatDong{
+    margin-top: 10px;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: green;
+    float: left;
+}
+
+.chuHoatDong a{
+    font-weight: 100;
+    font-size: 12px;
+    margin-top:9px;
+    margin-left: 8px;
+    color: white;
+    float: left;
+}
+
+.TimKiem{
+    width: 100%;
+    height: 50px;
+    float: left;
+}
+
+.noiDungTimKiem{
+    border: 1px solid beige;
+    border-radius: 4px;
+    margin-left: 10px;
+    outline: 0;
+    padding: 10px 46px 10px 20px;
+    float: left;
+}
+
+.btnTimKiem{
+    float: left;
+    width: 30px;
+    height: 30px;
+    margin-top: 3px;
+    margin-left: -40px;
+    outline: 0;
+    background-color: white;
+    border: 0px solid white;
+    cursor: pointer;
+}
+
+.Main{
+    width: 100%;
+    height: 40px;
+    background-color: rgb(20, 16, 16);
+    float: left;
+}
+
+.Main a{
+    margin-top: 10px;
+    margin-left: 13px;
+    float: left;
+    color: rgb(53, 52, 52);
+}
+
+.TrangChu{
+    width: 100%;
+    height: 45px;
+    background-color: rgb(67, 59, 59);
+    float: left;
+    cursor: pointer;
+    /* border-left: 5px solid rgb(36, 201, 184); */
+    border-bottom: 1px solid rgb(113, 110, 110);
+}
+
+.TrangChu i{
+    float: left;
+    margin-top: 13px;
+    margin-left: 16.5px;
+}
+
+.TrangChu a{
+    color: white;
+    float: left;
+    margin-top: 13px;
+    margin-left: 18.5px;
+}
+
+.HeThong{
+    width: 100%;
+    height: 45px;
+    background-color: rgb(67, 59, 59);
+    float: left;
+    cursor: pointer;
+    /* border-left: 5px solid rgb(36, 201, 184); */
+    border-bottom: 1px solid rgb(113, 110, 110);
+    margin-bottom: -2px;
+}
+
+.HeThong i{
+    float: left;
+    margin-top: 13px;
+    margin-left: 20px;
+}
+
+.HeThong a{
+    color: white;
+    float: left;
+    margin-top: 13px;
+    margin-left: 23px;
+}
+
+#RadioHeThong0{
+    opacity: 0;
+    width: 100%;
+    /* height: 45px; */
+    height: 0px;
+    background-color: rgb(67, 59, 59);
+    float: left;
+    cursor: pointer;
+    border-bottom: 1px solid rgb(113, 110, 110);
+    transition: 0.4s;
+}
+
+#RadioHeThong1{
+    opacity: 0;
+    width: 100%;
+    /* height: 45px; */
+    height: 0px;
+    background-color: rgb(67, 59, 59);
+    float: left;
+    cursor: pointer;
+    border-bottom: 1px solid rgb(113, 110, 110);
+    transition: 0.4s;
+}
+
+#RadioHeThong2{
+    opacity: 0;
+    width: 100%;
+    /* height: 45px; */
+    height: 0px;
+    background-color: rgb(67, 59, 59);
+    float: left;
+    cursor: pointer;
+    border-bottom: 1px solid rgb(113, 110, 110);
+    transition: 0.4s;
+}
+
+#radioTaiKhoan{
+    margin-top: 15px;
+    margin-left: 40px;
+    float: left;
+}
+
+#radioTinTuc{
+    margin-top: 15px;
+    margin-left: 40px;
+    float: left;
+}
+
+#radioDanhGiaSanPham{
+    margin-top: 15px;
+    margin-left: 40px;
+    float: left;
+}
+
+.Radio label{
+    margin-top: 13px;
+    margin-left: 10px;
+    float: left;
+    color: white;
+    font-size: 14px;
+}
+
+.SanPham{
+    width: 100%;
+    height: 45px;
+    background-color: rgb(67, 59, 59);
+    float: left;
+    cursor: pointer;
+    /* border-left: 5px solid rgb(36, 201, 184); */
+    border-bottom: 1px solid rgb(113, 110, 110);
+    margin-bottom: -3px;
+}
+
+.SanPham i{
+    float: left;
+    margin-top: 13px;
+    margin-left: 19px;
+}
+
+.SanPham a{
+    color: white;
+    float: left;
+    margin-top: 13px;
+    margin-left: 21px;
+}
+
+#RadioSanPham0{
+    opacity: 0;
+    width: 100%;
+    /* height: 45px; */
+    height: 0px;
+    background-color: rgb(67, 59, 59);
+    float: left;
+    cursor: pointer;
+    border-bottom: 1px solid rgb(113, 110, 110);
+    transition: 0.4s;
+}
+
+#RadioSanPham1{
+    opacity: 0;
+    width: 100%;
+    /* height: 45px; */
+    height: 0px;
+    background-color: rgb(67, 59, 59);
+    float: left;
+    cursor: pointer;
+    border-bottom: 1px solid rgb(113, 110, 110);
+    transition: 0.4s;
+}
+
+#RadioSanPham2{
+    opacity: 0;
+    width: 100%;
+    /* height: 45px; */
+    height: 0px;
+    background-color: rgb(67, 59, 59);
+    float: left;
+    cursor: pointer;
+    border-bottom: 1px solid rgb(113, 110, 110);
+    transition: 0.4s;
+}
+
+#RadioSanPham3{
+    opacity: 0;
+    width: 100%;
+    /* height: 45px; */
+    height: 0px;
+    background-color: rgb(67, 59, 59);
+    float: left;
+    cursor: pointer;
+    border-bottom: 1px solid rgb(113, 110, 110);
+    transition: 0.4s;
+}
+
+#RadioSanPham4{
+    opacity: 0;
+    width: 100%;
+    /* height: 45px; */
+    height: 0px;
+    background-color: rgb(67, 59, 59);
+    float: left;
+    cursor: pointer;
+    border-bottom: 1px solid rgb(113, 110, 110);
+    transition: 0.4s;
+}
+
+
+#radioSanPham{
+    margin-top: 15px;
+    margin-left: 40px;
+    float: left;
+}
+
+#radioLoaiSanPham{
+    margin-top: 15px;
+    margin-left: 40px;
+    float: left;
+}
+
+#radioThuongHieu{
+    margin-top: 15px;
+    margin-left: 40px;
+    float: left;
+}
+
+#radioLoaiSanPham{
+    margin-top: 15px;
+    margin-left: 40px;
+    float: left;
+}
+
+#radioThuongHieu{
+    margin-top: 15px;
+    margin-left: 40px;
+    float: left;
+}
+
+#radioGia{
+    margin-top: 15px;
+    margin-left: 40px;
+    float: left;
+}
+
+#radioKhuyenMai{
+    margin-top: 15px;
+    margin-left: 40px;
+    float: left;
+}
+
+.DonHang{
+    width: 100%;
+    height: 45px;
+    background-color: rgb(67, 59, 59);
+    float: left;
+    cursor: pointer;
+    /* border-left: 5px solid rgb(36, 201, 184); */
+    border-bottom: 1px solid rgb(113, 110, 110);
+    margin-bottom: -1px;
+}
+
+.DonHang i{
+    float: left;
+    margin-top: 13px;
+    margin-left: 16.5px;
+}
+
+.DonHang a{
+    color: white;
+    float: left;
+    margin-top: 13px;
+    margin-left: 18px;
+}
+
+#RadioDonHang0{
+    opacity: 0;
+    width: 100%;
+    /* height: 45px; */
+    height: 0px;
+    background-color: rgb(67, 59, 59);
+    float: left;
+    cursor: pointer;
+    border-bottom: 1px solid rgb(113, 110, 110);
+    transition: 0.4s;
+}
+
+#RadioDonHang1{
+    opacity: 0;
+    width: 100%;
+    /* height: 45px; */
+    height: 0px;
+    background-color: rgb(67, 59, 59);
+    float: left;
+    cursor: pointer;
+    border-bottom: 1px solid rgb(113, 110, 110);
+    transition: 0.4s;
+}
+
+#RadioDonHang2{
+    opacity: 0;
+    width: 100%;
+    /* height: 45px; */
+    height: 0px;
+    background-color: rgb(67, 59, 59);
+    float: left;
+    cursor: pointer;
+    border-bottom: 1px solid rgb(113, 110, 110);
+    transition: 0.4s;
+}
+
+#radioDonHang{
+    margin-top: 15px;
+    margin-left: 40px;
+    float: left;
+}
+
+#radioCTDonHang{
+    margin-top: 15px;
+    margin-left: 40px;
+    float: left;
+}
+
+#radioThanhToan{
+    margin-top: 15px;
+    margin-left: 40px;
+    float: left;
+}
+
+.ThongKe{
+    width: 100%;
+    height: 45px;
+    background-color: rgb(67, 59, 59);
+    float: left;
+    cursor: pointer;
+    /* border-left: 5px solid rgb(36, 201, 184); */
+    border-bottom: 1px solid rgb(113, 110, 110);
+}
+
+.ThongKe i{
+    float: left;
+    margin-top: 13px;
+    margin-left: 18px;
+}
+
+.ThongKe a{
+    color: white;
+    float: left;
+    margin-top: 13px;
+    margin-left: 20px;
+}
+
+.HoaDon{
+    width: 100%;
+    height: 45px;
+    background-color: rgb(67, 59, 59);
+    float: left;
+    cursor: pointer;
+    /* border-left: 5px solid rgb(36, 201, 184); */
+    border-bottom: 1px solid rgb(113, 110, 110);
+}
+
+.HoaDon i{
+    float: left;
+    margin-top: 13px;
+    margin-left: 20px;
+}
+
+.HoaDon a{
+    color: white;
+    float: left;
+    margin-top: 13px;
+    margin-left: 23px;
+}
+
+#RadioHoaDon0{
+    opacity: 0;
+    width: 100%;
+    /* height: 45px; */
+    height: 0px;
+    background-color: rgb(67, 59, 59);
+    float: left;
+    cursor: pointer;
+    border-bottom: 1px solid rgb(113, 110, 110);
+    transition: 0.4s;
+}
+
+#RadioHoaDon1{
+    opacity: 0;
+    width: 100%;
+    /* height: 45px; */
+    height: 0px;
+    background-color: rgb(67, 59, 59);
+    float: left;
+    cursor: pointer;
+    border-bottom: 1px solid rgb(113, 110, 110);
+    transition: 0.4s;
+}
+
+#RadioHoaDon2{
+    opacity: 0;
+    width: 100%;
+    /* height: 45px; */
+    height: 0px;
+    background-color: rgb(67, 59, 59);
+    float: left;
+    cursor: pointer;
+    border-bottom: 1px solid rgb(113, 110, 110);
+    transition: 0.4s;
+}
+
+#RadioHoaDon3{
+    opacity: 0;
+    width: 100%;
+    /* height: 45px; */
+    height: 0px;
+    background-color: rgb(67, 59, 59);
+    float: left;
+    cursor: pointer;
+    border-bottom: 1px solid rgb(113, 110, 110);
+    transition: 0.4s;
+}
+
+#radioHoaDonBan{
+    margin-top: 15px;
+    margin-left: 40px;
+    float: left;
+}
+
+#radioCTHoaDonBan{
+    margin-top: 15px;
+    margin-left: 40px;
+    float: left;
+}
+
+#radioHoaDonNhap{
+    margin-top: 15px;
+    margin-left: 40px;
+    float: left;
+}
+
+#radioCTHoaDonNhap{
+    margin-top: 15px;
+    margin-left: 40px;
+    float: left;
+}
