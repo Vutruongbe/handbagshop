@@ -124,12 +124,16 @@
                     <input type="radio" id="radioThanhToan" name="radio" onclick="testRadio();">
                     <label for="radioThanhToan">Lịch sử thanh toán</label>
                 </div>
-                <div class="ThongKe" onclick="">
+                <div class="ThongKe" onclick="MoThongKe('RadioThongKe0')">
                     <i class="fa-solid fa-chart-column" style="color: #ffffff;"></i>
                     <a>Thống Kê</a>
                     <i class="fa-solid fa-angle-down" style="color: #ffffff;float: right;margin-right: 20px;margin-top: 14px;"></i>
                 </div>
                 <!-- Các mục của thống kê-->
+                <div class="Radio" id="RadioThongKe0">
+                    <input type="radio" id="radioBieuDoanhThu" name="radio" onclick="testRadio();">
+                    <label for="radioBieuDoDoanhThu">Biểu đồ doanh thu</label>
+                </div>
                 <!--  -->
                 <div class="HoaDon" onclick="MoHoaDon('RadioHoaDon0','RadioHoaDon1','RadioHoaDon2','RadioHoaDon3');">
                     <i class="fa-solid fa-file-invoice-dollar" style="color: #ffffff;"></i>
@@ -161,8 +165,6 @@
                 <div id="row-Right-Mid-SanPham">
                     <div class="row-R-Mid-Top">
                         <a>Sản phẩm</a>
-                        <!-- <i class="fa-solid fa-minus dauTru"></i>
-                        <i class="fa-solid fa-xmark dauNhan"></i> -->
                     </div>
                     <div class="row-R-Mid-Mid">
                         <div class="div-SP-Trai">

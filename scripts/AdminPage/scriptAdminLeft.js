@@ -88,6 +88,20 @@ function MoDonHang(x,y,z){
     }
 }
 
+var ThongKe = false;
+function MoThongKe(x){
+    if(ThongKe==false){
+        document.getElementById(x).style.opacity=1;
+        document.getElementById(x).style.height="45px";
+        ThongKe = true;
+    }
+    else if(ThongKe==true){
+        document.getElementById(x).style.opacity=0;
+        document.getElementById(x).style.height="0px";
+        ThongKe = false;
+    }
+}
+
 var HoaDon = false;
 function MoHoaDon(x,y,z,m){
     if(HoaDon==false){
