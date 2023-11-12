@@ -71,15 +71,15 @@
                     <i class="fa-solid fa-angle-down" style="color: #ffffff;float: right;margin-right: 20px;margin-top: 14px;"></i>
                 </div>
                 <div class="Radio" id="RadioHeThong0">
-                    <input type="radio" id="radioTaiKhoan" name="radio">
+                    <input type="radio" id="radioTaiKhoan" name="radio" onclick="testRadio();">
                     <label for="radioTaiKhoan">Tài khoản</label>
                 </div>
                 <div class="Radio" id="RadioHeThong1">
-                    <input type="radio" id="radioTinTuc" name="radio">
+                    <input type="radio" id="radioTinTuc" name="radio" onclick="testRadio();">
                     <label for="radioTinTuc">Tin tức & bài viết</label>
                 </div>
                 <div class="Radio" id="RadioHeThong2">
-                    <input type="radio" id="radioDanhGiaSanPham" name="radio">
+                    <input type="radio" id="radioDanhGiaSanPham" name="radio" onclick="testRadio();">
                     <label for="radioDanhGiaSanPham">Đánh giá sản phẩm</label>
                 </div>
                 <div class="SanPham" onclick="MoSanPham('RadioSanPham0','RadioSanPham1','RadioSanPham2','RadioSanPham3','RadioSanPham4');">
@@ -88,23 +88,23 @@
                     <i class="fa-solid fa-angle-down" style="color: #ffffff;float: right;margin-right: 20px;margin-top: 14px;"></i>
                 </div>
                 <div class="Radio" id="RadioSanPham0">
-                    <input type="radio" id="radioSanPham" name="radio">
+                    <input type="radio" id="radioSanPham" name="radio" onclick="testRadio();">
                     <label for="radioSanPham">Sản phẩm</label>
                 </div>
                 <div class="Radio" id="RadioSanPham1">
-                    <input type="radio" id="radioLoaiSanPham" name="radio">
+                    <input type="radio" id="radioLoaiSanPham" name="radio" onclick="testRadio();">
                     <label for="radioLoaiSanPham">Loại sản phẩm</label>
                 </div>
                 <div class="Radio" id="RadioSanPham2">
-                    <input type="radio" id="radioThuongHieu" name="radio">
+                    <input type="radio" id="radioThuongHieu" name="radio" onclick="testRadio();">
                     <label for="radioThuongHieu">Thương hiệu</label>
                 </div>
                 <div class="Radio" id="RadioSanPham3">
-                    <input type="radio" id="radioGia" name="radio">
+                    <input type="radio" id="radioGia" name="radio" onclick="testRadio();">
                     <label for="radioGia">Giá</label>
                 </div>
                 <div class="Radio" id="RadioSanPham4">
-                    <input type="radio" id="radioKhuyenMai" name="radio">
+                    <input type="radio" id="radioKhuyenMai" name="radio" onclick="testRadio();">
                     <label for="radioKhuyenMai">Khuyến mãi</label>
                 </div>
                 <div class="DonHang" onclick="MoDonHang('RadioDonHang0','RadioDonHang1','RadioDonHang2');">
@@ -113,15 +113,15 @@
                     <i class="fa-solid fa-angle-down" style="color: #ffffff;float: right;margin-right: 20px;margin-top: 14px;"></i>
                 </div>
                 <div class="Radio" id="RadioDonHang0">
-                    <input type="radio" id="radioDonHang" name="radio">
+                    <input type="radio" id="radioDonHang" name="radio" onclick="testRadio();">
                     <label for="radioDonHang">Đơn hàng</label>
                 </div>
                 <div class="Radio" id="RadioDonHang1">
-                    <input type="radio" id="radioCTDonHang" name="radio">
+                    <input type="radio" id="radioCTDonHang" name="radio" onclick="testRadio();">
                     <label for="radioCTDonHang">Chi tiết đơn hàng</label>
                 </div>
                 <div class="Radio" id="RadioDonHang2">
-                    <input type="radio" id="radioThanhToan" name="radio">
+                    <input type="radio" id="radioThanhToan" name="radio" onclick="testRadio();">
                     <label for="radioThanhToan">Lịch sử thanh toán</label>
                 </div>
                 <div class="ThongKe" onclick="">
@@ -137,19 +137,19 @@
                     <i class="fa-solid fa-angle-down" style="color: #ffffff;float: right;margin-right: 20px;margin-top: 14px;"></i>
                 </div>
                 <div class="Radio" id="RadioHoaDon0">
-                    <input type="radio" id="radioHoaDonBan" name="radio">
+                    <input type="radio" id="radioHoaDonBan" name="radio" onclick="testRadio();">
                     <label for="radioHoaDonBan">Hóa đơn bán</label>
                 </div>
                 <div class="Radio" id="RadioHoaDon1">
-                    <input type="radio" id="radioCTHoaDonBan" name="radio">
+                    <input type="radio" id="radioCTHoaDonBan" name="radio" onclick="testRadio();">
                     <label for="radioCTHoaDonBan">Chi tiết hóa đơn bán</label>
                 </div>
                 <div class="Radio" id="RadioHoaDon2">
-                    <input type="radio" id="radioHoaDonNhap" name="radio">
+                    <input type="radio" id="radioHoaDonNhap" name="radio" onclick="testRadio();">
                     <label for="radioHoaDonNhap">Hóa đơn nhập</label>
                 </div>
                 <div class="Radio" id="RadioHoaDon3">
-                    <input type="radio" id="radioCTHoaDonNhap" name="radio">
+                    <input type="radio" id="radioCTHoaDonNhap" name="radio" onclick="testRadio();">
                     <label for="radioCTHoaDonNhap">Chi tiết hóa đơn nhập</label>
                 </div>
             </div>
@@ -158,11 +158,11 @@
                 <div class="row-Right-Top">
                     <a>NaLaBaLa</a>
                 </div>
-                <div class="row-Right-Mid">
+                <div id="row-Right-Mid-SanPham">
                     <div class="row-R-Mid-Top">
                         <a>Sản phẩm</a>
-                        <i class="fa-solid fa-minus dauTru"></i>
-                        <i class="fa-solid fa-xmark dauNhan"></i>
+                        <!-- <i class="fa-solid fa-minus dauTru"></i>
+                        <i class="fa-solid fa-xmark dauNhan"></i> -->
                     </div>
                     <div class="row-R-Mid-Mid">
                         <div class="div-SP-Trai">
@@ -229,5 +229,6 @@
         </div>
         <script src="scripts/AdminPage/scriptAdminLeft.js"></script>
         <script src="scriptSanPham.js"></script>
+        <script src="scriptQuanLyRadio.js"></script>
     </body>
 </html>
