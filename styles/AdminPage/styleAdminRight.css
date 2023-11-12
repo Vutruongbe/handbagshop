@@ -1,0 +1,60 @@
+.row-Right{
+    width: 960px;
+    height: auto;
+    min-height: 540px;
+    background-color: rgb(189, 185, 179);
+    float: left;
+}
+
+.row-Right-Top{
+    width: 100%;
+    height: 70px;
+    float: left;
+}
+
+.row-Right-Top a{
+    float: left;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 28px;
+    font-weight: 500;
+    color: black;
+}
+
+.row-Right-Mid{
+    margin-left: 20px;
+    float: left;
+    width: 920px;
+    height: auto;
+    padding-bottom: 20px;
+    background-color: rgb(242, 236, 236);
+}
+
+.row-R-Mid-Top{
+    font-size: 21px;
+    width: 100%;
+    height: 80px;
+    float: left;
+    color: rgb(120, 117, 115);
+}
+
+.row-R-Mid-Top a{
+    margin-top: 10px;
+    margin-left: 20px;
+    float: left;
+}
+
+.dauTru{
+    cursor: pointer;
+    float: left;
+    margin-top: 5px;
+    margin-left: 740px;
+}
+
+.dauNhan{
+    cursor: pointer;
+    float: left;
+    margin-top: 5px;
+    margin-left: 15px;
+}
+

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Thêm vào danh sách</title>
+    <style>
+        /* Thêm CSS theo ý của bạn */
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 5px;
+            background: #f0f0f0;
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" id="newItem" placeholder="Nhập nội dung">
+    <button onclick="addItem()">Thêm</button>
+    <ul id="list">
+        
+    </ul>
+
+    <script>
+        function addItem() {
+            var newItem = document.getElementById('newItem').value;
+
+            if (newItem !== '') {
+                var li = document.createElement('li');
+                li.appendChild(document.createTextNode(newItem));
+                li.appendChild(document.createTextNode(newItem));
+                document.getElementById('list').appendChild(li);
+                document.getElementById('newItem').value = '';
+            }
+        }
+    </script>
+</body>
+</html>

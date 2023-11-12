@@ -4,7 +4,9 @@
         <script src="https://kit.fontawesome.com/253d4a6e24.js" crossorigin="anonymous"></script>
 
         <link rel="stylesheet" href="styles/AdminPage/styleAdminTop.css">
-        <link rel="stylesheet" href="styleAdminLeft.css">
+        <link rel="stylesheet" href="styles/AdminPage/styleAdminLeft.css">
+        <link rel="stylesheet" href="styles/AdminPage/styleAdminRight.css">
+        <link rel="stylesheet" href="styleSanPham.css">
     </head>
     <body>
         <div class="container">
@@ -35,7 +37,6 @@
                     </div>
                 </div>
             </div>
-
             <div class="row-Left">
                 <div class="ThongTinAdmin">
                     <div class="AvtAdmin">
@@ -152,7 +153,81 @@
                     <label for="radioCTHoaDonNhap">Chi tiết hóa đơn nhập</label>
                 </div>
             </div>
+
+            <div class="row-Right">
+                <div class="row-Right-Top">
+                    <a>NaLaBaLa</a>
+                </div>
+                <div class="row-Right-Mid">
+                    <div class="row-R-Mid-Top">
+                        <a>Sản phẩm</a>
+                        <i class="fa-solid fa-minus dauTru"></i>
+                        <i class="fa-solid fa-xmark dauNhan"></i>
+                    </div>
+                    <div class="row-R-Mid-Mid">
+                        <div class="div-SP-Trai">
+                            <input type="text" placeholder="Từ khóa">
+                            <button class="btnTimKiemSP"><a>Tìm kiếm</a></button>
+                        </div>
+                        <div class="div-SP-Phai">
+                            <button class="btnThemSP" onclick="SanPhamThem('row-ThemSP');"><a>Thêm</a></button>
+                            <button class="btnSuaSP" onclick="SanPhamSua('row-SuaSP');"><a>Sửa</a></button>
+                            <button class="btnXoaSP" onclick="SanPhamXoa('row-XoaSP');"><a>Xóa</a></button>
+                        </div>
+                    </div>
+                    <div id="row-ThemSP">
+                        <input type="text" class="tenSP SP" placeholder="Tên" id="tenSP" value="Túi xách Orima">
+                        <input type="text" class="maGia SP" placeholder="Mã giá" id="maGia" value="600000">
+                        <input type="text" class="anhSP SP" placeholder="Hình ảnh" id="anhSP" value="SP1.jpg">
+                        <input type="text" class="tTSP SP" placeholder="Thuộc tính" id="tTSP" value="Đen">
+                        <input type="text" class="nDSP SP" placeholder="Nội dung" id="nDSP" value="...">
+                        <input type="text" class="maLoai SP" placeholder="Mã loại" id="maLoai" value="maLoai1">
+                        <input type="text" class="maThuongHieu SP" placeholder="Mã thương hiệu" id="maThuongHieu" value="maThgHieu1"> 
+                        <input type="text" class="trangThai SP" placeholder="Trạng thái" id="trangThai" value="...">
+                        <button class="btnSanPhamThem" onclick="ThemSP();TuCong();">Thêm sản phẩm</button>
+                        <span>id:</span><a class="So1">1</a>
+                    </div>
+                    <div id="row-SuaSP">
+                        <input type="text" class="tenSP SP" placeholder="Tên">
+                        <input type="text" class="maGia SP" placeholder="Mã giá">
+                        <input type="text" class="anhSP SP" placeholder="Hình ảnh">
+                        <input type="text" class="tTSP SP" placeholder="Thuộc tính">
+                        <input type="text" class="nDSP SP" placeholder="Nội dung">
+                        <input type="text" class="maLoai SP" placeholder="Mã loại">
+                        <input type="text" class="maThuongHieu SP" placeholder="Mã thương hiệu">
+                        <input type="text" class="trangThai SP" placeholder="Trạng thái">
+                        <button class="btnSanPhamSua" onclick="SuaSP();">Sửa sản phẩm</button>
+                    </div>
+                    <div id="row-XoaSP">
+                        <input type="text" class="tenSP SP" placeholder="Tên">
+                        <input type="text" class="maGia SP" placeholder="Mã giá">
+                        <input type="text" class="anhSP SP" placeholder="Hình ảnh">
+                        <input type="text" class="tTSP SP" placeholder="Thuộc tính">
+                        <input type="text" class="nDSP SP" placeholder="Nội dung">
+                        <input type="text" class="maLoai SP" placeholder="Mã loại">
+                        <input type="text" class="maThuongHieu SP" placeholder="Mã thương hiệu">
+                        <input type="text" class="trangThai SP" placeholder="Trạng thái">
+                        <button class="btnSanPhamXoa" onclick="XoaSP();">Xóa sản phẩm</button>
+                    </div>
+                    <div id="DataSanPham">
+                        <table id="Table">
+                            <tr>
+                                <th>STT</th>
+                                <th>Tên SP</th>
+                                <th>Mã giá</th>
+                                <th>Hình ảnh</th>
+                                <th>Thuộc tính</th>
+                                <th>Nội dung</th>
+                                <th>Mã loại</th>
+                                <th>Mã thương hiệu</th>
+                                <th>Trạng thái</th>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
         </div>
-        <script src="scriptAdminLeft.js"></script>
+        <script src="scripts/AdminPage/scriptAdminLeft.js"></script>
+        <script src="scriptSanPham.js"></script>
     </body>
 </html>

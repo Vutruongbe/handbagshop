@@ -1,0 +1,56 @@
+/* Thiết lập CSS cơ bản */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.products {
+    width: 70%;
+}
+
+.product {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.cart {
+    width: 25%;
+    border: 1px solid #ddd;
+    padding: 20px;
+}
+
+/* Thêm CSS tùy chỉnh cho mục giỏ hàng */
+.cart h2 {
+    text-align: center;
+}
+
+.cart ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.cart li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.cart .total {
+    font-weight: bold;
+    text-align: right;
+}
