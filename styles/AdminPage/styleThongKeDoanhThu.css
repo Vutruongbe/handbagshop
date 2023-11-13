@@ -1,0 +1,24 @@
+/* Code dưới chuẩn bị làm khung biểu đồ miền */
+#row-Right-Mid-BieuDoDoanhThu{
+    float: left;
+    width: 0px;
+    height: 430px;
+    padding-bottom: 20px;
+    background-color: rgb(242, 236, 236);
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.crypto-chart{
+    height: 100%;
+    width: 100%;
+    float: left;
+}
+
+.chart-container {
+    width: 80%;
+    height: 100%;
+    margin-top: -30px;
+    margin-left: 90px;
+    float: left;
+}

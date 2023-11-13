@@ -2,11 +2,14 @@
 <html lang="en">
     <head>
         <script src="https://kit.fontawesome.com/253d4a6e24.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
 
         <link rel="stylesheet" href="styles/AdminPage/styleAdminTop.css">
         <link rel="stylesheet" href="styles/AdminPage/styleAdminLeft.css">
         <link rel="stylesheet" href="styles/AdminPage/styleAdminRight.css">
-        <link rel="stylesheet" href="styleSanPham.css">
+        <link rel="stylesheet" href="styles/AdminPage/styleSanPham.css">
+        <link rel="stylesheet" href="styles/AdminPage/styleThongKeDoanhThu.css">
     </head>
     <body>
         <div class="container">
@@ -227,10 +230,26 @@
                         </table>
                     </div>
                 </div>
+                <div id="row-Right-Mid-BieuDoDoanhThu">
+                    <div class="row-R-Mid-Top">
+                        <a>Biểu đồ doanh thu</a>
+                    </div>
+                    <div class="crypto-chart">
+                        <div class="chart-container">
+                            <canvas id="cryptoChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <!-- Làm các item tiếp ở đây -->
             </div>
         </div>
         <script src="scripts/AdminPage/scriptAdminLeft.js"></script>
-        <script src="scriptSanPham.js"></script>
-        <script src="scriptQuanLyRadio.js"></script>
+
+        <!-- Chờ sửa sau khi thêm mục item khác -->
+        <script src="loading/scriptQuanLyRadio.js"></script>
+        <script src="loading/scriptSanPham.js"></script>
+        <!--  -->
+
+        <script src="scripts/AdminPage/scriptThongKeDoanhThu.js"></script>
     </body>
 </html>
