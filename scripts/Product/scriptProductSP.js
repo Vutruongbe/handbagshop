@@ -84,9 +84,9 @@ function showgiohang() {
         let tensp= giohang[i][1];
         let dGia= giohang[i][2];
         let Sl= giohang[i][3];
-        if(Sl=parseFloat(DuLieuNhanDo)){
-            Sl = parseFloat(DuLieuNhanDo);
-            tt= parseFloat(giohang[i][2])*parseInt(Sl);
+        if(Sl==parseInt(DuLieuNhanDo)){
+            Sl = parseInt(DuLieuNhanDo);
+            tt= parseInt(giohang[i][2])*parseInt(Sl);
         }else{
             Sl = giohang[i][3];
             tt= parseFloat(giohang[i][2])*parseInt(giohang[i][3]);

@@ -45,11 +45,11 @@
         <div id="container2">
             <div id="divNhapDuLieu">
                 <div class="TieuDeNhap">
-                    <a id="tieudechinh">Thanh Toán</a>
+                    <a id="tieudechinh">Đặt Hàng</a>
                     <hr color="#" width="94.5%">
                 </div>
                 <div class="TieuDeNhap">
-                    <a>CHI TIẾT THANH TOÁN</a>
+                    <a>Thông Tin Đặt Hàng</a>
                     <hr color="#" width="94.5%">
                 </div>
                 <div id="NoiDungThongTin">
@@ -107,7 +107,7 @@
                         <a style="font-weight: 500;margin-left: 90px;">Thông tin sản phẩm</a>
                         <hr color="#" width="80%">
                     </div>
-                    <div class="SanPhamChonMua" id="okdayNha" style="margin-bottom: 10px;margin-left: -38px;">
+                    <div class="SanPhamChonMua" id="okdayNha" style="margin-bottom: 10px;margin-left: -37px;">
                         <table>
                             <tr>
                                 <th style="font-size: 14px;">STT</th>
@@ -132,13 +132,13 @@
                     </div>
                     <hr color="#" width="80%" style="margin-left: 40px;margin-top: -30px;">
                     <div style="width: 334px;height: 45px;float:left;">
-                        <input type="button" value="Thanh Toán" id="btnThanhToan" onclick="ThanhToan()">
+                        <input type="button" value="Đặt Hàng" id="btnThanhToan" onclick="ThanhToanNe()">
                     </div>
                     <div style="width: 334px;height: 45px;float:left;">
                         <input type="button" value="Xem Hóa Đơn" id="btnHoaDon" onclick="window.location.href='indexSalesInvoice.html'">
                     </div>
                     <div style="width: 334px;height: 45px;float: left;">
-                        <input type="button" value="Quay lại" id="btnTroLai" onclick="window.location.href='indexShoppingCart.html'">
+                        <input type="button" value="Quay lại" id="btnTroLai" onclick="window.location.href='indexHomePage.html';">
                     </div>
                 </div>
             </div>
@@ -209,5 +209,6 @@
         <script>
             showgiohangThanhToan();
         </script>
+        <script src="scripts/CheckoutPage/scriptThanhToan.js"></script>
     </body>
 </html>
