@@ -99,9 +99,9 @@ function showgiohang() {
         ttgh += "<td>"+dGia+"</td>";
         ttgh += "<td  id='sl"+ i +"'>"+Sl+"</td>";
         ttgh += "<td>"+tt+"</td>";
-        ttgh += "<td><input type='button' value='Xóa' style='width: 60px;height: 30px;' onclick='Xoa(this)'></td>";
-        ttgh += "<td><input onclick='Tru(this);' style='position: absolute;margin-top: -13px;margin-left: -325px;padding: 5px 10px 5px 10px;' type='button' value='-'></td>";
-        ttgh += "<td><input onclick='Cong(this);' style='position: absolute;margin-top: -13px;margin-left: -263px;padding: 5px 8px 5px 8px;' type='button' value='+'></input></td>";
+        ttgh += "<td><input type='button' value='Xóa' style='width: 60px;height: 30px; cursor: pointer;' onclick='Xoa(this);'></td>";
+        ttgh += "<td><input onclick='Tru(this);' style='position: absolute;margin-top: -13px;margin-left: -325px;padding: 5px 10px 5px 10px; cursor: pointer;' type='button' value='-'></td>";
+        ttgh += "<td><input onclick='Cong(this);' style='position: absolute;margin-top: -13px;margin-left: -263px;padding: 5px 8px 5px 8px; cursor: pointer;' type='button' value='+'></input></td>";
         ttgh += "<tr>";
                   
         tongTien.push(tt);
@@ -294,9 +294,9 @@ function themNhieu(x){
         ttgh1 += "<td>"+dGia1+"</td>";
         ttgh1 += "<td  id='sl"+ stt1 +"'>"+Sl1+"</td>";
         ttgh1 += "<td>"+tt1+"</td>";
-        ttgh1 += "<td><input type='button' value='Xóa' style='width: 60px;height: 30px;' onclick='Xoa(this)'></td>";
-        ttgh1 += "<td><input onclick='Tru(this);' style='position: absolute;margin-top: -13px;margin-left: -325px;padding: 5px 10px 5px 10px;' type='button' value='-'></td>";
-        ttgh1 += "<td><input onclick='Cong(this);' style='position: absolute;margin-top: -13px;margin-left: -263px;padding: 5px 8px 5px 8px;' type='button' value='+'></input></td>";
+        ttgh1 += "<td><input type='button' value='Xóa' style='width: 60px;height: 30px; cursor: pointer;' onclick='Xoa(this);'></td>";
+        ttgh1 += "<td><input onclick='Tru(this);' style='position: absolute;margin-top: -13px;margin-left: -325px;padding: 5px 10px 5px 10px; cursor: pointer;' type='button' value='-'></td>";
+        ttgh1 += "<td><input onclick='Cong(this);' style='position: absolute;margin-top: -13px;margin-left: -263px;padding: 5px 8px 5px 8px; cursor: pointer;' type='button' value='+'></input></td>";
         ttgh1 += "<tr>";
     }
     document.getElementById('chitietgiohang').innerHTML="";

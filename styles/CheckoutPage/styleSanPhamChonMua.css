@@ -2,7 +2,8 @@
     margin-top: 90px;
     width: 100%;
     height: auto;
-    min-height: 500px;
+    float: left;
+    padding-bottom: 50px;
     background-color: rgb(231, 231, 194);
 }
 

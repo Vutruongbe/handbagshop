@@ -104,35 +104,33 @@
             <div id="divSanPhamMua">
                 <div id="divSPChonMua">
                     <div class="TieuDeNhap" style="padding-top: 20px;">
-                        <a style="font-weight: 500;margin-left: 100px;">YOUR ORDER</a>
+                        <a style="font-weight: 500;margin-left: 90px;">Thông tin sản phẩm</a>
                         <hr color="#" width="80%">
                     </div>
-                    <div class="SanPhamChonMua" id="okdayNha" style="margin-bottom: 10px;">
+                    <div class="SanPhamChonMua" id="okdayNha" style="margin-bottom: 10px;margin-left: -38px;">
                         <table>
                             <tr>
-                                <th>STT</th>
-                                <th style="width: 38px;">Tên</th>
-                                <th style="width: 76px;">Thành tiền</th>
+                                <th style="font-size: 14px;">STT</th>
+                                <th style="width: 38px;font-size: 13px;">Tên</th>
+                                <th style="width: 38px;font-size: 13px;">SL</th>
+                                <th style="width: 76px;font-size: 13px;">Thành tiền</th>
                             </tr>
                             <tbody id="chitietthanhtoan">
                                 <td class="td1">1</td>
                                 <td>...</td>
+                                <td>0</td>
                                 <td>0</td>
                             </tbody>
                         </table>
                     </div>
                     <hr color="#" width="80%" style="margin-left: 40px;">
                     <div id="GiaThanhToan">
-                        <div style="width: 100%;height: 30px;">
-                            <a style="float: left;">Tạm Tính</a>   
-                            <span style="float: right;">đ</span><a style="float: right;">1080000</a>     
-                        </div>
                         <div>
-                            <a style="float: left;">Thành Tiền</a>   
-                            <span style="float: right;">đ</span><a style="float: right;">1080000</a>     
+                            <a style="float: left;">Tổng tiền thanh toán:</a>   
+                            <a style="float: right;" id="nhanThanhTien">1080000</a>     
                         </div>
                     </div>
-                    <hr color="#" width="80%" style="margin-left: 40px;">
+                    <hr color="#" width="80%" style="margin-left: 40px;margin-top: -30px;">
                     <div style="width: 334px;height: 45px;float:left;">
                         <input type="button" value="Thanh Toán" id="btnThanhToan" onclick="ThanhToan()">
                     </div>
@@ -207,5 +205,9 @@
                 <img src="images/imageLogoShop.png" alt="">
             </div>
         </div>
+        <script src="scripts/ShoppingCart/scriptCartAndCheckOut.js"></script>
+        <script>
+            showgiohangThanhToan();
+        </script>
     </body>
 </html>
