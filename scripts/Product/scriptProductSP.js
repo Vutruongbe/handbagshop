@@ -169,7 +169,7 @@ function Xoa(x){
     let thanhTienCong = parseInt(ty[4].innerHTML) * parseInt(ty[3].innerHTML);
     TinhTienNhieuSanPhamNutTru(thanhTienCong)
     tz.remove();   
-    console.log(giohang2);;
+    alert('Xóa thành công!')
 }
 
 function XoaTatCa() {
@@ -177,38 +177,9 @@ function XoaTatCa() {
     document.getElementById('chitietgiohang').innerHTML="";
     document.getElementById('tamTinhTien').innerHTML=tienXoaALL+'đ';
     document.getElementById('tienNe').innerHTML=tienXoaALL+'đ';
+    alert('Bạn vừa xóa tất cả!')
 }
 
-function Sua(x,i){
-    var tn=x.parentElement.parentElement.children;
-    var donGiaSP = tn[3].innerHTML;
-    tn[4].innerHTML= CanSua;
-    var TongTien = parseInt(donGiaSP)*parseInt(CanSua);
-    tn[5].innerHTML= TongTien;
-    capnhaptien = TongTien;
-    truTien = TongTien;
-    document.getElementById('tamTinhTien').innerHTML=TongTien+'đ';
-    document.getElementById('tienNe').innerHTML=TongTien+'đ';
-    SoLuongTatCa = CanSua;
-    //qtrong lam tiep thanh toan
-    console.log(document.getElementById('chitietgiohang').innerHTML);
-    //
-}
-
-let CanSua;
-function SuaSoLuong(x,y) {
-    var slsua = document.getElementById(x).value;
-    CanSua = slsua;
-    document.getElementById(y).style.opacity = 0 ;
-}
-
-function CapNhap(x){
-    document.getElementById(x).style.opacity = 1 ;
-}
-
-function HuySua(x){
-    document.getElementById(x).style.opacity = 0 ;
-}
 
 function QuayLaiVaTruyenDuLieu(){
     if(SoLuongTatCa==0){
@@ -327,4 +298,8 @@ function TinhTienNhieuSanPhamNutTru(x){
     var c = parseInt(newA) - parseInt(x);
     document.getElementById('tamTinhTien').innerHTML = c + 'đ';
     document.getElementById('tienNe').innerHTML = c + 'đ';
+}
+
+function ToastThemThanhCong(){
+    alert('Thêm thành công')
 }
