@@ -56,14 +56,13 @@
         <div class="SanPham" id="okday">
             <table>
                 <tr>
-                    <th>STT</th>
-                    <th>Hình</th>
-                    <th>Tên</th>
-                    <th>Đơn giá</th>
-                    <th>Số lượng</th>
-                    <th>Thành tiền</th>
-                    <th>Sửa</th>
-                    <th>Xóa</th>
+                    <th style="font-size: 14px;font-weight: bold;">STT</th>
+                    <th style="width: 110px;font-size: 14px; height: 50px;font-weight: bold;">Hình</th>
+                    <th style="width: 110px;font-size: 14px;font-weight: bold;">Tên</th>
+                    <th style="font-size: 13px;font-weight: bold;">Đơn giá</th>
+                    <th style="font-size: 13px;font-weight: bold;">Số lượng</th>
+                    <th style="font-size: 13px;font-weight: bold;">Thành tiền</th>
+                    <th style="font-size: 13px;font-weight: bold;">Xóa</th>
                 </tr>
                 <tbody id="chitietgiohang">
                     <td class="td1">1</td>
@@ -72,7 +71,6 @@
                     <td>0</td>
                     <td>0</td>
                     <td>0</td>
-                    <td><input type="button" value="Sửa" style="width: 60px;height: 30px;"></td>
                     <td><input type="button" value="Xóa" style="width: 60px;height: 30px;"></td>
                 </tbody>
             </table>
@@ -82,9 +80,9 @@
             <div id="ver" style="width: 200px;height: 39px; float: right; margin-right: 10px;">
                 <input type="button" value="Xóa tất cả" id="btnXoa" onclick="XoaTatCa()">
             </div>
-            <div id="ver" style="width: 200px;height: 39px; float: right; margin-right: 10px;">
+            <!-- <div id="ver" style="width: 200px;height: 39px; float: right; margin-right: 10px;">
                 <input type="button" value="Cập nhập" id="btnCapNhap" onclick="CapNhap('okhienNao')" style="cursor: pointer;">
-            </div>
+            </div> -->
         </div>
         
         
@@ -123,14 +121,21 @@
             <div class="tieudeSPK">
                 <h3>Sản phẩm khác</h3>
             </div>
+
+
+
+
+
+
             <div class="noidungSPK">
                 <div class="motSPK">
                     <img src="images/DMitem2.jpg" alt="">
                     <div class="ttSPK">
                         <h4>Túi sách UPTOORI</h4>
                         <p>Hãng Carit & Koty đem đến sự thanh lịch</p>
-                        <div class="GiaShow1">400.000 <a>đ</a></div>
-                        <a href="" class="ShowMuaNgay">Mua Ngay</a>
+                        <div class="GiaShow1" id="gt1">400000</div>
+                        <button class="ShowMuaNgay" id="sp1" style="width: 100px;margin-left: 36px;border: 0px solid;cursor: pointer;" onclick="themNhieu('sp1');TinhTienNhieuSanPham('gt1');">Mua Ngay</button>
+                        <h1 style="opacity: 0;">1</h1>
                     </div>
                 </div>
             </div>
@@ -138,10 +143,11 @@
                 <div class="motSPK">
                     <img src="images/SPshowH2c.jpg" alt="">
                     <div class="ttSPK">
-                        <h4>Túi sách UPTOORI</h4>
+                        <h4>Túi sách MIROCO</h4>
                         <p>Hãng Carit & Koty đem đến sự thanh lịch</p>
-                        <div class="GiaShow1">500.000 <a>đ</a></div>
-                        <a href="" class="ShowMuaNgay">Mua Ngay</a>
+                        <div class="GiaShow1" id="gt2">500000</div>
+                        <button class="ShowMuaNgay" id="sp2" style="width: 100px;margin-left: 36px;border: 0px solid;cursor: pointer;" onclick="themNhieu('sp2');TinhTienNhieuSanPham('gt2');">Mua Ngay</button>
+                        <h1 style="opacity: 0;">1</h1>
                     </div>
                 </div>
             </div>
@@ -149,13 +155,21 @@
                 <div class="motSPK">
                     <img src="images/SPshowH2e.jpg" alt="">
                     <div class="ttSPK">
-                        <h4>Túi sách UPTOORI</h4>
+                        <h4>Túi sách CACA</h4>
                         <p>Hãng Carit & Koty đem đến sự thanh lịch</p>
-                        <div class="GiaShow1">600.000 <a>đ</a></div>
-                        <a href="" class="ShowMuaNgay">Mua Ngay</a>
+                        <div class="GiaShow1" id="gt3">600000</div>
+                        <button class="ShowMuaNgay" id="sp3" style="width: 100px;margin-left: 36px;border: 0px solid;cursor: pointer;" onclick="themNhieu('sp3');TinhTienNhieuSanPham('gt3');">Mua Ngay</button>
+                        <h1 style="opacity: 0;">1</h1>
                     </div>
                 </div>
             </div>
+
+
+
+
+
+
+
         </div>
         <hr width="100%">
         <div class="Footer" style="margin-top: 20px;">

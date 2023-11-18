@@ -92,16 +92,17 @@ function showgiohang() {
             tt= parseFloat(giohang[i][2])*parseInt(giohang[i][3]);
         }
         
-        ttgh += `<tr>
-                    <td>${j}</td>
-                    <td>${hinhsp}</td>
-                    <td>${tensp}</td>
-                    <td>${dGia}</td>
-                    <td>${Sl}</td>
-                    <td>${tt}</td>
-                    <td><input type='button' value='Sửa' style='width: 60px;height: 30px;' onclick='Sua(this, ${i})'></td>
-                    <td><input type='button' value='Xóa' style='width: 60px;height: 30px;' onclick='Xoa(this)'></td>
-                </tr>`;
+        ttgh += "<tr>";
+        ttgh += "<td>"+j+"</td>";
+        ttgh += "<td>"+hinhsp+"</td>";
+        ttgh += "<td>"+tensp+"</td>";
+        ttgh += "<td>"+dGia+"</td>";
+        ttgh += "<td  id='sl"+ i +"'>"+Sl+"</td>";
+        ttgh += "<td>"+tt+"</td>";
+        ttgh += "<td><input type='button' value='Xóa' style='width: 60px;height: 30px;' onclick='Xoa(this)'></td>";
+        ttgh += "<td><input onclick='Tru(this);' style='position: absolute;margin-top: -13px;margin-left: -325px;padding: 5px 10px 5px 10px;' type='button' value='-'></td>";
+        ttgh += "<td><input onclick='Cong(this);' style='position: absolute;margin-top: -13px;margin-left: -263px;padding: 5px 8px 5px 8px;' type='button' value='+'></input></td>";
+        ttgh += "<tr>";
                   
         tongTien.push(tt);
         SoLuongTatCaChuaThayDoi = Sl
@@ -110,8 +111,45 @@ function showgiohang() {
     document.getElementById('chitietgiohang').innerHTML=ttgh;
     thanhTien();
     console.log(giohang);
+    huhu = ttgh;
     
 }
+var huhu;
+var huhu1;
+
+function Tru(x){
+    let a; 
+    var tz=x.parentElement.parentElement;
+    var ty=x.parentElement.parentElement.children;
+    if(parseInt(ty[4].innerHTML) < 1){
+        // tz.remove();
+        ty[4].innerHTML = 0;
+        a = 0;
+
+    }
+    else{
+        let soLuongCong = parseInt(ty[4].innerHTML) - 1;
+        ty[4].innerHTML = soLuongCong;
+        a = ty[3].innerHTML;
+    }
+    let thanhTienCong = parseInt(ty[4].innerHTML) * parseInt(ty[3].innerHTML);
+    ty[5].innerText = thanhTienCong;
+
+    TinhTienNhieuSanPhamNutTru(a);
+}
+
+function Cong(x){
+    var ty=x.parentElement.parentElement.children;
+    let soLuongCong = parseInt(ty[4].innerHTML) + 1;
+    ty[4].innerHTML = soLuongCong;
+    let thanhTienCong = parseInt(ty[4].innerHTML) * parseInt(ty[3].innerHTML);
+    ty[5].innerText = thanhTienCong;
+    let a = ty[3].innerHTML;
+
+    TinhTienNhieuSanPhamNutCong(a);
+}
+
+
 
 //hoàn thiện
 function thanhTien(){
@@ -126,11 +164,12 @@ function thanhTien(){
 let truTien = 0;
 let capnhaptien = 0;
 function Xoa(x){
-    var ty=x.parentElement.parentElement;
-    truTien-=parseInt(capnhaptien, 10);
-    document.getElementById('tamTinhTien').innerHTML=truTien+'đ';
-    document.getElementById('tienNe').innerHTML=truTien+'đ';
-    ty.remove();   
+    var tz=x.parentElement.parentElement;
+    var ty=x.parentElement.parentElement.children;
+    let thanhTienCong = parseInt(ty[4].innerHTML) * parseInt(ty[3].innerHTML);
+    TinhTienNhieuSanPhamNutTru(thanhTienCong)
+    tz.remove();   
+    console.log(giohang2);;
 }
 
 function XoaTatCa() {
@@ -192,28 +231,100 @@ function NhanDuLieuGuiVe(){
     }
 }
 
+// Thêm nhiều sản phẩm
+var giohang1 = new Array();
+var giohang2 = new Array();
+var soThuTu = 1;
+function themNhieu(x){
+    // console.log(huhu);
+    
+    var zAnh = document.getElementById(x).parentElement.parentElement.children;
+    var hinh = zAnh[0].src;
+    // console.log(hinh);
+    
+    var zTen = document.getElementById(x).parentElement.children;
+    var ten1 = zTen[0].innerHTML;
+    // console.log(ten);
+    
+    var zDonGia = document.getElementById(x).parentElement.children;
+    var gia = zDonGia[2].innerHTML;
+    // console.log(gia);
+    
+    var zSoLuong = document.getElementById(x).parentElement.children;
+    var soluong = zSoLuong[4].innerHTML;
+    // console.log(soluong);
+
+    if(giohang1.length<1){
+        soThuTu=soThuTu+1;
+        var item = [hinh,ten1,gia,parseInt(soluong),soThuTu];
+        Cong1 = item[2];
+        giohang1.push(item);
+    }
+    else{
+        for (let i = 0; i< giohang1.length; i++) {
+            if(ten1==giohang1[i][1]){
+                giohang1[i][3]= parseInt(giohang1[i][3])+1;
+                giohang1 = giohang1.slice(0, 3);
+            }
+            else if(ten1!=giohang1[i][1]){
+                soThuTu = soThuTu + 1;
+                soluong = soluong - 1;
+                var item = [hinh,ten1,gia,soluong,soThuTu];
+                giohang1.push(item);
+                giohang2 = giohang1.slice(0, 3);
+                
+            }
+        }
+    }
+
+    let ttgh1="";
+    let tong1=0;
+    for(let i=0; i< giohang1.length; i++){
+        let tt1 = parseFloat(giohang1[i][2]) * parseInt(giohang1[i][3]);
+        tong1 = tong1 + tt1;
+        let hinhsp1 = "<img src='"+ giohang1[i][0] +"' width='100px'>";
+        let tensp1= giohang1[i][1];
+        let dGia1= giohang1[i][2];
+        let Sl1= giohang1[i][3];
+        let stt1 = giohang1[i][4];
+        ttgh1 += "<tr>";
+        ttgh1 += "<td>"+stt1+"</td>";
+        ttgh1 += "<td>"+hinhsp1+"</td>";
+        ttgh1 += "<td>"+tensp1+"</td>";
+        ttgh1 += "<td>"+dGia1+"</td>";
+        ttgh1 += "<td  id='sl"+ stt1 +"'>"+Sl1+"</td>";
+        ttgh1 += "<td>"+tt1+"</td>";
+        ttgh1 += "<td><input type='button' value='Xóa' style='width: 60px;height: 30px;' onclick='Xoa(this)'></td>";
+        ttgh1 += "<td><input onclick='Tru(this);' style='position: absolute;margin-top: -13px;margin-left: -325px;padding: 5px 10px 5px 10px;' type='button' value='-'></td>";
+        ttgh1 += "<td><input onclick='Cong(this);' style='position: absolute;margin-top: -13px;margin-left: -263px;padding: 5px 8px 5px 8px;' type='button' value='+'></input></td>";
+        ttgh1 += "<tr>";
+    }
+    document.getElementById('chitietgiohang').innerHTML="";
+    document.getElementById('chitietgiohang').innerHTML=document.getElementById('chitietgiohang').innerHTML+huhu+ttgh1;    
+}
 
 
+function TinhTienNhieuSanPham(x){
+    var a = document.getElementById('tamTinhTien').innerHTML;
+    let newA = a.replace("đ", '');
+    let b = document.getElementById(x).innerHTML;
+    var c = parseInt(newA) + parseInt(b);
+    document.getElementById('tamTinhTien').innerHTML = c + 'đ';
+    document.getElementById('tienNe').innerHTML = c + 'đ';
+}
 
+function TinhTienNhieuSanPhamNutCong(x){
+    var a = document.getElementById('tamTinhTien').innerHTML;
+    let newA = a.replace("đ", '');
+    var c = parseInt(newA) + parseInt(x);
+    document.getElementById('tamTinhTien').innerHTML = c + 'đ';
+    document.getElementById('tienNe').innerHTML = c + 'đ';
+}
 
-
-
-
-
-
-
-
-
-
-
-
-// ttgh += "<tr>";
-// ttgh += "<td>"+j+"</td>";
-// ttgh += "<td>"+hinhsp+"</td>";
-// ttgh += "<td>"+tensp+"</td>";
-// ttgh += "<td>"+dGia+"</td>";
-// ttgh += "<td>"+Sl+"</td>";
-// ttgh += "<td>"+tt+"</td>";
-// ttgh += "<td><input type='button' value='Sửa' style='width: 60px;height: 30px;' onclick='Sua(this,"+i+")'></td>";
-// ttgh += "<td><input type='button' value='Xóa' style='width: 60px;height: 30px;' onclick='Xoa(this)'></td>";
-// ttgh += "<tr>";
+function TinhTienNhieuSanPhamNutTru(x){
+    var a = document.getElementById('tamTinhTien').innerHTML;
+    let newA = a.replace("đ", '');
+    var c = parseInt(newA) - parseInt(x);
+    document.getElementById('tamTinhTien').innerHTML = c + 'đ';
+    document.getElementById('tienNe').innerHTML = c + 'đ';
+}
