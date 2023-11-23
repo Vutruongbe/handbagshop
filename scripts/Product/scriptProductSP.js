@@ -247,7 +247,6 @@ function themNhieu(x){
             }
         }
     }
-
     let ttgh1="";
     let tong1=0;
     for(let i=0; i< giohang1.length; i++){
