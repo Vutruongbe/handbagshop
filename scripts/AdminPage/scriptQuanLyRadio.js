@@ -20,6 +20,13 @@ function testRadio(){
     // ThongKe
     const radio3 = document.getElementById('radioBieuDoanhThu');
 
+    // HoaDon
+    const radio13 = document.getElementById('radioHoaDonBan');
+    const radio14 = document.getElementById('radioCTHoaDonBan');
+    const radio15 = document.getElementById('radioHoaDonNhap');
+    const radio16 = document.getElementById('radioCTHoaDonNhap');
+
+
     if(radio1.checked) {
         // chính
         var a = document.getElementById('row-Right-Mid-SanPham');
@@ -82,6 +89,26 @@ function testRadio(){
         DGBaiViet.style.width = "0px";
         DGBaiViet.style.opacity = 0;
         DGBaiViet.style.transition = "0s";
+
+        var HoaDonBan = document.getElementById('row-Right-Mid-HoaDonBan');
+        HoaDonBan.style.width = "0px";
+        HoaDonBan.style.opacity = 0;
+        HoaDonBan.style.transition = "0s";
+
+        var CTHoaDonBan = document.getElementById('row-Right-Mid-CTHoaDonBan');
+        CTHoaDonBan.style.width = "0px";
+        CTHoaDonBan.style.opacity = 0;
+        CTHoaDonBan.style.transition = "0s";
+
+        var HoaDonNhap = document.getElementById('row-Right-Mid-HoaDonNhap');
+        HoaDonNhap.style.width = "0px";
+        HoaDonNhap.style.opacity = 0;
+        HoaDonNhap.style.transition = "0s";
+
+        var CTHoaDonNhap = document.getElementById('row-Right-Mid-CTHoaDonNhap');
+        CTHoaDonNhap.style.width = "0px";
+        CTHoaDonNhap.style.opacity = 0;
+        CTHoaDonNhap.style.transition = "0s";
     } 
     else if(radio2.checked) {
         //chính
@@ -145,6 +172,26 @@ function testRadio(){
         DGBaiViet.style.width = "0px";
         DGBaiViet.style.opacity = 0;
         DGBaiViet.style.transition = "0s";
+
+        var HoaDonBan = document.getElementById('row-Right-Mid-HoaDonBan');
+        HoaDonBan.style.width = "0px";
+        HoaDonBan.style.opacity = 0;
+        HoaDonBan.style.transition = "0s";
+
+        var CTHoaDonBan = document.getElementById('row-Right-Mid-CTHoaDonBan');
+        CTHoaDonBan.style.width = "0px";
+        CTHoaDonBan.style.opacity = 0;
+        CTHoaDonBan.style.transition = "0s";
+
+        var HoaDonNhap = document.getElementById('row-Right-Mid-HoaDonNhap');
+        HoaDonNhap.style.width = "0px";
+        HoaDonNhap.style.opacity = 0;
+        HoaDonNhap.style.transition = "0s";
+
+        var CTHoaDonNhap = document.getElementById('row-Right-Mid-CTHoaDonNhap');
+        CTHoaDonNhap.style.width = "0px";
+        CTHoaDonNhap.style.opacity = 0;
+        CTHoaDonNhap.style.transition = "0s";
     }
     else if(radio3.checked) {
         // chính
@@ -208,6 +255,26 @@ function testRadio(){
         DGBaiViet.style.width = "0px";
         DGBaiViet.style.opacity = 0;
         DGBaiViet.style.transition = "0s";
+
+        var HoaDonBan = document.getElementById('row-Right-Mid-HoaDonBan');
+        HoaDonBan.style.width = "0px";
+        HoaDonBan.style.opacity = 0;
+        HoaDonBan.style.transition = "0s";
+
+        var CTHoaDonBan = document.getElementById('row-Right-Mid-CTHoaDonBan');
+        CTHoaDonBan.style.width = "0px";
+        CTHoaDonBan.style.opacity = 0;
+        CTHoaDonBan.style.transition = "0s";
+
+        var HoaDonNhap = document.getElementById('row-Right-Mid-HoaDonNhap');
+        HoaDonNhap.style.width = "0px";
+        HoaDonNhap.style.opacity = 0;
+        HoaDonNhap.style.transition = "0s";
+
+        var CTHoaDonNhap = document.getElementById('row-Right-Mid-CTHoaDonNhap');
+        CTHoaDonNhap.style.width = "0px";
+        CTHoaDonNhap.style.opacity = 0;
+        CTHoaDonNhap.style.transition = "0s";
     }  
     else if(radio4.checked) {
         // chính
@@ -271,6 +338,26 @@ function testRadio(){
         DGBaiViet.style.width = "0px";
         DGBaiViet.style.opacity = 0;
         DGBaiViet.style.transition = "0s";
+
+        var HoaDonBan = document.getElementById('row-Right-Mid-HoaDonBan');
+        HoaDonBan.style.width = "0px";
+        HoaDonBan.style.opacity = 0;
+        HoaDonBan.style.transition = "0s";
+
+        var CTHoaDonBan = document.getElementById('row-Right-Mid-CTHoaDonBan');
+        CTHoaDonBan.style.width = "0px";
+        CTHoaDonBan.style.opacity = 0;
+        CTHoaDonBan.style.transition = "0s";
+
+        var HoaDonNhap = document.getElementById('row-Right-Mid-HoaDonNhap');
+        HoaDonNhap.style.width = "0px";
+        HoaDonNhap.style.opacity = 0;
+        HoaDonNhap.style.transition = "0s";
+
+        var CTHoaDonNhap = document.getElementById('row-Right-Mid-CTHoaDonNhap');
+        CTHoaDonNhap.style.width = "0px";
+        CTHoaDonNhap.style.opacity = 0;
+        CTHoaDonNhap.style.transition = "0s";
     }  
     else if(radio5.checked) {
         // chính
@@ -334,6 +421,26 @@ function testRadio(){
         DGBaiViet.style.width = "0px";
         DGBaiViet.style.opacity = 0;
         DGBaiViet.style.transition = "0s";
+
+        var HoaDonBan = document.getElementById('row-Right-Mid-HoaDonBan');
+        HoaDonBan.style.width = "0px";
+        HoaDonBan.style.opacity = 0;
+        HoaDonBan.style.transition = "0s";
+
+        var CTHoaDonBan = document.getElementById('row-Right-Mid-CTHoaDonBan');
+        CTHoaDonBan.style.width = "0px";
+        CTHoaDonBan.style.opacity = 0;
+        CTHoaDonBan.style.transition = "0s";
+
+        var HoaDonNhap = document.getElementById('row-Right-Mid-HoaDonNhap');
+        HoaDonNhap.style.width = "0px";
+        HoaDonNhap.style.opacity = 0;
+        HoaDonNhap.style.transition = "0s";
+
+        var CTHoaDonNhap = document.getElementById('row-Right-Mid-CTHoaDonNhap');
+        CTHoaDonNhap.style.width = "0px";
+        CTHoaDonNhap.style.opacity = 0;
+        CTHoaDonNhap.style.transition = "0s";
     }  
     else if(radio6.checked) {
         // chính
@@ -397,6 +504,26 @@ function testRadio(){
         DGBaiViet.style.width = "0px";
         DGBaiViet.style.opacity = 0;
         DGBaiViet.style.transition = "0s";
+
+        var HoaDonBan = document.getElementById('row-Right-Mid-HoaDonBan');
+        HoaDonBan.style.width = "0px";
+        HoaDonBan.style.opacity = 0;
+        HoaDonBan.style.transition = "0s";
+
+        var CTHoaDonBan = document.getElementById('row-Right-Mid-CTHoaDonBan');
+        CTHoaDonBan.style.width = "0px";
+        CTHoaDonBan.style.opacity = 0;
+        CTHoaDonBan.style.transition = "0s";
+
+        var HoaDonNhap = document.getElementById('row-Right-Mid-HoaDonNhap');
+        HoaDonNhap.style.width = "0px";
+        HoaDonNhap.style.opacity = 0;
+        HoaDonNhap.style.transition = "0s";
+
+        var CTHoaDonNhap = document.getElementById('row-Right-Mid-CTHoaDonNhap');
+        CTHoaDonNhap.style.width = "0px";
+        CTHoaDonNhap.style.opacity = 0;
+        CTHoaDonNhap.style.transition = "0s";
     }
     else if(radio7.checked) {
         // chính
@@ -460,6 +587,26 @@ function testRadio(){
         DGBaiViet.style.width = "0px";
         DGBaiViet.style.opacity = 0;
         DGBaiViet.style.transition = "0s";
+
+        var HoaDonBan = document.getElementById('row-Right-Mid-HoaDonBan');
+        HoaDonBan.style.width = "0px";
+        HoaDonBan.style.opacity = 0;
+        HoaDonBan.style.transition = "0s";
+
+        var CTHoaDonBan = document.getElementById('row-Right-Mid-CTHoaDonBan');
+        CTHoaDonBan.style.width = "0px";
+        CTHoaDonBan.style.opacity = 0;
+        CTHoaDonBan.style.transition = "0s";
+
+        var HoaDonNhap = document.getElementById('row-Right-Mid-HoaDonNhap');
+        HoaDonNhap.style.width = "0px";
+        HoaDonNhap.style.opacity = 0;
+        HoaDonNhap.style.transition = "0s";
+
+        var CTHoaDonNhap = document.getElementById('row-Right-Mid-CTHoaDonNhap');
+        CTHoaDonNhap.style.width = "0px";
+        CTHoaDonNhap.style.opacity = 0;
+        CTHoaDonNhap.style.transition = "0s";
     }  
     else if(radio8.checked) {
         // chính
@@ -523,6 +670,26 @@ function testRadio(){
         DGBaiViet.style.width = "0px";
         DGBaiViet.style.opacity = 0;
         DGBaiViet.style.transition = "0s";
+
+        var HoaDonBan = document.getElementById('row-Right-Mid-HoaDonBan');
+        HoaDonBan.style.width = "0px";
+        HoaDonBan.style.opacity = 0;
+        HoaDonBan.style.transition = "0s";
+
+        var CTHoaDonBan = document.getElementById('row-Right-Mid-CTHoaDonBan');
+        CTHoaDonBan.style.width = "0px";
+        CTHoaDonBan.style.opacity = 0;
+        CTHoaDonBan.style.transition = "0s";
+
+        var HoaDonNhap = document.getElementById('row-Right-Mid-HoaDonNhap');
+        HoaDonNhap.style.width = "0px";
+        HoaDonNhap.style.opacity = 0;
+        HoaDonNhap.style.transition = "0s";
+
+        var CTHoaDonNhap = document.getElementById('row-Right-Mid-CTHoaDonNhap');
+        CTHoaDonNhap.style.width = "0px";
+        CTHoaDonNhap.style.opacity = 0;
+        CTHoaDonNhap.style.transition = "0s";
     }  
     else if(radio9.checked) {
         // chính
@@ -586,6 +753,26 @@ function testRadio(){
         DGBaiViet.style.width = "0px";
         DGBaiViet.style.opacity = 0;
         DGBaiViet.style.transition = "0s";
+
+        var HoaDonBan = document.getElementById('row-Right-Mid-HoaDonBan');
+        HoaDonBan.style.width = "0px";
+        HoaDonBan.style.opacity = 0;
+        HoaDonBan.style.transition = "0s";
+
+        var CTHoaDonBan = document.getElementById('row-Right-Mid-CTHoaDonBan');
+        CTHoaDonBan.style.width = "0px";
+        CTHoaDonBan.style.opacity = 0;
+        CTHoaDonBan.style.transition = "0s";
+
+        var HoaDonNhap = document.getElementById('row-Right-Mid-HoaDonNhap');
+        HoaDonNhap.style.width = "0px";
+        HoaDonNhap.style.opacity = 0;
+        HoaDonNhap.style.transition = "0s";
+
+        var CTHoaDonNhap = document.getElementById('row-Right-Mid-CTHoaDonNhap');
+        CTHoaDonNhap.style.width = "0px";
+        CTHoaDonNhap.style.opacity = 0;
+        CTHoaDonNhap.style.transition = "0s";
     }  
     else if(radio10.checked) {
         // chính
@@ -650,6 +837,26 @@ function testRadio(){
         DGBaiViet.style.width = "0px";
         DGBaiViet.style.opacity = 0;
         DGBaiViet.style.transition = "0s";
+
+        var HoaDonBan = document.getElementById('row-Right-Mid-HoaDonBan');
+        HoaDonBan.style.width = "0px";
+        HoaDonBan.style.opacity = 0;
+        HoaDonBan.style.transition = "0s";
+
+        var CTHoaDonBan = document.getElementById('row-Right-Mid-CTHoaDonBan');
+        CTHoaDonBan.style.width = "0px";
+        CTHoaDonBan.style.opacity = 0;
+        CTHoaDonBan.style.transition = "0s";
+
+        var HoaDonNhap = document.getElementById('row-Right-Mid-HoaDonNhap');
+        HoaDonNhap.style.width = "0px";
+        HoaDonNhap.style.opacity = 0;
+        HoaDonNhap.style.transition = "0s";
+
+        var CTHoaDonNhap = document.getElementById('row-Right-Mid-CTHoaDonNhap');
+        CTHoaDonNhap.style.width = "0px";
+        CTHoaDonNhap.style.opacity = 0;
+        CTHoaDonNhap.style.transition = "0s";
     }  
     else if(radio11.checked) {
         // chính
@@ -713,6 +920,26 @@ function testRadio(){
         DGBaiViet.style.width = "0px";
         DGBaiViet.style.opacity = 0;
         DGBaiViet.style.transition = "0s";
+
+        var HoaDonBan = document.getElementById('row-Right-Mid-HoaDonBan');
+        HoaDonBan.style.width = "0px";
+        HoaDonBan.style.opacity = 0;
+        HoaDonBan.style.transition = "0s";
+
+        var CTHoaDonBan = document.getElementById('row-Right-Mid-CTHoaDonBan');
+        CTHoaDonBan.style.width = "0px";
+        CTHoaDonBan.style.opacity = 0;
+        CTHoaDonBan.style.transition = "0s";
+
+        var HoaDonNhap = document.getElementById('row-Right-Mid-HoaDonNhap');
+        HoaDonNhap.style.width = "0px";
+        HoaDonNhap.style.opacity = 0;
+        HoaDonNhap.style.transition = "0s";
+
+        var CTHoaDonNhap = document.getElementById('row-Right-Mid-CTHoaDonNhap');
+        CTHoaDonNhap.style.width = "0px";
+        CTHoaDonNhap.style.opacity = 0;
+        CTHoaDonNhap.style.transition = "0s";
     }  
     else if(radio12.checked) {
         // chính
@@ -776,6 +1003,110 @@ function testRadio(){
         c.style.width = "0px";
         c.style.opacity = 0;
         c.style.transition = "0s";
+
+        var HoaDonBan = document.getElementById('row-Right-Mid-HoaDonBan');
+        HoaDonBan.style.width = "0px";
+        HoaDonBan.style.opacity = 0;
+        HoaDonBan.style.transition = "0s";
+
+        var CTHoaDonBan = document.getElementById('row-Right-Mid-CTHoaDonBan');
+        CTHoaDonBan.style.width = "0px";
+        CTHoaDonBan.style.opacity = 0;
+        CTHoaDonBan.style.transition = "0s";
+
+        var HoaDonNhap = document.getElementById('row-Right-Mid-HoaDonNhap');
+        HoaDonNhap.style.width = "0px";
+        HoaDonNhap.style.opacity = 0;
+        HoaDonNhap.style.transition = "0s";
+        
+        var CTHoaDonNhap = document.getElementById('row-Right-Mid-CTHoaDonNhap');
+        CTHoaDonNhap.style.width = "0px";
+        CTHoaDonNhap.style.opacity = 0;
+        CTHoaDonNhap.style.transition = "0s";
+    }  
+    else if(radio13.checked) {
+        // chính
+        var HoaDonBan = document.getElementById('row-Right-Mid-HoaDonBan');
+        HoaDonBan.style.width = "920px";
+        HoaDonBan.style.opacity = 1;
+        HoaDonBan.style.transition = "0.2s";
+        
+        // phụ
+        var DGBaiViet = document.getElementById('row-Right-Mid-DGBaiViet');
+        DGBaiViet.style.width = "0px";
+        DGBaiViet.style.opacity = 0;
+        DGBaiViet.style.transition = "0s";
+        
+        var TinTuc = document.getElementById('row-Right-Mid-TinTuc');
+        TinTuc.style.width = "0px";
+        TinTuc.style.opacity = 0;
+        TinTuc.style.transition = "0s";
+
+        var TaiKhoan = document.getElementById('row-Right-Mid-TaiKhoan');
+        TaiKhoan.style.width = "0px";
+        TaiKhoan.style.opacity = 0;
+        TaiKhoan.style.transition = "0s";
+        
+        var LSThanhToan = document.getElementById('row-Right-Mid-LSThanhToan');
+        LSThanhToan.style.width = "0px";
+        LSThanhToan.style.opacity = 0;
+        LSThanhToan.style.transition = "0s";
+
+        var k = document.getElementById('row-Right-Mid-CTDonHang');
+        k.style.width = "0px";
+        k.style.opacity = 0;
+        k.style.transition = "0s";
+
+        var q = document.getElementById('row-Right-Mid-DonHang');
+        q.style.width = "0px";
+        q.style.opacity = 0;
+        q.style.transition = "0s";
+
+        var f = document.getElementById('row-Right-Mid-KhuyenMai');
+        f.style.width = "0px";
+        f.style.opacity = 0;
+        f.style.transition = "0s";
+
+        var z = document.getElementById('row-Right-Mid-Gia');
+        z.style.width = "0px";
+        z.style.opacity = 0;
+        z.style.transition = "0s";
+        
+        var d = document.getElementById('row-Right-Mid-ThuongHieu');
+        d.style.width = "0px";
+        d.style.opacity = 0;
+        d.style.transition = "0s";
+        
+        var h = document.getElementById('row-Right-Mid-BieuDoDoanhThu');
+        h.style.width = "0x";
+        h.style.opacity = 0;
+        h.style.transition = "0s"
+
+        var g = document.getElementById('row-Right-Mid-SanPham');
+        g.style.width = "0px";
+        g.style.opacity = 0;
+        g.style.transition = "0s";
+        
+        var c = document.getElementById('row-Right-Mid-LoaiSanPham');
+        c.style.width = "0px";
+        c.style.opacity = 0;
+        c.style.transition = "0s";
+
+
+        var CTHoaDonBan = document.getElementById('row-Right-Mid-CTHoaDonBan');
+        CTHoaDonBan.style.width = "0px";
+        CTHoaDonBan.style.opacity = 0;
+        CTHoaDonBan.style.transition = "0s";
+
+        var HoaDonNhap = document.getElementById('row-Right-Mid-HoaDonNhap');
+        HoaDonNhap.style.width = "0px";
+        HoaDonNhap.style.opacity = 0;
+        HoaDonNhap.style.transition = "0s";
+
+        var CTHoaDonNhap = document.getElementById('row-Right-Mid-CTHoaDonNhap');
+        CTHoaDonNhap.style.width = "0px";
+        CTHoaDonNhap.style.opacity = 0;
+        CTHoaDonNhap.style.transition = "0s";
     }  
 }
 

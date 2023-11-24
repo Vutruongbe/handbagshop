@@ -133,6 +133,16 @@
     transition: 0.4s;
 }
 
+#row-Right-Mid-HoaDonBan{
+    float: left;
+    width: 0px;
+    height: auto;
+    padding-bottom: 20px;
+    background-color: rgb(242, 236, 236);
+    opacity: 0;
+    transition: 0.4s;
+}
+
 .row-R-Mid-Top{
     font-size: 21px;
     width: 100%;

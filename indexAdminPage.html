@@ -7,9 +7,11 @@
 
         <link rel="stylesheet" href="styles/AdminPage/styleAdminTop.css">
         <link rel="stylesheet" href="styles/AdminPage/styleAdminLeft.css">
-        <link rel="stylesheet" href="loading/styleAdminRight.css">
+        <link rel="stylesheet" href="styles/AdminPage/styleAdminRight.css">
         <link rel="stylesheet" href="styles/AdminPage/styleSanPham.css">
         <link rel="stylesheet" href="styles/AdminPage/styleThongKeDoanhThu.css">
+
+        <link rel="stylesheet" href="styleTaiKhoan.css">
     </head>
     <body>
         <div class="container">
@@ -127,17 +129,17 @@
                     <input type="radio" id="radioThanhToan" name="radio" onclick="testRadio();">
                     <label for="radioThanhToan">Lịch sử thanh toán</label>
                 </div>
+                <!-- Các mục của thống kê-->
                 <div class="ThongKe" onclick="MoThongKe('RadioThongKe0')">
                     <i class="fa-solid fa-chart-column" style="color: #ffffff;"></i>
                     <a>Thống Kê</a>
                     <i class="fa-solid fa-angle-down" style="color: #ffffff;float: right;margin-right: 20px;margin-top: 14px;"></i>
                 </div>
-                <!-- Các mục của thống kê-->
                 <div class="Radio" id="RadioThongKe0">
                     <input type="radio" id="radioBieuDoanhThu" name="radio" onclick="testRadio();">
                     <label for="radioBieuDoDoanhThu">Biểu đồ doanh thu</label>
                 </div>
-                <!--  -->
+                <!-- Các mục của hóa đơn -->
                 <div class="HoaDon" onclick="MoHoaDon('RadioHoaDon0','RadioHoaDon1','RadioHoaDon2','RadioHoaDon3');">
                     <i class="fa-solid fa-file-invoice-dollar" style="color: #ffffff;"></i>
                     <a>Hóa Đơn</a>
@@ -177,61 +179,110 @@
                             <button class="btnTimKiemSP"><a>Tìm kiếm</a></button>
                         </div>
                         <div class="div-SP-Phai">
-                            <button class="btnThemSP" onclick="SanPhamThem('row-ThemSP');"><a>Thêm</a></button>
-                            <button class="btnSuaSP" onclick="SanPhamSua('row-SuaSP');"><a>Sửa</a></button>
-                            <button class="btnXoaSP" onclick="SanPhamXoa('row-XoaSP');"><a>Xóa</a></button>
+                            <button class="btnThemTaiKhoan" onclick="MoThemTaiKhoan('row-ThemTK','row-SuaTK');"><a>Thêm mới</a></button>
+                            <button class="btnXoaTaiKhoanAll" onclick="XoaTatCaTK();"><a>Xóa tất cả</a></button>
                         </div>
                     </div>
-                    <div id="row-ThemSP">
-                        <input type="text" class="tenSP SP" placeholder="Tên" id="tenSP" value="Túi xách Orima">
-                        <input type="text" class="maGia SP" placeholder="Mã giá" id="maGia" value="600000">
-                        <input type="text" class="anhSP SP" placeholder="Hình ảnh" id="anhSP" value="SP1.jpg">
-                        <input type="text" class="tTSP SP" placeholder="Thuộc tính" id="tTSP" value="Đen">
-                        <input type="text" class="nDSP SP" placeholder="Nội dung" id="nDSP" value="...">
-                        <input type="text" class="maLoai SP" placeholder="Mã loại" id="maLoai" value="maLoai1">
-                        <input type="text" class="maThuongHieu SP" placeholder="Mã thương hiệu" id="maThuongHieu" value="maThgHieu1"> 
-                        <input type="text" class="trangThai SP" placeholder="Trạng thái" id="trangThai" value="...">
-                        <button class="btnSanPhamThem" onclick="ThemSP();TuCong();">Thêm sản phẩm</button>
-                        <span>id:</span><a class="So1">1</a>
+                    <div >
+                        <div id="row-ThemTK">
+                            <input type="text" class="trangThai SP" placeholder="id" id="sttTK" value="6">
+                            <input type="text" class="tenSP SP" placeholder="Mã tài khoản" id="maTK" value="ad9">
+                            <input type="text" class="maGia SP" placeholder="Tài khoản" id="tk" value="admin9">
+                            <input type="text" class="anhSP SP" placeholder="Mật khẩu" id="mk" value="123">
+                            <input type="text" class="tTSP SP" placeholder="Phân quyền" id="pQ" value="quản trị viên">
+                            <input type="text" class="nDSP SP" placeholder="Trạng thái" id="ttTK" value="khóa">
+                            <input type="text" class="maGia SP" placeholder="Ngày tạo" value="">
+                            <input type="text" class="maGia SP" placeholder="Ngày sửa đổi" value="">
+                            <button class="btnSanPhamThem" onclick="ThemTaiKhoan()">Thêm tài khoản</button>
+                            <button class="btnSanPhamThem" onclick="Huy('row-ThemTK')" style="background-color: #717782;margin-left: 30px;">Hủy</button>
+                        </div>
                     </div>
-                    <div id="row-SuaSP">
-                        <input type="text" class="tenSP SP" placeholder="Tên">
-                        <input type="text" class="maGia SP" placeholder="Mã giá">
-                        <input type="text" class="anhSP SP" placeholder="Hình ảnh">
-                        <input type="text" class="tTSP SP" placeholder="Thuộc tính">
-                        <input type="text" class="nDSP SP" placeholder="Nội dung">
-                        <input type="text" class="maLoai SP" placeholder="Mã loại">
-                        <input type="text" class="maThuongHieu SP" placeholder="Mã thương hiệu">
-                        <input type="text" class="trangThai SP" placeholder="Trạng thái">
-                        <button class="btnSanPhamSua" onclick="SuaSP();">Sửa sản phẩm</button>
+                    <div >
+                        <div id="row-SuaTK" style="position: relative;">
+                            <input type="text" class="trangThai SP" placeholder="id" id="sttTKa" value="">
+                            <input type="text" class="tenSP SP" placeholder="Mã tài khoản" id="maTKa" value="">
+                            <input type="text" class="maGia SP" placeholder="Tài khoản" id="tka" value="">
+                            <input type="text" class="anhSP SP" placeholder="Mật khẩu" id="mka" value="">
+                            <input type="text" class="tTSP SP" placeholder="Phân quyền" id="pQa" value="">
+                            <input type="text" class="nDSP SP" placeholder="Trạng thái" id="ttTKa" value="">
+                            <input type="text" class="maGia SP" placeholder="Ngày tạo" value="">
+                            <input type="text" class="maGia SP" placeholder="Ngày sửa đổi" value="">
+                            <button class="btnSanPhamSua" onclick="SuaTaiKhoan()">Sửa tài khoản</button>
+                            <button class="btnSanPhamThem" onclick="Huy('row-SuaTK')" style="background-color: #717782;margin-left: 30px;">Hủy</button>
+                        </div>
                     </div>
-                    <div id="row-XoaSP">
-                        <input type="text" class="tenSP SP" placeholder="Tên">
-                        <input type="text" class="maGia SP" placeholder="Mã giá">
-                        <input type="text" class="anhSP SP" placeholder="Hình ảnh">
-                        <input type="text" class="tTSP SP" placeholder="Thuộc tính">
-                        <input type="text" class="nDSP SP" placeholder="Nội dung">
-                        <input type="text" class="maLoai SP" placeholder="Mã loại">
-                        <input type="text" class="maThuongHieu SP" placeholder="Mã thương hiệu">
-                        <input type="text" class="trangThai SP" placeholder="Trạng thái">
-                        <button class="btnSanPhamXoa" onclick="XoaSP();">Xóa sản phẩm</button>
-                    </div>
-                    <div id="DataSanPham">
-                        <table id="Table">
-                            <tr>
+                    <div class="DataTaiKhoan">
+                        <table class="TableTK" id="TableTK">
+                            <tr style="background-color: #717782;">
+                                <!-- <th><input type="checkbox" name="" id=""></th> -->
                                 <th>STT</th>
-                                <th>Tên SP</th>
-                                <th>Mã giá</th>
-                                <th>Hình ảnh</th>
-                                <th>Thuộc tính</th>
-                                <th>Nội dung</th>
-                                <th>Mã loại</th>
-                                <th>Mã thương hiệu</th>
-                                <th>Trạng thái</th>
+                                <th>Mã TK</th>
+                                <th>Tài khoản</th>
+                                <th>Mật khẩu</th>
+                                <th>Phân quyền</th>
+                                <th>Trạng Thái</th>
+                                <th style="width: 30px;">Sửa</th>
+                                <th style="width: 30px;">Xóa</th>
+                            </tr>
+                            <tr>
+                                <!-- <th><input type="checkbox" name="" id=""></th> -->
+                                <th>1</th>
+                                <th>AD1</th>
+                                <th>VutruongBe</th>
+                                <th>123</th>
+                                <th>quản trị viên</th>
+                                <th style="color: rgb(110, 241, 110);">hoạt động</th>
+                                <th><button type="button" onclick="MoThemTaiKhoan('row-SuaTK','row-ThemTK');SuaTK(this);"><i class="fa-solid fa-pen" style="color: #005eff;"></i></button></th>
+                                <th><button type="button" onclick="XoaTK(this);"><i class="fa-solid fa-trash" style="color: rgb(245, 45, 0);"></i></button></th>
+                            </tr>
+                            <tr>
+                                <!-- <th><input type="checkbox" name="" id=""></th> -->
+                                <th>2</th>
+                                <th>US1</th>
+                                <th>user1</th>
+                                <th>us1</th>
+                                <th>người dùng</th>
+                                <th style="color: rgb(110, 241, 110);">hoạt động</th>
+                                <th><button type="button" onclick="MoThemTaiKhoan('row-SuaTK','row-ThemTK');SuaTK(this);"><i class="fa-solid fa-pen" style="color: #005eff;"></i></button></th>
+                                <th><button type="button" onclick="XoaTK(this);"><i class="fa-solid fa-trash" style="color: rgb(245, 45, 0);"></i></button></th>
+                            </tr>
+                            <tr>
+                                <!-- <th><input type="checkbox" name="" id=""></th> -->
+                                <th>3</th>
+                                <th>US2</th>
+                                <th>user2</th>
+                                <th>us2</th>
+                                <th>người dùng</th>
+                                <th style="color: rgb(110, 241, 110);">hoạt động</th>
+                                <th><button type="button" onclick="MoThemTaiKhoan('row-SuaTK','row-ThemTK');SuaTK(this);"><i class="fa-solid fa-pen" style="color: #005eff;"></i></button></th>
+                                <th><button type="button" onclick="XoaTK(this);"><i class="fa-solid fa-trash" style="color: rgb(245, 45, 0);"></i></button></th>
+                            </tr>
+                            <tr>
+                                <!-- <th><input type="checkbox" name="" id=""></th> -->
+                                <th>4</th>
+                                <th>US3</th>
+                                <th>user3</th>
+                                <th>us3</th>
+                                <th>người dùng</th>
+                                <th style="color: red;">khóa</th>
+                                <th><button type="button" onclick="MoThemTaiKhoan('row-SuaTK','row-ThemTK');SuaTK(this);"><i class="fa-solid fa-pen" style="color: #005eff;"></i></button></th>
+                                <th><button type="button" onclick="XoaTK(this);"><i class="fa-solid fa-trash" style="color: rgb(245, 45, 0);"></i></button></th>
+                            </tr>
+                            <tr>
+                                <!-- <th><input type="checkbox" name="" id=""></th> -->
+                                <th>5</th>
+                                <th>AD2</th>
+                                <th>admin2</th>
+                                <th>ad2</th>
+                                <th>quản trị viên</th>
+                                <th style="color: red;">khóa</th>
+                                <th><button type="button" onclick="MoThemTaiKhoan('row-SuaTK','row-ThemTK');SuaTK(this);"><i class="fa-solid fa-pen" style="color: #005eff;"></i></button></th>
+                                <th><button type="button" onclick="XoaTK(this);"><i class="fa-solid fa-trash" style="color: rgb(245, 45, 0);"></i></button></th>
                             </tr>
                         </table>
                     </div>
                 </div>
+
                 <div id="row-Right-Mid-TinTuc">
                     <div class="row-R-Mid-Top">
                         <a>Tin tức & bài viết</a>
@@ -898,13 +949,27 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- item Hóa đơn -->
+                <div id="row-Right-Mid-HoaDonBan">
+                    <div class="row-R-Mid-Top">
+                        <a>Hóa đơn bán</a>
+                    </div>
+                    <div class="crypto-chart">
+                        <div class="chart-container">
+                            <canvas id="cryptoChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+                
                 <!-- Làm các item tiếp ở đây -->
             </div>
         </div>
         <script src="scripts/AdminPage/scriptAdminLeft.js"></script>
+        <script src="scripts/AdminPage/scriptQuanLyRadio.js"></script>
+        <script src="scriptTaiKhoan.js"></script>
 
         <!-- Chờ sửa sau khi thêm mục item khác -->
-        <script src="loading/scriptQuanLyRadio.js"></script>
         <script src="loading/scriptSanPham.js"></script>
         <!--  -->
 
