@@ -95,6 +95,7 @@
 }
 
 #row-Right-Mid-LSThanhToan{
+    margin-left: -20px;
     float: left;
     width: 0px;
     height: auto;
