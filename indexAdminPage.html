@@ -3,7 +3,8 @@
     <head>
         <script src="https://kit.fontawesome.com/253d4a6e24.js" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
+        
+        <link rel="stylesheet" href="styles/AdminPage/styleTaiKhoan.css">
 
         <link rel="stylesheet" href="styles/AdminPage/styleAdminTop.css">
         <link rel="stylesheet" href="styles/AdminPage/styleAdminLeft.css">
@@ -14,11 +15,12 @@
         <link rel="stylesheet" href="styles/AdminPage/styleThuongHieu.css">
         <link rel="stylesheet" href="styles/AdminPage/styleGia.css">
         <link rel="stylesheet" href="styles/AdminPage/styleKhuyenMai.css">
-        <link rel="stylesheet" href="styleLSThanhToan.css">
+
+        <link rel="stylesheet" href="styles/AdminPage/styleCTDonHang.css">
+        <link rel="stylesheet" href="styles/AdminPage/styleLSThanhToan.css">
         
         <link rel="stylesheet" href="styles/AdminPage/styleThongKeDoanhThu.css">
 
-        <link rel="stylesheet" href="styleTaiKhoan.css">
     </head>
     <body>
         <div class="container">
@@ -912,58 +914,118 @@
                             <input type="text" placeholder="Từ khóa">
                             <button class="btnTimKiemSP"><a>Tìm kiếm</a></button>
                         </div>
-                        <div class="div-SP-Phai">
-                            <button class="btnThemSP" onclick="SanPhamThem('row-ThemSP');"><a>Thêm</a></button>
-                            <button class="btnSuaSP" onclick="SanPhamSua('row-SuaSP');"><a>Sửa</a></button>
-                            <button class="btnXoaSP" onclick="SanPhamXoa('row-XoaSP');"><a>Xóa</a></button>
-                        </div>
                     </div>
-                    <div id="row-ThemSP">
-                        <input type="text" class="tenSP SP" placeholder="Tên" id="tenSP" value="Túi xách Orima">
-                        <input type="text" class="maGia SP" placeholder="Mã giá" id="maGia" value="600000">
-                        <input type="text" class="anhSP SP" placeholder="Hình ảnh" id="anhSP" value="SP1.jpg">
-                        <input type="text" class="tTSP SP" placeholder="Thuộc tính" id="tTSP" value="Đen">
-                        <input type="text" class="nDSP SP" placeholder="Nội dung" id="nDSP" value="...">
-                        <input type="text" class="maLoai SP" placeholder="Mã loại" id="maLoai" value="maLoai1">
-                        <input type="text" class="maThuongHieu SP" placeholder="Mã thương hiệu" id="maThuongHieu" value="maThgHieu1"> 
-                        <input type="text" class="trangThai SP" placeholder="Trạng thái" id="trangThai" value="...">
-                        <button class="btnSanPhamThem" onclick="ThemSP();TuCong();">Thêm sản phẩm</button>
-                        <span>id:</span><a class="So1">1</a>
-                    </div>
-                    <div id="row-SuaSP">
-                        <input type="text" class="tenSP SP" placeholder="Tên">
-                        <input type="text" class="maGia SP" placeholder="Mã giá">
-                        <input type="text" class="anhSP SP" placeholder="Hình ảnh">
-                        <input type="text" class="tTSP SP" placeholder="Thuộc tính">
-                        <input type="text" class="nDSP SP" placeholder="Nội dung">
-                        <input type="text" class="maLoai SP" placeholder="Mã loại">
-                        <input type="text" class="maThuongHieu SP" placeholder="Mã thương hiệu">
-                        <input type="text" class="trangThai SP" placeholder="Trạng thái">
-                        <button class="btnSanPhamSua" onclick="SuaSP();">Sửa sản phẩm</button>
-                    </div>
-                    <div id="row-XoaSP">
-                        <input type="text" class="tenSP SP" placeholder="Tên">
-                        <input type="text" class="maGia SP" placeholder="Mã giá">
-                        <input type="text" class="anhSP SP" placeholder="Hình ảnh">
-                        <input type="text" class="tTSP SP" placeholder="Thuộc tính">
-                        <input type="text" class="nDSP SP" placeholder="Nội dung">
-                        <input type="text" class="maLoai SP" placeholder="Mã loại">
-                        <input type="text" class="maThuongHieu SP" placeholder="Mã thương hiệu">
-                        <input type="text" class="trangThai SP" placeholder="Trạng thái">
-                        <button class="btnSanPhamXoa" onclick="XoaSP();">Xóa sản phẩm</button>
-                    </div>
-                    <div id="DataSanPham">
-                        <table id="Table">
-                            <tr>
+                    <div class="DataCTDonHang">
+                        <table class="TableCTDH" id="TableCTDH">
+                            <tr style="background-color: #717782;">
                                 <th>STT</th>
-                                <th>Tên SP</th>
-                                <th>Mã giá</th>
+                                <th>Mã đơn hàng</th>
+                                <th>Tên sản phẩm</th>
                                 <th>Hình ảnh</th>
-                                <th>Thuộc tính</th>
-                                <th>Nội dung</th>
-                                <th>Mã loại</th>
-                                <th>Mã thương hiệu</th>
-                                <th>Trạng thái</th>
+                                <th>Số lượng</th>
+                                <th>Đơn giá</th>
+                                <th>Mô tả</th>
+                                <th>Thành tiền</th>
+                            </tr>
+                            <tr>
+                                <th>1</th>
+                                <th>ĐH1</th>
+                                <th>Túi Oparam V3</th>
+                                <th>tui1.jpg</th>
+                                <th>2</th>
+                                <th>450.000đ</th>
+                                <th>...</th>
+                                <th>900.000đ</th>
+                            </tr>
+                            <tr>
+                                <th>2</th>
+                                <th>ĐH1</th>
+                                <th>Túi Mijum</th>
+                                <th>tui2.jpg</th>
+                                <th>1</th>
+                                <th>1.200.000đ</th>
+                                <th>...</th>
+                                <th>1.200.000đ</th>
+                            </tr>
+                            <tr>
+                                <th>3</th>
+                                <th>ĐH2</th>
+                                <th>Túi Oparam V3</th>
+                                <th>tui1.jpg</th>
+                                <th>2</th>
+                                <th>450.000đ</th>
+                                <th>...</th>
+                                <th>900.000đ</th>
+                            </tr>
+                            <tr>
+                                <th>4</th>
+                                <th>ĐH3</th>
+                                <th>Túi Oparam V3</th>
+                                <th>tui1.jpg</th>
+                                <th>2</th>
+                                <th>450.000đ</th>
+                                <th>...</th>
+                                <th>900.000đ</th>
+                            </tr>
+                            <tr>
+                                <th>5</th>
+                                <th>ĐH9</th>
+                                <th>Túi Oparam V3</th>
+                                <th>tui1.jpg</th>
+                                <th>2</th>
+                                <th>450.000đ</th>
+                                <th>...</th>
+                                <th>900.000đ</th>
+                            </tr>
+                            <tr>
+                                <th>6</th>
+                                <th>ĐH14</th>
+                                <th>Túi Oparam V3</th>
+                                <th>tui1.jpg</th>
+                                <th>2</th>
+                                <th>450.000đ</th>
+                                <th>...</th>
+                                <th>900.000đ</th>
+                            </tr>
+                            <tr>
+                                <th>7</th>
+                                <th>ĐH24</th>
+                                <th>Túi Oparam V3</th>
+                                <th>tui1.jpg</th>
+                                <th>2</th>
+                                <th>450.000đ</th>
+                                <th>...</th>
+                                <th>900.000đ</th>
+                            </tr>
+                            <tr>
+                                <th>8</th>
+                                <th>ĐH6</th>
+                                <th>Túi Oparam V3</th>
+                                <th>tui1.jpg</th>
+                                <th>2</th>
+                                <th>450.000đ</th>
+                                <th>...</th>
+                                <th>900.000đ</th>
+                            </tr>
+                            <tr>
+                                <th>9</th>
+                                <th>ĐH8</th>
+                                <th>Túi Oparam V3</th>
+                                <th>tui1.jpg</th>
+                                <th>2</th>
+                                <th>450.000đ</th>
+                                <th>...</th>
+                                <th>900.000đ</th>
+                            </tr>
+                            <tr>
+                                <th>10</th>
+                                <th>ĐH5</th>
+                                <th>Túi Oparam V3</th>
+                                <th>tui1.jpg</th>
+                                <th>2</th>
+                                <th>450.000đ</th>
+                                <th>...</th>
+                                <th>900.000đ</th>
                             </tr>
                         </table>
                     </div>
@@ -1103,16 +1165,15 @@
         </div>
         <script src="scripts/AdminPage/scriptAdminLeft.js"></script>
         <script src="scripts/AdminPage/scriptQuanLyRadio.js"></script>
-        <script src="scriptTaiKhoan.js"></script>
+        <script src="scripts/AdminPage/scriptTaiKhoan.js"></script>
         <script src="scripts/AdminPage/scriptLoaiSanPham.js"></script>
         <script src="scripts/AdminPage/scriptThuongHieu.js"></script>
         <script src="scripts/AdminPage/scriptGia.js"></script>
         <script src="scripts/AdminPage/scriptKhuyenMai.js"></script>
+        <script src="scripts/AdminPage/scriptThongKeDoanhThu.js"></script>
 
         <!-- Chờ sửa sau khi thêm mục item khác -->
         <script src="loading/scriptSanPham.js"></script>
         <!--  -->
-
-        <script src="scripts/AdminPage/scriptThongKeDoanhThu.js"></script>
     </body>
 </html>
