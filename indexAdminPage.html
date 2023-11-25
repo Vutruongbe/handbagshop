@@ -13,6 +13,7 @@
         <link rel="stylesheet" href="styles/AdminPage/styleLoaiSanPham.css">
         <link rel="stylesheet" href="styles/AdminPage/styleThuongHieu.css">
         <link rel="stylesheet" href="styles/AdminPage/styleGia.css">
+        <link rel="stylesheet" href="styleKhuyenMai.css">
         
         <link rel="stylesheet" href="styles/AdminPage/styleThongKeDoanhThu.css">
 
@@ -741,57 +742,95 @@
                             <button class="btnTimKiemSP"><a>Tìm kiếm</a></button>
                         </div>
                         <div class="div-SP-Phai">
-                            <button class="btnThemSP" onclick="SanPhamThem('row-ThemSP');"><a>Thêm</a></button>
-                            <button class="btnSuaSP" onclick="SanPhamSua('row-SuaSP');"><a>Sửa</a></button>
-                            <button class="btnXoaSP" onclick="SanPhamXoa('row-XoaSP');"><a>Xóa</a></button>
+                            <button class="btnThemKhuyenMai" onclick="MoThemKhuyenMai('row-ThemKM','row-SuaKM');"><a>Thêm mới</a></button>
+                            <button class="btnXoaKhuyenMaiAll" onclick="XoaTatCaKM();"><a>Xóa tất cả</a></button>
                         </div>
                     </div>
-                    <div id="row-ThemSP">
-                        <input type="text" class="tenSP SP" placeholder="Tên" id="tenSP" value="Túi xách Orima">
-                        <input type="text" class="maGia SP" placeholder="Mã giá" id="maGia" value="600000">
-                        <input type="text" class="anhSP SP" placeholder="Hình ảnh" id="anhSP" value="SP1.jpg">
-                        <input type="text" class="tTSP SP" placeholder="Thuộc tính" id="tTSP" value="Đen">
-                        <input type="text" class="nDSP SP" placeholder="Nội dung" id="nDSP" value="...">
-                        <input type="text" class="maLoai SP" placeholder="Mã loại" id="maLoai" value="maLoai1">
-                        <input type="text" class="maThuongHieu SP" placeholder="Mã thương hiệu" id="maThuongHieu" value="maThgHieu1"> 
-                        <input type="text" class="trangThai SP" placeholder="Trạng thái" id="trangThai" value="...">
-                        <button class="btnSanPhamThem" onclick="ThemSP();TuCong();">Thêm sản phẩm</button>
-                        <span>id:</span><a class="So1">1</a>
+                    <div >
+                        <div id="row-ThemKM">
+                            <input type="text" class="trangThai SP" placeholder="id" id="sttTK" value="6">
+                            <input type="text" class="tenSP SP" placeholder="Mã tài khoản" id="maTK" value="ad9">
+                            <input type="text" class="maGia SP" placeholder="Tài khoản" id="tk" value="admin9">
+                            <input type="text" class="anhSP SP" placeholder="Mật khẩu" id="mk" value="123">
+                            <input type="text" class="tTSP SP" placeholder="Phân quyền" id="pQ" value="quản trị viên">
+                            <input type="text" class="nDSP SP" placeholder="Trạng thái" id="ttTK" value="khóa">
+                            <input type="text" class="maGia SP" placeholder="Ngày tạo" value="">
+                            <input type="text" class="maGia SP" placeholder="Ngày sửa đổi" value="">
+                            <button class="btnKhuyenMaiThem" onclick="ThemKhuyenMai()">Thêm khuyến mãi</button>
+                            <button class="btnKhuyenMaiThem" onclick="Huy('row-ThemKM')" style="background-color: #717782;margin-left: 30px;">Hủy</button>
+                        </div>
                     </div>
-                    <div id="row-SuaSP">
-                        <input type="text" class="tenSP SP" placeholder="Tên">
-                        <input type="text" class="maGia SP" placeholder="Mã giá">
-                        <input type="text" class="anhSP SP" placeholder="Hình ảnh">
-                        <input type="text" class="tTSP SP" placeholder="Thuộc tính">
-                        <input type="text" class="nDSP SP" placeholder="Nội dung">
-                        <input type="text" class="maLoai SP" placeholder="Mã loại">
-                        <input type="text" class="maThuongHieu SP" placeholder="Mã thương hiệu">
-                        <input type="text" class="trangThai SP" placeholder="Trạng thái">
-                        <button class="btnSanPhamSua" onclick="SuaSP();">Sửa sản phẩm</button>
+                    <div >
+                        <div id="row-SuaKM" style="position: relative;">
+                            <input type="text" class="trangThai SP" placeholder="id" id="sttTKa" value="">
+                            <input type="text" class="tenSP SP" placeholder="Mã tài khoản" id="maTKa" value="">
+                            <input type="text" class="maGia SP" placeholder="Tài khoản" id="tka" value="">
+                            <input type="text" class="anhSP SP" placeholder="Mật khẩu" id="mka" value="">
+                            <input type="text" class="tTSP SP" placeholder="Phân quyền" id="pQa" value="">
+                            <input type="text" class="nDSP SP" placeholder="Trạng thái" id="ttTKa" value="">
+                            <input type="text" class="maGia SP" placeholder="Ngày tạo" value="">
+                            <input type="text" class="maGia SP" placeholder="Ngày sửa đổi" value="">
+                            <button class="btnKhuyenMaiSua" onclick="SuaKhuyenMai()">Sửa khuyến mãi</button>
+                            <button class="btnKhuyenMaiThem" onclick="Huy('row-SuaKM')" style="background-color: #717782;margin-left: 30px;">Hủy</button>
+                        </div>
                     </div>
-                    <div id="row-XoaSP">
-                        <input type="text" class="tenSP SP" placeholder="Tên">
-                        <input type="text" class="maGia SP" placeholder="Mã giá">
-                        <input type="text" class="anhSP SP" placeholder="Hình ảnh">
-                        <input type="text" class="tTSP SP" placeholder="Thuộc tính">
-                        <input type="text" class="nDSP SP" placeholder="Nội dung">
-                        <input type="text" class="maLoai SP" placeholder="Mã loại">
-                        <input type="text" class="maThuongHieu SP" placeholder="Mã thương hiệu">
-                        <input type="text" class="trangThai SP" placeholder="Trạng thái">
-                        <button class="btnSanPhamXoa" onclick="XoaSP();">Xóa sản phẩm</button>
-                    </div>
-                    <div id="DataSanPham">
-                        <table id="Table">
-                            <tr>
+                    <div class="DataKhuyenMai">
+                        <table class="TableKM" id="TableKM">
+                            <tr style="background-color: #717782;">
                                 <th>STT</th>
-                                <th>Tên SP</th>
-                                <th>Mã giá</th>
-                                <th>Hình ảnh</th>
-                                <th>Thuộc tính</th>
-                                <th>Nội dung</th>
-                                <th>Mã loại</th>
-                                <th>Mã thương hiệu</th>
-                                <th>Trạng thái</th>
+                                <th>Mã KM</th>
+                                <th>Tên</th>
+                                <th>Ngày bắt đầu</th>
+                                <th>Ngày kết thúc</th>
+                                <th>Giảm giá</th>
+                                <th>Ngày tạo</th>
+                                <th>Ngày cập nhật</th>
+                                <th>Mã SP</th>
+                                <th>Trạng Thái</th>
+                                <th style="width: 30px;">Sửa</th>
+                                <th style="width: 30px;">Xóa</th>
+                            </tr>
+                            <tr>
+                                <th>1</th>
+                                <th>KM1</th>
+                                <th>...</th>
+                                <th>25-11-2023</th>
+                                <th>25-11-2023</th>
+                                <th>50%</th>
+                                <th>25-11-2023</th>
+                                <th></th>
+                                <th>SP1</th>
+                                <th style="color: rgb(110, 241, 110);">hoạt động</th>
+                                <th><button type="button" onclick="MoThemKhuyenMai('row-SuaKM','row-ThemKM');SuaKM(this);"><i class="fa-solid fa-pen" style="color: #005eff;"></i></button></th>
+                                <th><button type="button" onclick="XoaKM(this);"><i class="fa-solid fa-trash" style="color: rgb(245, 45, 0);"></i></button></th>
+                            </tr>
+                            <tr>
+                                <th>2</th>
+                                <th>KM1</th>
+                                <th>...</th>
+                                <th>25-11-2023</th>
+                                <th>25-11-2023</th>
+                                <th>50%</th>
+                                <th>25-11-2023</th>
+                                <th></th>
+                                <th>SP2</th>
+                                <th style="color: rgb(110, 241, 110);">hoạt động</th>
+                                <th><button type="button" onclick="MoThemKhuyenMai('row-SuaKM','row-ThemKM');SuaKM(this);"><i class="fa-solid fa-pen" style="color: #005eff;"></i></button></th>
+                                <th><button type="button" onclick="XoaKM(this);"><i class="fa-solid fa-trash" style="color: rgb(245, 45, 0);"></i></button></th>
+                            </tr>
+                            <tr>
+                                <th>3</th>
+                                <th>KM1</th>
+                                <th>...</th>
+                                <th>25-11-2023</th>
+                                <th>25-11-2023</th>
+                                <th>50%</th>
+                                <th>25-11-2023</th>
+                                <th></th>
+                                <th>SP2</th>
+                                <th style="color: rgb(110, 241, 110);">hoạt động</th>
+                                <th><button type="button" onclick="MoThemKhuyenMai('row-SuaKM','row-ThemKM');SuaKM(this);"><i class="fa-solid fa-pen" style="color: #005eff;"></i></button></th>
+                                <th><button type="button" onclick="XoaKM(this);"><i class="fa-solid fa-trash" style="color: rgb(245, 45, 0);"></i></button></th>
                             </tr>
                         </table>
                     </div>
@@ -1027,6 +1066,7 @@
         <script src="scripts/AdminPage/scriptLoaiSanPham.js"></script>
         <script src="scripts/AdminPage/scriptThuongHieu.js"></script>
         <script src="scripts/AdminPage/scriptGia.js"></script>
+        <script src="scriptKhuyenMai.js"></script>
 
         <!-- Chờ sửa sau khi thêm mục item khác -->
         <script src="loading/scriptSanPham.js"></script>
