@@ -16,6 +16,7 @@
         <link rel="stylesheet" href="styles/AdminPage/styleGia.css">
         <link rel="stylesheet" href="styles/AdminPage/styleKhuyenMai.css">
 
+        <link rel="stylesheet" href="styles/AdminPage/styleDonHang.css">
         <link rel="stylesheet" href="styles/AdminPage/styleCTDonHang.css">
         <link rel="stylesheet" href="styles/AdminPage/styleLSThanhToan.css">
         
@@ -849,58 +850,152 @@
                             <input type="text" placeholder="Từ khóa">
                             <button class="btnTimKiemSP"><a>Tìm kiếm</a></button>
                         </div>
-                        <div class="div-SP-Phai">
-                            <button class="btnThemSP" onclick="SanPhamThem('row-ThemSP');"><a>Thêm</a></button>
-                            <button class="btnSuaSP" onclick="SanPhamSua('row-SuaSP');"><a>Sửa</a></button>
-                            <button class="btnXoaSP" onclick="SanPhamXoa('row-XoaSP');"><a>Xóa</a></button>
-                        </div>
                     </div>
-                    <div id="row-ThemSP">
-                        <input type="text" class="tenSP SP" placeholder="Tên" id="tenSP" value="Túi xách Orima">
-                        <input type="text" class="maGia SP" placeholder="Mã giá" id="maGia" value="600000">
-                        <input type="text" class="anhSP SP" placeholder="Hình ảnh" id="anhSP" value="SP1.jpg">
-                        <input type="text" class="tTSP SP" placeholder="Thuộc tính" id="tTSP" value="Đen">
-                        <input type="text" class="nDSP SP" placeholder="Nội dung" id="nDSP" value="...">
-                        <input type="text" class="maLoai SP" placeholder="Mã loại" id="maLoai" value="maLoai1">
-                        <input type="text" class="maThuongHieu SP" placeholder="Mã thương hiệu" id="maThuongHieu" value="maThgHieu1"> 
-                        <input type="text" class="trangThai SP" placeholder="Trạng thái" id="trangThai" value="...">
-                        <button class="btnSanPhamThem" onclick="ThemSP();TuCong();">Thêm sản phẩm</button>
-                        <span>id:</span><a class="So1">1</a>
-                    </div>
-                    <div id="row-SuaSP">
-                        <input type="text" class="tenSP SP" placeholder="Tên">
-                        <input type="text" class="maGia SP" placeholder="Mã giá">
-                        <input type="text" class="anhSP SP" placeholder="Hình ảnh">
-                        <input type="text" class="tTSP SP" placeholder="Thuộc tính">
-                        <input type="text" class="nDSP SP" placeholder="Nội dung">
-                        <input type="text" class="maLoai SP" placeholder="Mã loại">
-                        <input type="text" class="maThuongHieu SP" placeholder="Mã thương hiệu">
-                        <input type="text" class="trangThai SP" placeholder="Trạng thái">
-                        <button class="btnSanPhamSua" onclick="SuaSP();">Sửa sản phẩm</button>
-                    </div>
-                    <div id="row-XoaSP">
-                        <input type="text" class="tenSP SP" placeholder="Tên">
-                        <input type="text" class="maGia SP" placeholder="Mã giá">
-                        <input type="text" class="anhSP SP" placeholder="Hình ảnh">
-                        <input type="text" class="tTSP SP" placeholder="Thuộc tính">
-                        <input type="text" class="nDSP SP" placeholder="Nội dung">
-                        <input type="text" class="maLoai SP" placeholder="Mã loại">
-                        <input type="text" class="maThuongHieu SP" placeholder="Mã thương hiệu">
-                        <input type="text" class="trangThai SP" placeholder="Trạng thái">
-                        <button class="btnSanPhamXoa" onclick="XoaSP();">Xóa sản phẩm</button>
-                    </div>
-                    <div id="DataSanPham">
-                        <table id="Table">
-                            <tr>
+                    <div class="DataDonHang">
+                        <table class="TableDH" id="TableDH">
+                            <tr style="background-color: #717782;">
                                 <th>STT</th>
-                                <th>Tên SP</th>
-                                <th>Mã giá</th>
-                                <th>Hình ảnh</th>
-                                <th>Thuộc tính</th>
-                                <th>Nội dung</th>
-                                <th>Mã loại</th>
-                                <th>Mã thương hiệu</th>
+                                <th>Mã đơn hàng</th>
+                                <th>Ngày đặt hàng</th>
+                                <th>Ngày giao</th>
+                                <th>Mã khách hàng</th>
+                                <th>Địa chỉ giao</th>
+                                <th>Số điện thoại</th>
+                                <th>Ngày tạo</th>
+                                <th>Thành tiền</th>
                                 <th>Trạng thái</th>
+                            </tr>
+                            <tr>
+                                <th>1</th>
+                                <th>ĐH1</th>
+                                <th>26-11-2023</th>
+                                <th>...</th>
+                                <th>KH1</th>
+                                <th>Hải Dương</th>
+                                <th>0385666387</th>
+                                <th>26-11-2023</th>
+                                <th>900.000đ</th>
+                                <th style="color: yellow;">Đang giao</th>
+                            </tr>
+                            <tr>
+                                <th>2</th>
+                                <th>ĐH2</th>
+                                <th>26-11-2023</th>
+                                <th>27-11-2023</th>
+                                <th>KH2</th>
+                                <th>Hải Dương</th>
+                                <th>0385926387</th>
+                                <th>26-11-2023</th>
+                                <th>3.900.000đ</th>
+                                <th style="color: rgb(79, 216, 79)">Đã nhận hàng</th>
+                            </tr>
+                            <tr>
+                                <th>3</th>
+                                <th>ĐH3</th>
+                                <th>26-11-2023</th>
+                                <th>27-11-2023</th>
+                                <th>KH3</th>
+                                <th>Hải Dương</th>
+                                <th>0385666387</th>
+                                <th>26-11-2023</th>
+                                <th>900.000đ</th>
+                                <th style="color: rgb(79, 216, 79)">Đã nhận hàng</th>
+                            </tr>
+                            <tr>
+                                <th>4</th>
+                                <th>ĐH4</th>
+                                <th>26-11-2023</th>
+                                <th>...</th>
+                                <th>KH4</th>
+                                <th>Hải Dương</th>
+                                <th>0385666387</th>
+                                <th>26-11-2023</th>
+                                <th>900.000đ</th>
+                                <th style="color: yellow;">Đang giao</th>
+                            </tr>
+                            <tr>
+                                <th>5</th>
+                                <th>ĐH5</th>
+                                <th>26-11-2023</th>
+                                <th>...</th>
+                                <th>KH5</th>
+                                <th>Hải Dương</th>
+                                <th>0385666387</th>
+                                <th>26-11-2023</th>
+                                <th>900.000đ</th>
+                                <th style="color: yellow;">Đang giao</th>
+                            </tr>
+                            <tr>
+                                <th>6</th>
+                                <th>ĐH6</th>
+                                <th>26-11-2023</th>
+                                <th>...</th>
+                                <th>KH6</th>
+                                <th>Hải Dương</th>
+                                <th>0385666387</th>
+                                <th>26-11-2023</th>
+                                <th>900.000đ</th>
+                                <th style="color: yellow;">Đang giao</th>
+                            </tr>
+                            <tr>
+                                <th>7</th>
+                                <th>ĐH7</th>
+                                <th>26-11-2023</th>
+                                <th>...</th>
+                                <th>KH7</th>
+                                <th>Hải Dương</th>
+                                <th>0385666387</th>
+                                <th>26-11-2023</th>
+                                <th>900.000đ</th>
+                                <th style="color: yellow;">Đang giao</th>
+                            </tr>
+                            <tr>
+                                <th>8</th>
+                                <th>ĐH8</th>
+                                <th>26-11-2023</th>
+                                <th>...</th>
+                                <th>KH8</th>
+                                <th>Hải Dương</th>
+                                <th>0385666387</th>
+                                <th>26-11-2023</th>
+                                <th>900.000đ</th>
+                                <th style="color: yellow;">Đang giao</th>
+                            </tr>
+                            <tr>
+                                <th>9</th>
+                                <th>ĐH9</th>
+                                <th>26-11-2023</th>
+                                <th>...</th>
+                                <th>KH9</th>
+                                <th>Hải Dương</th>
+                                <th>0385666387</th>
+                                <th>26-11-2023</th>
+                                <th>900.000đ</th>
+                                <th style="color: red">Đã hủy</th>
+                            </tr>
+                            <tr>
+                                <th>10</th>
+                                <th>ĐH10</th>
+                                <th>26-11-2023</th>
+                                <th>...</th>
+                                <th>KH10</th>
+                                <th>Hải Dương</th>
+                                <th>0385666387</th>
+                                <th>26-11-2023</th>
+                                <th>900.000đ</th>
+                                <th style="color: red">Đã hủy</th>
+                            </tr>
+                            <tr>
+                                <th>11</th>
+                                <th>ĐH11</th>
+                                <th>26-11-2023</th>
+                                <th>...</th>
+                                <th>KH11</th>
+                                <th>Hải Dương</th>
+                                <th>0385666387</th>
+                                <th>26-11-2023</th>
+                                <th>900.000đ</th>
+                                <th style="color: yellow;">Đang giao</th>
                             </tr>
                         </table>
                     </div>

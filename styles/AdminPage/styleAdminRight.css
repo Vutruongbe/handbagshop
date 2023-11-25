@@ -75,6 +75,7 @@
 }
 
 #row-Right-Mid-DonHang{
+    margin-left: -20px;
     float: left;
     width: 0px;
     height: auto;
