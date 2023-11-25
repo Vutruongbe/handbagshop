@@ -16,8 +16,8 @@ function ThemLoaiSanPham(){
     var ip1 = document.getElementById('sttLSP');
     var ip2 = document.getElementById('maLSP');
     var ip3 = document.getElementById('tenLSP');
-    var ip4 = document.getElementById('ttLSP');
-    var ip5 = document.getElementById('nsLSP');
+    var ip4 = document.getElementById('nsLSP');
+    var ip5 = document.getElementById('ttLSP');
 
     var table = document.querySelector('.TableLSP');
     var newRow = document.createElement('tr');
