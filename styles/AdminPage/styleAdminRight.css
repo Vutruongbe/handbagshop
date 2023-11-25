@@ -32,15 +32,18 @@
     transition: 0.4s;
 }
 
+/*  */
 #row-Right-Mid-LoaiSanPham{
+    margin-left: -20px;
     float: left;
-    width: 0px;
+    width: 920px;
     height: auto;
     padding-bottom: 20px;
     background-color: rgb(242, 236, 236);
-    opacity: 0;
+    opacity: 1;
     transition: 0.4s;
 }
+/*  */
 
 #row-Right-Mid-ThuongHieu{
     float: left;
