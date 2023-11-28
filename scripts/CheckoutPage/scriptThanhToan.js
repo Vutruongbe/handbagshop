@@ -33,5 +33,7 @@ function ThanhToanNe() {
         document.getElementById("textTownCity").value = '';
         document.getElementById("textPhone").value = '';
         document.getElementById("textEmail").value = '';
+
+        window.location.href='indexSalesInvoice.html';
     }
 }

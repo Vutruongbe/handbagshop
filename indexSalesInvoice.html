@@ -64,52 +64,27 @@
                     <h3 style="padding: 0px 0px 0px 10px;">Đơn vị tiền tệ (Currency): </h3>
                 </div>
                 <hr>
-                <div class="SanPham" id="okday"style="padding: 0px 0px 0px 100px">
+                <div class="SanPham" id="okday"style="padding: 0px 0px 0px 170px">
                     <table>
                         <tr>
                             <th >STT</th>
                             <th style="width: 100px;">Hình</th>
                             <th style="width: 100px;">Tên</th>
-                            <th style="width: 100px;">Đơn giá</th>
                             <th style="width: 100px;">Số lượng</th>
                             <th style="width: 100px;">Thành tiền</th>
                         </tr>
-                        <tbody id="chitietgiohang">
+                        <tbody id="chitiethoadon">
                             <td class="td1">1</td>
                             <td><img src="images/DMitem1.jpg" width="100px" alt="" srcset=""></td>
                             <td>Túi sách untiJo</td>
-                            <td>807000</td>
                             <td>1</td>
                             <td>807000</td>
-                        </tbody>
-                        <tbody id="chitietgiohang">
-                            <td class="td1">1</td>
-                            <td><img src="images/DMitem2.jpg" width="100px" alt="" srcset=""></td>
-                            <td>Túi sách untiJo</td>
-                            <td>1977000</td>
-                            <td>1</td>
-                            <td>1977000</td>
-                        </tbody>
-                        <tbody id="chitietgiohang">
-                            <td class="td1">1</td>
-                            <td><img src="images/DMitem3.jpg" width="100px" alt="" srcset=""></td>
-                            <td>Túi sách untiJo</td>
-                            <td>1807000</td>
-                            <td>1</td>
-                            <td>1807000</td>
-                        </tbody>
-                        <tbody id="chitietgiohang">
-                            <td class="td1">1</td>
-                            <td><img src="images/DMitem4.jpg" width="100px" alt="" srcset=""></td>
-                            <td>Túi sách untiJo</td>
-                            <td>287000</td>
-                            <td>1</td>
-                            <td>287000</td>
                         </tbody>
                     </table>
                     <a style="margin-left: 750px;">Tổng tiền :</a>
-                    <hr style="margin-left: -123px;" width="1139px">    
+                    <a style="float: right;" id="nhanThanhTienHoaDon">1080000</a>     
                 </div>
+                <hr width="1139px">    
                 <div id="row4">
                     <div id="div1" style="width: 70%;height: 100%;float: left;"></div>
                     <div id="div2" style="width: 25%;height: 100%;float: left;border: 1px solid black;">
@@ -119,4 +94,9 @@
             </div>
         </div>
     </body>
+
+    <script src="scripts/ShoppingCart/scriptCartAndCheckOut.js"></script>
+    <script>
+        showHoaDon();
+    </script>
 </html>
