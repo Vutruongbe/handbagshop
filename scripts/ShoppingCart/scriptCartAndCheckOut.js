@@ -9,7 +9,7 @@ function GuiDuLieuThanhToan(){
     var hinhCells = document.querySelectorAll('#chitietgiohang td:nth-child(2)');
     for (let i = 0; i < tenCells.length; i++) {
         
-        var itemSP = [i+1, tenCells[i].innerHTML, soLuongCells[i].innerHTML , thanhTienCells[i].innerHTML];
+        var itemSP = [i+1, tenCells[i].innerHTML, soLuongCells[i].innerHTML , thanhTienCells[i].innerHTML, hinhCells[i].innerHTML];
         arrSP.push(itemSP);
         var itemHD = [i+1, hinhCells[i].innerHTML, tenCells[i].innerHTML, soLuongCells[i].innerHTML , thanhTienCells[i].innerHTML];
         arrHD.push(itemHD);
@@ -92,6 +92,30 @@ function showHoaDon() {
     // alert(ttghtt)
     document.getElementById('chitiethoadon').innerHTML=ttghtt;
     document.getElementById('nhanThanhTienHoaDon').innerHTML=chuoiMoi;
-
 }
 
+
+function showChoXacNhan() {
+    var gp = sessionStorage.getItem("arrSP");
+    var thanhtoan = JSON.parse(gp);
+
+    let choxn="";
+    for(let i=0; i< thanhtoan.length; i++){
+        let tentt = thanhtoan[i][1];
+        let sltt = thanhtoan[i][2];
+        let ttsp = thanhtoan[i][3];
+        var ttMoi = chuyenDoi(ttsp);
+        ttsp = ttMoi;
+        let imgsp = thanhtoan[i][4];
+
+   
+        choxn += "<tr>";
+        choxn += "<td>"+tentt+"</td>";
+        choxn += "<td>"+imgsp+"</td>";
+        choxn += "<td>"+sltt+"</td>";
+        choxn += "<td>"+ttsp+"</td>";
+        choxn += "<td style='color: blue;'>Chờ xác nhận</td>";
+        choxn += "<tr>";
+    }
+    document.getElementById('chitietchoxacnhan').innerHTML=choxn;
+}

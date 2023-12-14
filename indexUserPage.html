@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="styles/HomePage/styleBanner.css">
         <link rel="stylesheet" href="styles/HomePage/styleMenu.css">
         <link rel="stylesheet" href="styles/UserPage/styleNoiDung.css">
+        <link rel="stylesheet" href="styles/UserPage/styleUserPage.css">
 
         <div id="fb-root"></div>
         <script async defer crossorigin="anonymous" 
@@ -137,10 +138,26 @@
                 <!--  -->
                 <div class="NDChoXacNhan">
                     <!-- làm phần đổ sản phẩm -->
-                <!-- </div> -->
-
-
+                    <div class="SanPhamDangXuLy" id="okdayNha" style="margin-bottom: 10px;margin-left: -38px;">
+                        <table>
+                            <tr>
+                                <th style="width: 170px;font-size: 20px;">Tên</th>
+                                <th style="width: 170px;font-size: 20px;">Hình</th>
+                                <th style="width: 170px;font-size: 20px;">Số lượng</th>
+                                <th style="width: 170px;font-size: 20px;">Thành tiền</th>
+                                <th style="width: 170px;font-size: 20px;">Tình trạng</th>
+                            </tr>
+                            <tbody id="chitietchoxacnhan">
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
             </div>
         </div>
+        <script src="scripts/ShoppingCart/scriptCartAndCheckOut.js"></script>
+        <script>
+            showChoXacNhan();
+        </script>
     </body>
 </html>
