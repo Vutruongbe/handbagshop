@@ -1,0 +1,163 @@
+.NoiDungTH{
+    width: 100%;
+    height: 1600px;
+}
+
+.tenDM{
+    width: 100%;
+    height: 45px;
+    float: left;
+}
+
+.tenDM i{
+    float: left;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.tenDM a{
+    margin-top: 19px;
+    float: left;
+    margin-left: 10px;
+}
+
+.noidungDM{
+    width: 100%;
+    height: 400px;
+    float: left;
+}
+
+.noidungDM a{
+    margin-left: 45px;
+    margin-top: 5px;
+    float: left;
+}
+
+.danhMuc{
+    float: left;
+    width: 20%;
+    background-color: rgb(238, 238, 243);
+    height: 1530px;
+}
+
+.menuSapXep{
+    float: left;
+    height: 60px;
+    width: 80%;
+    background-color: rgb(226, 217, 211);
+}
+
+#a1{
+    margin-left: 20px;
+    margin-top: 20px;
+    float: left;
+    color: rgb(92, 84, 84);
+}
+
+#btnPhoBien{
+    margin-left: 10px;
+    margin-top: 14px;
+    cursor: pointer;
+    padding: 7px 10px 7px 10px;
+    color: white;
+    border: 0px solid black;
+    background-color: #EE4D2D;
+}
+
+#btnDat{
+    margin-left: 10px;
+    margin-top: 14px;
+    cursor: pointer;
+    padding: 7px 15px 7px 15px;
+    color: rgb(141, 132, 132);
+    border: 0px solid black;
+    background-color: white;
+}
+
+#btnBanHangDau{
+    margin-left: 10px;
+    margin-top: 14px;
+    cursor: pointer;
+    padding: 7px 15px 7px 15px;
+    color: rgb(141, 132, 132);
+    border: 0px solid black;
+    background-color: white;
+}
+
+#btnGia{
+    margin-left: 10px;
+    margin-top: 14px;
+    cursor: pointer;
+    padding: 7px 15px 7px 15px;
+    color: rgb(141, 132, 132);
+    border: 0px solid black;
+    background-color: white;
+}
+
+#a2{
+    color: #EE4D2D;
+    margin-left: 150px;
+}
+
+.menuSapXep i{
+    cursor: pointer;
+    margin-left: 5px;
+    padding: 8px 10px 8px 10px;
+    background-color: rgb(226, 228, 230);
+}
+
+#iright{
+    background-color: rgb(240, 248, 255);
+}
+
+.NoiDungChinhTH{
+    float: left;
+    width: 80%;
+    height: 1500px;
+    /* background-color: #EE4D2D; */
+}
+
+.Sp1{
+    cursor: pointer;
+    width: 190px;
+    height: 290px;
+    background-color: #ece3e1;
+    float: left;
+    margin-left: 4px;
+    margin-top: 4px;
+}
+
+.Sp1 img{
+    width: 100%;
+    float: left;
+}
+
+.Sp1 a{
+    width: 100%;
+    text-align: center;
+    margin-top: 5px;
+    float: left;
+}
+
+.sao{
+    margin-top: 5px;
+    margin-left: 40px;
+    width: auto;
+    height: auto;
+    float: left;
+}
+
+.sao i{
+    color: rgb(188, 188, 41);
+}
+
+/* .Sp1:hover{
+    border: 0.1px solid;
+} */
+
+/* .Sp1 input{
+    margin-top: 8px;
+    float: left;
+    padding: 5px 15px 5px 15px;
+    margin-left: 48px;
+} */
