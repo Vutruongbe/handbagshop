@@ -19,6 +19,7 @@
         <link rel="stylesheet" href="styles/AdminPage/styleDonHang.css">
         <link rel="stylesheet" href="styles/AdminPage/styleCTDonHang.css">
         <link rel="stylesheet" href="styles/AdminPage/styleLSThanhToan.css">
+        <link rel="stylesheet" href="styleSuaDonHang.css">
         
         <link rel="stylesheet" href="styles/AdminPage/styleThongKeDoanhThu.css">
 
@@ -75,7 +76,7 @@
                 <div class="Main">
                     <a>MAIN NAVIGATION</a>
                 </div>
-                <div class="TrangChu" onclick="alert('Trở lại trang chủ')">
+                <div class="TrangChu" onclick="window.location.href='indexHomePage.html'">
                     <i class="fa-solid fa-igloo" style="color: #ffffff;"></i>
                     <a>Trang Chủ</a>
                     <i class="fa-solid fa-download" style="color: #ffffff;float: right;margin-right: 20px;margin-top: 14px;"></i>
@@ -854,7 +855,7 @@
                     <div class="DataDonHang">
                         <table class="TableDH" id="TableDH">
                             <tr style="background-color: #717782;">
-                                <!-- <th><input type="checkbox"></th> -->
+                                <th><input type="checkbox" name="" id=""></th>
                                 <th>STT</th>
                                 <th>Mã đơn hàng</th>
                                 <th>Mã khách hàng</th>
@@ -866,9 +867,23 @@
                             </tr>
                         </table>
                     </div>
-                    <!-- <div style="position: fixed;width: 200px;height: 30px;background-color: #4d525c;">
-                        ok
-                    </div> -->
+                    <div id="SuaDonHang" class="SuaDonHang scrollable-div">
+                        <div class="NDDonHang">
+                            <a>Mã đơn hàng :</a><input type="text" id="mDHs" value="" style="float: left;margin-right: 300px;outline: none;cursor: pointer;">
+                            <a style="margin-top: 5px;">Mã khách hàng :</a><input type="text" id="mKHs" value="" style="margin-top: 5px;float: left;margin-right: 300px;outline: none;cursor: pointer;">
+                            <a style="margin-top: 5px;">Số lượng :</a><p id="SLs" style="margin-top: 5.5px;margin-right: 500px;">a</p>
+                            <a style="margin-top: -10px;">Tổng tiền :</a><p id="TgTs" style="margin-top: -10px;margin-right: 400px;">a</p>
+                            <a style="margin-top: -10px;">Trạng thái :</a>
+                                <select id="TTs" style="margin-top: -10px;outline: none;cursor: pointer;">
+                                    <option value="Chờ xác nhận">Chờ xác nhận</option>
+                                    <option value="Xác nhận">Xác nhận</option>
+                                    <option value="Đang đóng hàng">Đang đóng hàng</option>
+                                    <option value="Đã giao vận chuyển">Đã giao vận chuyển</option>
+                                </select>
+                            <input type="button" value="Xác nhận" style="float: left;margin-left: -200px;margin-top: 20px;padding: 5px 10px;background-color: green;border: 1px solid;color: white;cursor: pointer;" onclick="XacNhanSuaDonHang()">
+                            <input type="button" value="Hủy" style="float: left;margin-left: -100px;margin-top: 20px;padding: 5px 10px;background-color: red;border: 1px solid;color: white;cursor: pointer;" onclick="HuySuaDonHang()">
+                        </div>
+                    </div>
                 </div>
                 <div id="row-Right-Mid-CTDonHang">
                     <div class="row-R-Mid-Top">

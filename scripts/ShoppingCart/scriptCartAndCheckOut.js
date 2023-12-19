@@ -1,5 +1,6 @@
 var arrSP = new Array();
 var arrHD = new Array();
+var arrXuLySuaDonHang = new Array();
 
 function GuiDuLieuThanhToan(){
     // Thanh Toan
@@ -139,6 +140,8 @@ function showDonHangAdmin() {
     // Đơn hàng
     var table = document.querySelector('.TableDH');
     var newRow = document.createElement('tr');
+    var cell0 = document.createElement('td');
+        cell0.innerHTML = '<th><input type="checkbox" name="" id=""></th>'; 
     var cell1 = document.createElement('td');
         cell1.textContent = '1'; 
         cell1.style.fontWeight = 'Bold'
@@ -163,6 +166,23 @@ function showDonHangAdmin() {
     var editButton = document.createElement('button');
     editButton.type = 'button';
     editButton.innerHTML = '<i class="fa-solid fa-pen" style="color: #005eff;"></i>';
+    editButton.addEventListener('click', function() {
+        document.getElementById('SuaDonHang').style.width="600px";
+        document.getElementById('SuaDonHang').style.height="300px";
+        document.getElementById('SuaDonHang').style.padding="10px";
+        var DataMaDH = document.querySelectorAll('#TableDH td:nth-child(3)');
+        var DataMaKH = document.querySelectorAll('#TableDH td:nth-child(4)');
+        var DataSoLuong = document.querySelectorAll('#TableDH td:nth-child(5)');
+        var DataTongTien = document.querySelectorAll('#TableDH td:nth-child(6)');
+
+        // alert(DataMaDH[0].innerHTML);
+        document.getElementById('mDHs').value=DataMaDH[0].innerHTML;
+        document.getElementById('mKHs').value=DataMaKH[0].innerHTML;
+        document.getElementById('SLs').innerHTML=DataSoLuong[0].innerHTML;
+        document.getElementById('TgTs').innerHTML=DataTongTien[0].innerHTML;
+
+        
+    });
     editCell.appendChild(editButton);
     var deleteCell = document.createElement('td');
     var deleteButton = document.createElement('button');
@@ -173,6 +193,7 @@ function showDonHangAdmin() {
     });
     deleteCell.appendChild(deleteButton);
 
+    newRow.appendChild(cell0);
     newRow.appendChild(cell1);
     newRow.appendChild(cell2);
     newRow.appendChild(cell3);
@@ -220,4 +241,26 @@ function showDonHangAdmin() {
         newRowb.appendChild(cell7b);
         tableb.appendChild(newRowb);
     }
+}
+
+function HuySuaDonHang(){
+    document.getElementById('SuaDonHang').style.width="0px";
+    document.getElementById('SuaDonHang').style.height="0px";
+    document.getElementById('SuaDonHang').style.padding="0px";
+}
+
+function XacNhanSuaDonHang(){
+    document.querySelectorAll('#TableDH td:nth-child(3)')[0].innerHTML=document.getElementById('mDHs').value;
+    document.querySelectorAll('#TableDH td:nth-child(4)')[0].innerHTML=document.getElementById('mKHs').value;
+    document.querySelectorAll('#TableDH td:nth-child(5)')[0].innerHTML=document.getElementById('SLs').innerHTML;
+    document.querySelectorAll('#TableDH td:nth-child(6)')[0].innerHTML=document.getElementById('TgTs').innerHTML;
+    document.querySelectorAll('#TableDH td:nth-child(7)')[0].innerHTML=document.getElementById('TTs').value;
+
+    for(let i = 0; i < document.querySelectorAll('#TableCTDH td:nth-child(2)').length; i++) {
+        document.querySelectorAll('#TableCTDH td:nth-child(2)')[i].innerHTML=document.getElementById('mDHs').value;
+    }
+    
+    document.getElementById('SuaDonHang').style.width="0px";
+    document.getElementById('SuaDonHang').style.height="0px";
+    document.getElementById('SuaDonHang').style.padding="0px";
 }
