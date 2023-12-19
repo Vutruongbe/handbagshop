@@ -1,4 +1,4 @@
-.SuaDonHang{
+.SuaCTDonHang{
     position: fixed;
     width: 0px;
     height: 0px;
@@ -8,27 +8,17 @@
     overflow-x: auto;
 }
 
-.scrollable-div {
-    overflow: auto; 
-    border: 1px solid #ccc; 
-  }
-
-.NDDonHang{
+.NDCTDonHang{
     width: 100%;
-    height: 170px;
+    height: 150px;
     background-color: aliceblue;
 }
 
-.NDDonHang a{
+.NDCTDonHang a{
     float: left;
 }
 
-.NDDonHang p{
+.NDCTDonHang p{
     color: rgb(254, 0, 0);
-    float: left;
-}
-
-select{
-    border-radius: 4px;
     float: left;
 }

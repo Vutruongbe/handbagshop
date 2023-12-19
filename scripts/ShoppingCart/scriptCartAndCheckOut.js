@@ -168,7 +168,7 @@ function showDonHangAdmin() {
     editButton.innerHTML = '<i class="fa-solid fa-pen" style="color: #005eff;"></i>';
     editButton.addEventListener('click', function() {
         document.getElementById('SuaDonHang').style.width="600px";
-        document.getElementById('SuaDonHang').style.height="300px";
+        document.getElementById('SuaDonHang').style.height="170px";
         document.getElementById('SuaDonHang').style.padding="10px";
         var DataMaDH = document.querySelectorAll('#TableDH td:nth-child(3)');
         var DataMaKH = document.querySelectorAll('#TableDH td:nth-child(4)');
@@ -210,6 +210,8 @@ function showDonHangAdmin() {
         
         var tableb = document.querySelector('.TableCTDH');
         var newRowb = document.createElement('tr');
+        var cell0b = document.createElement('td');
+            cell0b.innerHTML = '<th><input type="checkbox" name="" id=""></th>'; 
         var cell1b = document.createElement('td');
             cell1b.textContent = i+1; 
             cell1b.style.fontWeight = 'Bold'
@@ -232,6 +234,41 @@ function showDonHangAdmin() {
             cell7b.textContent = chuyenDoi(hoadon[i][4]);
             cell7b.style.fontWeight = 'Bold'
     
+        var editCellb = document.createElement('td');
+        var editButtonb = document.createElement('button');
+        editButtonb.type = 'button';
+        editButtonb.innerHTML = '<i class="fa-solid fa-pen" style="color: #005eff;"></i>';
+        editButtonb.addEventListener('click', function() {
+            // var tz=this.parentElement.parentElement.children;
+            // console.log(tz[5].innerHTML);
+            // var a = tz[5].innerHTML
+            document.getElementById('SuaCTDonHang').style.width="600px";
+            document.getElementById('SuaCTDonHang').style.height="150px";
+            document.getElementById('SuaCTDonHang').style.padding="10px";
+
+            var DataCTMaDH = document.querySelectorAll('#TableCTDH td:nth-child(3)');
+            var DataCTtenSP = document.querySelectorAll('#TableCTDH td:nth-child(4)');
+            var DataCTsoLuong = document.querySelectorAll('#TableCTDH td:nth-child(6)');
+            var DataCTthanhTien = document.querySelectorAll('#TableCTDH td:nth-child(8)');
+
+            document.getElementById('mDHct').innerHTML=DataCTMaDH[i].innerHTML;
+            document.getElementById('tenSPct').innerHTML=DataCTtenSP[i].innerHTML;
+            document.getElementById('SLct').value=DataCTsoLuong[i].innerHTML;
+            document.getElementById('ThanhTienSP').innerHTML=DataCTthanhTien[i].innerHTML;
+
+
+        });
+        editCellb.appendChild(editButtonb);
+        var deleteCellb = document.createElement('td');
+        var deleteButtonb = document.createElement('button');
+        deleteButtonb.type = 'button';
+        deleteButtonb.innerHTML = '<i class="fa-solid fa-trash" style="color: rgb(245, 45, 0);"></i>';
+        deleteButtonb.addEventListener('click', function() {
+            XoaLSP(this);
+        });
+        deleteCellb.appendChild(deleteButtonb);
+
+        newRowb.appendChild(cell0b);
         newRowb.appendChild(cell1b);
         newRowb.appendChild(cell2b);
         newRowb.appendChild(cell3b);
@@ -239,6 +276,8 @@ function showDonHangAdmin() {
         newRowb.appendChild(cell5b);
         newRowb.appendChild(cell6b);
         newRowb.appendChild(cell7b);
+        newRowb.appendChild(editCellb);
+        newRowb.appendChild(deleteCellb);
         tableb.appendChild(newRowb);
     }
 }
@@ -256,11 +295,59 @@ function XacNhanSuaDonHang(){
     document.querySelectorAll('#TableDH td:nth-child(6)')[0].innerHTML=document.getElementById('TgTs').innerHTML;
     document.querySelectorAll('#TableDH td:nth-child(7)')[0].innerHTML=document.getElementById('TTs').value;
 
-    for(let i = 0; i < document.querySelectorAll('#TableCTDH td:nth-child(2)').length; i++) {
-        document.querySelectorAll('#TableCTDH td:nth-child(2)')[i].innerHTML=document.getElementById('mDHs').value;
+    for(let i = 0; i < document.querySelectorAll('#TableCTDH td:nth-child(3)').length; i++) {
+        document.querySelectorAll('#TableCTDH td:nth-child(3)')[i].innerHTML=document.getElementById('mDHs').value;
     }
-    
+
     document.getElementById('SuaDonHang').style.width="0px";
     document.getElementById('SuaDonHang').style.height="0px";
     document.getElementById('SuaDonHang').style.padding="0px";
+}
+
+
+function HuySuaCTDonHang(){
+    document.getElementById('SuaCTDonHang').style.width="0px";
+    document.getElementById('SuaCTDonHang').style.height="0px";
+    document.getElementById('SuaCTDonHang').style.padding="0px";
+}
+
+function XacNhanSuaCTDonHang(x){
+    var tz=x.parentElement.children;
+    let TongSLthaydoi=0;
+    let TongTienthaydoi=0;
+    for (let i = 0; i < document.querySelectorAll('#TableCTDH td:nth-child(4)').length; i++) {
+        if(tz[3].innerHTML == document.querySelectorAll('#TableCTDH td:nth-child(4)')[i].innerHTML){
+            document.querySelectorAll('#TableCTDH td:nth-child(6)')[i].innerHTML=tz[5].value;
+            const a= document.querySelectorAll('#TableCTDH td:nth-child(7)')[i].innerHTML;
+            const thaydoi = convertCurrencyStringToNumber(a);
+            let TinhTien = parseInt(document.querySelectorAll('#TableCTDH td:nth-child(6)')[i].innerHTML)*parseInt(thaydoi);
+            const KetQuaThanhTien = formatNumberToCurrency(TinhTien);
+            document.querySelectorAll('#TableCTDH td:nth-child(8)')[i].innerHTML=KetQuaThanhTien;
+        }
+        TongSLthaydoi+=parseInt(document.querySelectorAll('#TableCTDH td:nth-child(6)')[i].innerHTML);
+        const thaydoi = document.querySelectorAll('#TableCTDH td:nth-child(8)')[i].innerHTML;
+        TongTienthaydoi+=convertCurrencyStringToNumber(thaydoi);
+    }
+    const KetQuaTongTien = formatNumberToCurrency(TongTienthaydoi);
+    document.querySelectorAll('#TableDH td:nth-child(5)')[0].innerHTML=TongSLthaydoi;
+    document.querySelectorAll('#TableDH td:nth-child(6)')[0].innerHTML=KetQuaTongTien;
+
+
+    document.getElementById('SuaCTDonHang').style.width="0px";
+    document.getElementById('SuaCTDonHang').style.height="0px";
+    document.getElementById('SuaCTDonHang').style.padding="0px";
+}
+
+
+
+
+function convertCurrencyStringToNumber(currencyString) {
+    const cleanedString = currencyString.replace(/\./g, '').replace('đ', '');
+    const result = parseInt(cleanedString, 10);
+    return result;
+}
+function formatNumberToCurrency(number) {
+    const formattedNumber = number.toLocaleString('vi-VN');
+    const result = formattedNumber + 'đ';
+    return result;
 }

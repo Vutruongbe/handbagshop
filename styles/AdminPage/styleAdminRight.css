@@ -77,22 +77,22 @@
 #row-Right-Mid-DonHang{
     margin-left: -20px;
     float: left;
-    width: 900px;
+    width: 0px;
     height: auto;
     padding-bottom: 20px;
     background-color: rgb(242, 236, 236);
-    opacity: 1;
+    opacity: 0;
     transition: 0.4s;
 }
 
 #row-Right-Mid-CTDonHang{
     margin-left: -20px;
     float: left;
-    width: 0px;
+    width: 900px;
     height: auto;
     padding-bottom: 20px;
     background-color: rgb(242, 236, 236);
-    opacity: 0;
+    opacity: 1;
     transition: 0.4s;
 }
 

@@ -20,6 +20,7 @@
         <link rel="stylesheet" href="styles/AdminPage/styleCTDonHang.css">
         <link rel="stylesheet" href="styles/AdminPage/styleLSThanhToan.css">
         <link rel="stylesheet" href="styleSuaDonHang.css">
+        <link rel="stylesheet" href="styleSuaCTDonHang.css">
         
         <link rel="stylesheet" href="styles/AdminPage/styleThongKeDoanhThu.css">
 
@@ -840,7 +841,6 @@
                         </table>
                     </div>
                 </div>
-
                 <!-- item Đơn hàng -->
                 <div id="row-Right-Mid-DonHang">
                     <div class="row-R-Mid-Top">
@@ -898,6 +898,7 @@
                     <div class="DataCTDonHang">
                         <table class="TableCTDH" id="TableCTDH">
                             <tr style="background-color: #717782;">
+                                <th><input type="checkbox" name="" id=""></th>
                                 <th>STT</th>
                                 <th>Mã đơn</th>
                                 <th>Tên sản phẩm</th>
@@ -905,8 +906,20 @@
                                 <th>Số lượng</th>
                                 <th>Đơn giá</th>
                                 <th>Thành tiền</th>
+                                <th style="width: 30px;">Sửa</th>
+                                <th style="width: 30px;">Xóa</th>
                             </tr>
                         </table>
+                    </div>
+                    <div id="SuaCTDonHang" class="SuaCTDonHang scrollable-div">
+                        <div class="NDCTDonHang">
+                            <a>Mã đơn hàng :</a><p id="mDHct" style="margin-top: 0px;margin-right: 400px;"></p>
+                            <a style="margin-top: -10px;">Tên sản phẩm :</a><p id="tenSPct" style="margin-top: -10px;margin-right: 300px;"></p>
+                            <a style="margin-top: -10px;float: left;">Số lượng :</a><input type="number" id="SLct" value="" style="margin-top: -10px;float: left;margin-right: 420px;outline: none;cursor: pointer;width: 30px;">
+                            <a style="margin-top: 10px;">Thành tiền :</a><p id="ThanhTienSP" style="margin-top: 10px;">a</p>
+                            <input type="button" value="Xác nhận" style="float: left;margin-left: -140px;margin-top: 40px;padding: 5px 10px;background-color: green;border: 1px solid;color: white;cursor: pointer;" onclick="XacNhanSuaCTDonHang(this)">
+                            <input type="button" value="Hủy" style="float: left;margin-left: -50px;margin-top: 40px;padding: 5px 10px;background-color: red;border: 1px solid;color: white;cursor: pointer;" onclick="HuySuaCTDonHang()">
+                        </div>
                     </div>
                 </div>
                 <div id="row-Right-Mid-LSThanhToan">
