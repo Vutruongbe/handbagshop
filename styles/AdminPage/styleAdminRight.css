@@ -88,11 +88,11 @@
 #row-Right-Mid-CTDonHang{
     margin-left: -20px;
     float: left;
-    width: 900px;
+    width: 0px;
     height: auto;
     padding-bottom: 20px;
     background-color: rgb(242, 236, 236);
-    opacity: 1;
+    opacity: 0;
     transition: 0.4s;
 }
 

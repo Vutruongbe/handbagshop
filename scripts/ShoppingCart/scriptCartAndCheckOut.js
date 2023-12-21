@@ -91,7 +91,6 @@ function showHoaDon() {
     var chuoiChuyenDoi = gk;
     var chuoiMoi = chuyenDoi(chuoiChuyenDoi);
 
-    // alert(ttghtt)
     document.getElementById('chitiethoadon').innerHTML=ttghtt;
     document.getElementById('nhanThanhTienHoaDon').innerHTML=chuoiMoi;
 }
@@ -106,6 +105,9 @@ function showChoXacNhan() {
     var tenLogic = sessionStorage.getItem("tenLogic");
     var soluongLogic = sessionStorage.getItem("soluongLogic");
     var tienLogic = sessionStorage.getItem("tienLogic");
+    if(pp=="Đã giao hàng"){
+        document.getElementById("divDanhGia").style.opacity='1';
+    }
     if(pp==null){
         let choxn="";
         for(let i=0; i< thanhtoan.length; i++){
@@ -113,7 +115,6 @@ function showChoXacNhan() {
             let sltt;
             let ttsp;
             if(tenLogic==null){
-                alert('Đúng')
                 sltt = thanhtoan[i][2];
                 ttsp = thanhtoan[i][3];
             }else{
@@ -151,7 +152,6 @@ function showChoXacNhan() {
             let sltt;
             let ttsp;
             if(tenLogic==null){
-                alert('Đúng')
                 sltt = thanhtoan[i][2];
                 ttsp = thanhtoan[i][3];
             }else{
@@ -351,7 +351,6 @@ function showDonHangAdmin() {
 
     // CT Đơn hàng
     if(GuiLaiTen==null){
-        alert('OK')
         for (let i = 0; i < hoadon.length; i++) {
             
             var tableb = document.querySelector('.TableCTDH');
