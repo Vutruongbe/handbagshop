@@ -95,7 +95,6 @@ function showHoaDon() {
     document.getElementById('nhanThanhTienHoaDon').innerHTML=chuoiMoi;
 }
 
-
 function showChoXacNhan() {
     var gp = sessionStorage.getItem("arrSP");
     var thanhtoan = JSON.parse(gp);
@@ -173,7 +172,7 @@ function showChoXacNhan() {
             choxn += "<td>"+imgsp+"</td>";
             choxn += "<td>"+sltt+"</td>";
             choxn += "<td>"+ttsp+"</td>";
-            choxn += "<td style='color: blue;'>"+pp+"</td>";
+            choxn += "<td style='color: blue;' class='allSPn'>"+pp+"</td>";
             choxn += "<tr>";
         }
         document.getElementById('chitietchoxacnhan').innerHTML=choxn;
@@ -593,4 +592,38 @@ function formatNumberToCurrency(number) {
     const formattedNumber = number.toLocaleString('vi-VN');
     const result = formattedNumber + 'đ';
     return result;
+}
+
+
+var layALLCheckDonHangCheckbox = document.getElementById("layALLCheckDonHang");
+
+layALLCheckDonHangCheckbox.addEventListener("change", function() {
+    if (layALLCheckDonHangCheckbox.checked) {
+        document.querySelectorAll('#TableDH td:nth-child(1)')[0].children[0].checked = true;
+    } else {
+        document.querySelectorAll('#TableDH td:nth-child(1)')[0].children[0].checked = false;
+    }
+});
+
+function xuLyThayDoi() {
+    if(document.getElementById("layALLCheckDonHang").checked == true){
+        var value = document.getElementById("TTs1").value;
+        document.querySelectorAll('#TableDH td:nth-child(7)')[0].innerHTML= value;
+
+        let a = document.querySelectorAll('#TableDH td:nth-child(7)')[0].innerHTML;
+        sessionStorage.setItem("nhanTrangThaiDonHang",a);
+    }
+}
+
+function XacNhanDaNhan(){
+    var table = document.getElementById("chitietchoxacnhan1");
+    var a = table.querySelectorAll("#chitietchoxacnhan td:nth-child(1)").length;
+    for (let i = 0; i < a; i++) {
+        table.querySelectorAll("#chitietchoxacnhan td:nth-child(5)")[i].innerHTML = "Đã nhận hàng"
+    }
+
+    document.getElementById('p2').style.backgroundColor='rgb(201, 194, 192)';
+    document.getElementById('p1').style.backgroundColor='orangered';
+
+    sessionStorage.setItem("showDonHang",table.querySelectorAll("#chitietchoxacnhan td:nth-child(5)")[i].innerHTML);
 }

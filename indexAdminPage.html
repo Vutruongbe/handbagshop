@@ -851,11 +851,21 @@
                             <input type="text" placeholder="Từ khóa">
                             <button class="btnTimKiemSP"><a>Tìm kiếm</a></button>
                         </div>
+                        <div class="div-SP-Phai">
+                            <select id="TTs1" onchange="xuLyThayDoi(this)" style="outline: none;cursor: pointer;margin-left: -40px;float: left;padding: 11px;">
+                                <option value="Chờ xác nhận">Chờ xác nhận</option>
+                                <option value="Xác nhận">Xác nhận</option>
+                                <option value="Đang đóng hàng">Đang đóng hàng</option>
+                                <option value="Đã giao vận chuyển">Đã giao vận chuyển</option>
+                                <option value="Đã giao hàng">Đã giao hàng</option>
+                            </select>
+                            <button class="btnXoaTaiKhoanAll" style="margin-left: 10px;"><a>Xóa tất cả</a></button>
+                        </div>
                     </div>
                     <div class="DataDonHang">
                         <table class="TableDH" id="TableDH">
                             <tr style="background-color: #717782;">
-                                <th><input type="checkbox" name="" id=""></th>
+                                <th><input type="checkbox" name="" id="layALLCheckDonHang"></th>
                                 <th>STT</th>
                                 <th>Mã đơn hàng</th>
                                 <th>Mã khách hàng</th>
@@ -895,11 +905,14 @@
                             <input type="text" placeholder="Từ khóa">
                             <button class="btnTimKiemSP"><a>Tìm kiếm</a></button>
                         </div>
+                        <div class="div-SP-Phai">
+                            <button class="btnXoaTaiKhoanAll" style="margin-left: -30px;"><a>Xóa tất cả</a></button>
+                        </div>
                     </div>
                     <div class="DataCTDonHang">
                         <table class="TableCTDH" id="TableCTDH">
                             <tr style="background-color: #717782;">
-                                <th><input type="checkbox" name="" id=""></th>
+                                <th><input type="checkbox" name=""></th>
                                 <th>STT</th>
                                 <th>Mã đơn</th>
                                 <th>Tên sản phẩm</th>
