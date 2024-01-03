@@ -57,7 +57,7 @@ function DanhGiaNe(x){
 }
 
 function DanhGiaHoanTatMua(){
-    alert(mm)
+    // alert(mm)
     sessionStorage.setItem('sosao19',mm);
     sessionStorage.setItem('danhgia19',document.getElementById('doan-van').value)
     window.location.href='indexProduct.html';

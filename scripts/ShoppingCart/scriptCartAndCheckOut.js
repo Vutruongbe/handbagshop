@@ -627,3 +627,23 @@ function XacNhanDaNhan(){
 
     sessionStorage.setItem("showDonHang",table.querySelectorAll("#chitietchoxacnhan td:nth-child(5)")[i].innerHTML);
 }
+
+// var layALLCheckDonHangCheckbox = document.getElementById("layALLCheckDonHang");
+
+// layALLCheckDonHangCheckbox.addEventListener("change", function() {
+//     if (layALLCheckDonHangCheckbox.checked) {
+//         document.querySelectorAll('#TableDH td:nth-child(1)')[0].children[0].checked = true;
+//     } else {
+//         document.querySelectorAll('#TableDH td:nth-child(1)')[0].children[0].checked = false;
+//     }
+// });
+
+// function xuLyThayDoi() {
+//     if(document.getElementById("layALLCheckDonHang").checked == true){
+//         var value = document.getElementById("TTs1").value;
+//         document.querySelectorAll('#TableDH td:nth-child(7)')[0].innerHTML= value;
+
+//         let a = document.querySelectorAll('#TableDH td:nth-child(7)')[0].innerHTML;
+//         sessionStorage.setItem("nhanTrangThaiDonHang",a);
+//     }
+// }
